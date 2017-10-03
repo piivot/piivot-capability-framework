@@ -1,0 +1,98 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiiVOT Capability Framework</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="css/pizza.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    
+  </head>
+
+    <body>
+        <div class="grid-container cell">
+            <div class="grid-x grid-padding-x">
+                <div class="large-4 cell">
+                    <img src= "assets/PiiVOT-LOGO.png">
+                </div>
+                <div class="large-8 cell valign-middle">
+                    <h1>PiiVOT Capability Framework</h1>
+                </div>
+            </div>
+    
+            <div class="grid-x grid-padding-y">
+                <div class="large-12 cell"></div>
+                <div class="large-12 cell"></div>
+            </div>
+
+            <div class="grid-x grid-padding-x">
+                <div class="callout large-8 cell">
+                        <form class="grid-x">
+                            <div class="large-10 cell">
+                                <label>Internal Organization Workshops
+                                    <div class="range-control">
+                                        <input class="slider" id="inputRange1" type="range" min="0" max="5" step="1" value="0" data-thumbwidth="20">
+                                        <output name="rangeVal1">0</output>
+                                    </div>
+                                    <div class="slider" data-slider data-initial-start="0" data-end="5">
+                                        <span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput1"></span>
+                                        <span class="slider-fill" data-slider-fill></span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="large-2 cell">
+                                <input type="number" id="sliderOutput1">
+                            </div>
+                            <div class="form-icons">
+                            <h4>ORganization</h4>
+                        
+                            <div class="input-group">
+                                <span class="input-group-label">
+                                <i class="fa fa-user"></i>
+                                </span>
+                                <input class="input-group-field" type="text" placeholder="Full name">
+                            </div>
+                        
+                            <div class="input-group">
+                                <span class="input-group-label">
+                                <i class="fa fa-envelope"></i>
+                                </span>
+                                <input class="input-group-field" type="text" placeholder="Email">
+                            </div>
+                        
+                            <div class="input-group">
+                                <span class="input-group-label">
+                                <i class="fa fa-key"></i>
+                                </span>
+                                <input class="input-group-field" type="text" placeholder="Password">
+                            </div>
+                            </div>
+                        
+                            <button class="button">Sign Up</button>
+                        </form>
+                </div>
+
+                <div class="large-4 cell">
+                    <ul data-line-id="my-cool-line-graph" data-options='{"stroke_width": "0"}'>
+                        <li data-y="10" data-x="13" data-color="#000000">Your Capability</li>
+                        <li data-y="35" data-x="40" data-color="#f69320">Ideal Capability</li>                        
+                    </ul>
+                    <div id="my-cool-line-graph" style="height: 450px;"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/vendor/snap.svg.js"></script>
+    <script src="js/vendor/pizza.js"></script>
+    <script src="js/app.js"></script>
+</html>
