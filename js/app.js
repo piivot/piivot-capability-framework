@@ -34,9 +34,9 @@ $('#ORC-CL1-05').slider({
 
 //$(document).foundation();
 
-/*Pizza.init();
+Pizza.init();
 
-$('input[type="range"]').on('input', function() {
+/*$('input[type="range"]').on('input', function() {
     
     var control = $(this),
     controlMin = control.attr('min'),
