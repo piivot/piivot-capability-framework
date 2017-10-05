@@ -1,5 +1,5 @@
 $(".piivot-question").on("change", function(){
-    
+    Pizza.init();
     let sectionId = $(this).attr('piivot-section');
     let capabilityId = $(this).attr('piivot-capability');
     let questionId = $(this).attr('id')
@@ -17,6 +17,18 @@ $(".piivot-question").on("change", function(){
     let mainQuestionContent = $.grep(mainQuestion[0].scores, function(e) {return e.value == score;});
 
     $(contentHolder).text(mainQuestionContent[0].description);    
+
+    y = parseInt(score) + 6;
+    x = parseInt(score) + 5;
+
+    /*$('#graphinfoyourcapability').attr('data-y',y);
+    $('#graphinfoyourcapability').attr('data-x',x);    
+    
+    setTimeout(
+        function() 
+        {
+            Pizza.init('#my-cool-line-graph');
+        }, 10000);*/
 });
 
 $('.piivot-slider').slider();
@@ -31,10 +43,10 @@ $('#ORC-CL1-05').slider({
     ticks_snap_bounds: 30
 });
 
+//Pizza.init();
 
 //$(document).foundation();
 
-Pizza.init();
 
 /*$('input[type="range"]').on('input', function() {
     
