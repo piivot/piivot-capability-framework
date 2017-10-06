@@ -18,8 +18,12 @@ $(".piivot-question").on("change", function(){
 
     $(contentHolder).text(mainQuestionContent[0].description);    
 
-    y = parseInt(score) + 6;
-    x = parseInt(score) + 5;
+    y = parseInt(score) + 1;
+    x = parseInt(score) + 1;
+
+    myChart.data.datasets[0].data[0].x = x;
+    myChart.data.datasets[0].data[0].y = y;
+    myChart.update();
 
     /*$('#graphinfoyourcapability').attr('data-y',y);
     $('#graphinfoyourcapability').attr('data-x',x);    
