@@ -1,0 +1,24 @@
+{
+    "capabilityLevels": [
+        {
+            "id": "CL1",
+            "description": "Recognition of need"
+        },
+        {
+            "id": "CL2",
+            "description": "Individual ad-hoc deployment"
+        },
+        {
+            "id": "CL3",
+            "description": "Basic organizational site-level architecture deployment"
+        },
+        {
+            "id": "CL4",
+            "description": "Advanced organizational site-level architecture deployment"
+        },
+        {
+            "id": "CL5",
+            "description": "Advanced organizational self-service architecture deployment"
+        }
+    ]
+}

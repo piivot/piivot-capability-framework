@@ -1,0 +1,24 @@
+{
+    "sections": [
+        {
+            "name": "Organizational Capability",
+            "shortName": "organizational",
+            "id": "S01-ORG",
+            "questions": [
+                { "id": "ORC-CL1-01" },
+                { "id": "ORC-CL1-02" },
+                { "id": "ORC-CL1-03" },
+                { "id": "ORC-CL1-04" },
+                { "id": "ORC-CL1-05" }                
+            ]            
+        },
+        {
+            "name": "Operational Capability",
+            "shortName": "operational",
+            "id": "S02-OPR",
+            "questions": [
+                { "id": "OPC-CL1-01" }
+            ]            
+        }
+    ]
+}

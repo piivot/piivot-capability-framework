@@ -24,8 +24,7 @@ var question1Info = {
         }
     ],
     comparisonScore: 1,
-    type: "dropdown"
-    
+    type: "scale"    
 }
 
 var question2Info = {

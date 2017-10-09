@@ -1,0 +1,184 @@
+{
+    "questions": [
+        {
+            "id": "ORC-CL1-01",
+            "title": "Internal Organization Workshops",
+            "capabilityLevel": "CL1", 
+            "scores": [
+                {
+                    "value": 1,
+                    "description": "Score of 1 indicates you have not run any workshops"
+                },
+                {
+                    "value": 2,
+                    "description": "Score of 2 indicates you ran one workshop and ran the consultant out"
+                },
+                {
+                    "value": 3,
+                    "description": "Score of 3 indicates you value the internal organization workshop"
+                },
+                {
+                    "value": 4,
+                    "description": "Score of 4 indicates you run regular workshops"
+                },
+                {
+                    "value": 5,
+                    "description": "Score of 5 indicates you are the best organization"
+                }
+            ],
+            "comparisonScore": 1,
+            "type": "scale"    
+        },
+
+        {
+            "id": "ORC-CL1-02",
+            "title": "3rd Party Vendor Educational Workshops/Meetings",
+            "capabilityLevel": "CL1", 
+            "scores": [
+                {
+                    "value": 1,
+                    "description": "Score of 1 indicates you have not run any 3rd party workshops"
+                },
+                {
+                    "value": 2,
+                    "description": "Score of 2 indicates you ran one workshop and ran the 3rd party out"
+                },
+                {
+                    "value": 3,
+                    "description": "Score of 3 indicates you value the 3rd party workshops"
+                },
+                {
+                    "value": 4,
+                    "description": "Score of 4 indicates you interact regularly with 3rd parties"
+                },
+                {
+                    "value": 5,
+                    "description": "Score of 5 indicates you and third parties are partners"
+                }
+            ],
+            "comparisonScore": 1,
+            "type": "scale"            
+        },
+
+        {
+            "id": "ORC-CL1-03",
+            "title": "Recognition for the need for Cloud Adoption: <strong>IT Management</strong>", 
+            "capabilityLevel": "CL1",
+            "scores": [
+                {
+                    "value": 1,
+                    "description": "Score of 1 indicates you have not run any 3rd party workshops"
+                },
+                {
+                    "value": 2,
+                    "description": "Score of 2 indicates you ran one workshop and ran the 3rd party out"
+                },
+                {
+                    "value": 3,
+                    "description": "Score of 3 indicates you value the 3rd party workshops"
+                },
+                {
+                    "value": 4,
+                    "description": "Score of 4 indicates you interact regularly with 3rd parties"
+                },
+                {
+                    "value": 5,
+                    "description": "Score of 5 indicates you and third parties are partners"
+                }
+            ],
+            "comparisonScore": 1,
+            "type": "scale"    
+        },
+
+        {
+            "id": "ORC-CL1-04",
+            "title": "Limited Business Unit Leadership/Individual commitment and approvals",
+            "capabilityLevel": "CL2", 
+            "scores": [
+                {
+                    "value": 1,
+                    "description": "Score of 1 indicates you have not run any 3rd party workshops"
+                },
+                {
+                    "value": 2,
+                    "description": "Score of 2 indicates you ran one workshop and ran the 3rd party out"
+                },
+                {
+                    "value": 3,
+                    "description": "Score of 3 indicates you value the 3rd party workshops"
+                },
+                {
+                    "value": 4,
+                    "description": "Score of 4 indicates you interact regularly with 3rd parties"
+                },
+                {
+                    "value": 5,
+                    "description": "Score of 5 indicates you and third parties are partners"
+                }
+            ],
+            "comparisonScore": 1,
+            "type": "scale"    
+        },
+
+        {
+            "id": "ORC-CL1-05",
+            "title": "Limited Business Unit Leadership/Individual funding approvals",
+            "capabilityLevel": "CL2", 
+            "scores": [
+                {
+                    "value": 1,
+                    "description": "Score of 1 indicates you have not run any 3rd party workshops"
+                },
+                {
+                    "value": 2,
+                    "description": "Score of 2 indicates you ran one workshop and ran the 3rd party out"
+                },
+                {
+                    "value": 3,
+                    "description": "Score of 3 indicates you value the 3rd party workshops"
+                },
+                {
+                    "value": 4,
+                    "description": "Score of 4 indicates you interact regularly with 3rd parties"
+                },
+                {
+                    "value": 5,
+                    "description": "Score of 5 indicates you and third parties are partners"
+                }
+            ],
+            "comparisonScore": 1,
+            "type": "scale"    
+        },
+        
+        {
+            "id": "OPC-CL1-01",
+            "title": "Internal Organization Workshops",
+            "capabilityLevel": "CL1", 
+            "scores": [
+                {
+                    "value": 1,
+                    "description": "Score of 1 indicates you have not run any 3rd party workshops"
+                },
+                {
+                    "value": 2,
+                    "description": "Score of 2 indicates you ran one workshop and ran the 3rd party out"
+                },
+                {
+                    "value": 3,
+                    "description": "Score of 3 indicates you value the 3rd party workshops"
+                },
+                {
+                    "value": 4,
+                    "description": "Score of 4 indicates you interact regularly with 3rd parties"
+                },
+                {
+                    "value": 5,
+                    "description": "Score of 5 indicates you and third parties are partners"
+                }
+            ],
+            "comparisonScore": 1,
+            "type": "scale"    
+        }
+
+    ]
+}
