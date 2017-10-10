@@ -134,44 +134,6 @@ function loadQuestionContent()
     
 }
 
-/*$(".piivot-question").on("change", function(){
-    
-    let sectionId = $(this).attr('piivot-section');
-    let capabilityId = $(this).attr('piivot-capability');
-    let questionId = $(this).attr('id')
-    let contentHolder = "#" + $(this).attr('piivot-question-content');
-    let score = $(this).val();
-
-    if (score == null)
-    {
-        score = $(this).attr('data-value');
-    }
-
-    let mainQuestion = $.grep(questions, function(e) {return e.id == questionId;});
-    console.log(mainQuestion);
-
-    //let section = $.grep(frameworkInfo.sections, function(s) { return s.id == sectionId;});
-    //let capability = $.grep(section[0].capabilities, function(c) { return c.id == capabilityId;});
-    let mainQuestionComparisonScore = mainQuestion[0].comparisonScore;
-    let mainQuestionContent = $.grep(mainQuestion[0].scores, function(e) {return e.value == score;});
-
-    $(contentHolder).text(mainQuestionContent[0].description);    
-
-    updateScore(questionId,score,mainQuestionComparisonScore);    
-});
-
-$('.piivot-slider').slider();
-
-$('.piivot-slider').on("slide", function(slideevt) {
-	$('#ex4SliderVal').text(slideevt.value);
-});
-
-$('#ORC-CL1-05').slider({
-    ticks: [1,2,3,4,5],
-    ticks_labels: ['1', '2', '3', '4', '5'],
-    ticks_snap_bounds: 30
-});*/
-
 function updateScore(id,score,comparisonScore)
 {
     let currentQuestion = $.grep(overallScore, function(s) { return s.id == id;});
