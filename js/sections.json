@@ -5,11 +5,7 @@
             "shortName": "organizational",
             "id": "S01-ORG",
             "questions": [
-                { "id": "ORC-CL1-01" },
-                { "id": "ORC-CL1-02" },
-                { "id": "ORC-CL1-03" },
-                { "id": "ORC-CL1-04" },
-                { "id": "ORC-CL1-05" }                
+                { "id": "ORG-01" }, { "id": "ORG-02" }, { "id": "ORG-03" }, { "id": "ORG-04" }, { "id": "ORG-05" }                
             ]            
         },
         {
@@ -17,7 +13,15 @@
             "shortName": "operational",
             "id": "S02-OPR",
             "questions": [
-                { "id": "OPC-CL1-01" }
+                { "id": "OPR-01" }, { "id": "OPR-02" }, { "id": "OPR-03" }, { "id": "OPR-04" }, { "id": "OPR-05" }
+            ]            
+        },
+        {
+            "name": "Governance Capability",
+            "shortName": "governance",
+            "id": "S03-GOV",
+            "questions": [
+                { "id": "GOV-01" }, { "id": "GOV-02" }
             ]            
         }
     ]

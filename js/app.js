@@ -76,10 +76,18 @@ function loadQuestionContent()
             htmlContent += '<div class="row bg-white">';
             htmlContent += '<div class="input-group">';
             htmlContent += '<div class="col-md-8">';
-            htmlContent += '<p class="form-control-plaintext flex-wrap">' + q.title + '</p>';
+            htmlContent += '<p class="form-control-plaintext flex-wrap">' + q.questionText + '</p>';
             htmlContent += '</div>';
             htmlContent += '<div class="col-md-4">';
-            htmlContent += '<input class="piivot-question piivot-slider" id="' + q.id + '" piivot-question-id="' + q.id + '" piivot-question-content="' + q.id + '-CONTENT" piivot-section="' + sectionId + '" piivot-capability="' + q.capabilityLevel + '" data-slider-id="' + q.id + '-Slider" type="text" data-slider-ticks-snap-bounds="30" data-slider-tooltip="hide" data-slider-value="1" />' 
+            htmlContent += '<select class="custom-select mb-4 mr-sm-4 mb-sm-0" id="' + q.id + '" piivot-question-id="' + q.id + '" >';
+
+            $.each(q.options, function() {
+                let o = $(this)[0];
+                htmlContent += '<option value="' + o.id + '">' + o.optionText + '</option>';
+            });
+
+            htmlContent += '</select>';
+            //htmlContent += '<input class="piivot-question piivot-slider" id="' + q.id + '" piivot-question-id="' + q.id + '" piivot-question-content="' + q.id + '-CONTENT" piivot-section="' + sectionId + '" piivot-capability="' + q.capabilityLevel + '" data-slider-id="' + q.id + '-Slider" type="text" data-slider-ticks-snap-bounds="30" data-slider-tooltip="hide" data-slider-value="1" />' 
             htmlContent += '</div>'; 
             htmlContent += '</div>';
             htmlContent += '</div>';
