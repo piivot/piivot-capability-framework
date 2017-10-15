@@ -13,6 +13,7 @@ function loadSections()
         dataType: 'json',
         success: function(data) {
             sections = data.sections;
+            
             loadQuestions();
         }
     });
@@ -25,7 +26,7 @@ function loadQuestions()
         async: true,
         dataType: 'json',
         success: function(data) {
-            questions = data.questions;
+            questions = data.questions;            
             loadQuestionContent();
         }
     });
@@ -42,14 +43,19 @@ function loadQuestionContent()
         let section = $(this)[0];
         let shortName = section.shortName;
         let sectionId = section.id;
+        let sectionOrder = section.order;
 
         /****** Update tab content *************************/
 
         let tabAClass = 'nav-link text-capitalize';
+        let ariaExpanded = 'false';
+        let tabShow = 'tab-pane fade';
 
         if (count == 0)
         {
             tabAClass += ' active';
+            ariaExpanded = 'true';
+            tabShow += ' active show';
         }
 
         let tabContent = '';
@@ -68,7 +74,7 @@ function loadQuestionContent()
 
         let htmlContent = '';
         
-        htmlContent += '<div class="tab-pane fade show active" id="' + shortName + '" role="tabpanel" aria-labelledby="' + shortName + '-tab" piivot-section="' + sectionId + '">';
+        htmlContent += '<div class="' + tabShow + '" id="' + shortName + '" role="tabpanel" aria-labelledby="' + shortName + '-tab" piivot-section="' + sectionId + '" piivot-section-order="' + sectionOrder + '" aria-expanded="' + ariaExpanded + '">';
 
         $.each(questionsSection, function() {
             let q = $(this)[0];                
@@ -79,7 +85,8 @@ function loadQuestionContent()
             htmlContent += '<p class="form-control-plaintext flex-wrap">' + q.questionText + '</p>';
             htmlContent += '</div>';
             htmlContent += '<div class="col-md-4">';
-            htmlContent += '<select class="custom-select mb-4 mr-sm-4 mb-sm-0" id="' + q.id + '" piivot-question-id="' + q.id + '" >';
+            htmlContent += '<select class="piivot-question custom-select mb-4 mr-sm-4 mb-sm-0" id="' + q.id + '" piivot-question-id="' + q.id + '" piivot-section="' + sectionId + '" piivot-section-order="' + sectionOrder + '">';
+            htmlContent += '<option value="0">Choose...</option>';
 
             $.each(q.options, function() {
                 let o = $(this)[0];
@@ -123,50 +130,112 @@ function loadQuestionContent()
         let capabilityId = $(this).attr('piivot-capability');
         let questionId = $(this).attr('id')
         let contentHolder = "#" + $(this).attr('piivot-question-content');
-        let score = $(this).val();
-    
-        if (score == null)
+
+        let selection = $(this).val();
+
+        let score = 0;
+
+        /*if (score == null)
         {
             score = $(this).attr('data-value');
-        }
+        }*/
     
         let mainQuestion = $.grep(questions, function(e) {return e.id == questionId;});
-        let mainQuestionComparisonScore = mainQuestion[0].comparisonScore;
-        let mainQuestionContent = $.grep(mainQuestion[0].scores, function(e) {return e.value == score;});
+        let selectedOption = $.grep(mainQuestion[0].options, function(o) {return o.id == selection});
+        score = selectedOption[0].ml;
+        let maxML = mainQuestion[0].maxML;
+        let maxCL = mainQuestion[0].maxCL;
+        
+        //let mainQuestionComparisonScore = mainQuestion[0].comparisonScore;
+        //let mainQuestionContent = $.grep(mainQuestion[0].scores, function(e) {return e.value == score;});
     
-        $(contentHolder).text(mainQuestionContent[0].description);    
+        //$(contentHolder).text(mainQuestionContent[0].description);    
     
-        updateScore(questionId,score,mainQuestionComparisonScore);    
+        addScoreToArray(questionId,score,maxML,maxCL);
+            
     });
 
     
 }
 
-function updateScore(id,score,comparisonScore)
+function addScoreToArray(id,score,maxML,maxCL)
 {
     let currentQuestion = $.grep(overallScore, function(s) { return s.id == id;});
     
     if (currentQuestion != null && currentQuestion.length > 0)
     {
-        currentQuestion[0].score = score * comparisonScore;
+        currentQuestion[0].score = score;
     }
     else
     {
         let newscore = {};
         newscore.id = id;
-        newscore.score = score * comparisonScore;
+        newscore.score = score;
+        overallScore.push(newscore);
+    }
+
+    updateChart();
+}
+
+function updateChart()
+{
+    $.each(sections, function() {
+        let thisSection = $(this)[0];
+        
+        let order = thisSection.order;
+        
+        let calculatedML = 0;
+        let totalML = 0;
+
+
+        $.each(thisSection.questions, function() {
+            let q = $(this)[0];
+            
+            let thisQuestion = $.grep(questions, function(s) { return s.id == q.id;});
+            
+            totalML += thisQuestion[0].maxML;
+
+            let calculatedQuestion = $.grep(overallScore, function(s) { return s.id == q.id;});
+
+            if (calculatedQuestion != null && calculatedQuestion.length > 0)
+            {
+                calculatedML += calculatedQuestion[0].score;
+            }
+
+        });
+
+        let calcPercentage = calculatedML / totalML * 100;
+               
+        myChart.data.datasets[0].data[order] = calcPercentage;
+    });
+
+
+    /*let currentQuestion = $.grep(overallScore, function(s) { return s.id == id;});
+    
+    if (currentQuestion != null && currentQuestion.length > 0)
+    {
+        currentQuestion[0].score = score / maxML;
+    }
+    else
+    {
+        let newscore = {};
+        newscore.id = id;
+        newscore.score = score / maxML;
         overallScore.push(newscore);
     }
 
     let chartScore = 0.0;
     $.each(overallScore, function(){
         chartScore += this.score;
-    })
+    })*/
 
-    if (chartScore > 20) chartScore = 20;
+    //if (chartScore > 20) chartScore = 20;
 
-    myChart.data.datasets[0].data[0].x = chartScore;
-    myChart.data.datasets[0].data[0].y = chartScore;
+    //chartScore = chartScore * 100;
+
+    //myChart.data.datasets[0].data[0] = chartScore;
+    //myChart.data.datasets[0].data[0].x = chartScore;
+    //myChart.data.datasets[0].data[0].y = chartScore;
     myChart.update();
 
 }

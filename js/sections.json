@@ -4,6 +4,7 @@
             "name": "Organizational Capability",
             "shortName": "organizational",
             "id": "S01-ORG",
+            "order": 0,
             "questions": [
                 { "id": "ORG-01" }, { "id": "ORG-02" }, { "id": "ORG-03" }, { "id": "ORG-04" }, { "id": "ORG-05" }                
             ]            
@@ -12,6 +13,7 @@
             "name": "Operational Capability",
             "shortName": "operational",
             "id": "S02-OPR",
+            "order": 1,
             "questions": [
                 { "id": "OPR-01" }, { "id": "OPR-02" }, { "id": "OPR-03" }, { "id": "OPR-04" }, { "id": "OPR-05" }
             ]            
@@ -20,8 +22,54 @@
             "name": "Governance Capability",
             "shortName": "governance",
             "id": "S03-GOV",
+            "order": 2,
             "questions": [
                 { "id": "GOV-01" }, { "id": "GOV-02" }
+            ]            
+        },
+        {
+            "name": "Platform Selection",
+            "shortName": "platform",
+            "id": "S04-PLT",
+            "order": 3,
+            "questions": [
+                
+            ]            
+        },
+        {
+            "name": "Identity & Access Management",
+            "shortName": "identity",
+            "id": "S05-IAM",
+            "order": 4,
+            "questions": [
+                
+            ]            
+        },
+        {
+            "name": "Network Elasticity",
+            "shortName": "network",
+            "id": "S06-NET",
+            "order": 5,
+            "questions": [
+                
+            ]            
+        },
+        {
+            "name": "Security Adherance",
+            "shortName": "security",
+            "id": "S07-SEC",
+            "order": 6,
+            "questions": [
+                
+            ]            
+        },
+        {
+            "name": "Data Management",
+            "shortName": "data",
+            "id": "S08-DAT",
+            "order": 7,
+            "questions": [
+                
             ]            
         }
     ]

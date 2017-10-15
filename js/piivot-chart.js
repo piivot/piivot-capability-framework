@@ -1,28 +1,28 @@
 var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
-    type: 'scatter',
+    type: 'horizontalBar',
     data: {
-        labels: ["Your Capability", "Ideal Capability"],
+        labels: ["Organizational", "Operational", "Governance", "Platform Selection", "Identity and Access Management", "Network Elasticity", "Security Adherance", "Data Management"],
         datasets: [{
             label: 'Your Capability',
-            data: [
-                { x: 1, y: 1 }                                
+            data: [ 1, 1, 1, 1, 1, 1, 1, 1
+                //{ x: 1, y: 100 }, { x: 20, y: 100 }                                
             ],
-            backgroundColor: [
+            backgroundColor: 'black' /* [
                 'black'                
-            ],            
+            ]*/,            
             pointBackgroundColor:["black"],
             borderWidth: 1,
             pointRadius: 10
         },
         {
             label: 'Ideal Capability',
-            data: [
-                { x: 13, y: 15 }                
+            data: [100, 100, 100, 100, 100, 100, 100, 100
+                //{ x: 13, y: 15 }, { x: 20, y: 100 }                
             ],
-            backgroundColor: [
+            backgroundColor: '#f69320' /* [
                 '#f69320'                
-            ],            
+            ]*/,            
             pointBackgroundColor:["#f69320"],
             borderWidth: 1,
             pointRadius: 10
@@ -34,11 +34,11 @@ var myChart = new Chart(ctx, {
         scales: {
             yAxes: [{
                 stacked: true,
-                ticks: { min: 0, max: 20}
+                ticks: { min: 0, max: 100}
             }],
             xAxes: [{
-                stacked: true,
-                ticks: { min: 0, max: 20}
+                //stacked: true,
+                ticks: { min: 0, max: 100}
             }]
         }
     }

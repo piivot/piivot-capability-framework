@@ -107,7 +107,7 @@
                 { "id": "OPR-04-opt-01", "optionText": "Informal Recognition of Testing", "ml": 1 },
                 { "id": "OPR-04-opt-02", "optionText": "Ad-hoc Testing Structure and/or frequency", "ml": 2 },
                 { "id": "OPR-04-opt-03", "optionText": "Formalized Testing Frequency and Structure", "ml": 3 },
-                { "id": "OPR-04-opt-04", "optionText": "Self-Service continuous testing", "ml": 3 }
+                { "id": "OPR-04-opt-04", "optionText": "Self-Service continuous testing", "ml": 4 }
             ],
             "maxML": 4,
             "maxCL": 5
@@ -120,7 +120,7 @@
                 { "id": "OPR-05-opt-01", "optionText": "Informal Recognition of Change, monitoring and reporting requirements.", "ml": 1 },
                 { "id": "OPR-05-opt-02", "optionText": "Ad-hoc Change, monitoring and reporting", "ml": 2 },
                 { "id": "OPR-05-opt-03", "optionText": "Formal Change, monitoring and reporting", "ml": 3 },
-                { "id": "OPR-05-opt-04", "optionText": "Complete automated Change management integration w/ analytic insights", "ml": 3 }
+                { "id": "OPR-05-opt-04", "optionText": "Complete automated Change management integration w/ analytic insights", "ml": 4 }
             ],
             "maxML": 4,
             "maxCL": 5
@@ -133,7 +133,7 @@
                 { "id": "GOV-01-opt-01", "optionText": "Internal Workshops", "ml": 1 },
                 { "id": "GOV-01-opt-02", "optionText": "External 3rd Party Workshops for Technical & Business Staff", "ml": 2 },
                 { "id": "GOV-01-opt-03", "optionText": "Ad-hoc Education for Technical and Business staff", "ml": 3 },
-                { "id": "GOV-01-opt-04", "optionText": "Formal Education Plans for Technical and Business staff", "ml": 3 }
+                { "id": "GOV-01-opt-04", "optionText": "Formal Education Plans for Technical and Business staff", "ml": 4 }
             ],
             "maxML": 4,
             "maxCL": 5
@@ -150,9 +150,7 @@
             "maxML": 3,
             "maxCL": 5
         },
-
-
-        // old question types
+                
         {
             "id": "ORC-CL1-01",
             "title": "Internal Organization Workshops",
