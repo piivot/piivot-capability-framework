@@ -75,12 +75,13 @@
             "category": "Education",
             "questionText": "Education on how IT and Business Operations change in a cloud world.",
             "options": [
-                { "id": "OPR-01-opt-01", "optionText": "Internal Workshops", "ml": 1 },
-                { "id": "OPR-01-opt-02", "optionText": "External 3rd Party Workshops for Technical & Business Staff", "ml": 2 },
-                { "id": "OPR-01-opt-03", "optionText": "Ad-hoc Education for Technical and Business staff", "ml": 3 },
-                { "id": "OPR-01-opt-04", "optionText": "Formal Education Plans for Technical and Business staff", "ml": 4 }
+                { "id": "OPR-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                { "id": "OPR-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                { "id": "OPR-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                { "id": "OPR-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                { "id": "OPR-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
             ],
-            "maxML": 4,
+            "maxML": 5,
             "maxCL": 5
         },
         {
@@ -88,11 +89,13 @@
             "category": "Needs Recognition",
             "questionText": "Recognition of Operational Process changes",
             "options": [
-                { "id": "OPR-02-opt-01", "optionText": "Informal Recognition", "ml": 1 },
-                { "id": "OPR-02-opt-02", "optionText": "Ad-hoc Recognition - IT Leadership", "ml": 2 },
-                { "id": "OPR-02-opt-03", "optionText": "Formal Recognition - IT & Business Leadership", "ml": 3 }
+                { "id": "OPR-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                { "id": "OPR-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                { "id": "OPR-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                { "id": "OPR-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                { "id": "OPR-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
             ],
-            "maxML": 3,
+            "maxML": 5,
             "maxCL": 5
         },
         {
@@ -100,11 +103,13 @@
             "category": "Operational Metrics",
             "questionText": "Definition of current & target Operational Metrics",
             "options": [
-                { "id": "OPR-03-opt-01", "optionText": "Informal Operational Metric Definitions", "ml": 1 },
-                { "id": "OPR-03-opt-02", "optionText": "Ad-hoc Operational Metric Definitions", "ml": 2 },
-                { "id": "OPR-03-opt-03", "optionText": "Formal Recognition - Operational Metrics", "ml": 3 }
+                { "id": "OPR-03-opt-01", "optionText": "Operational Metrics - Informal Definitions", "ml": 1 },
+                { "id": "OPR-03-opt-02", "optionText": "Operational Metrics - Ad-hoc Definitions", "ml": 2 },
+                { "id": "OPR-03-opt-03", "optionText": "Operational Metrics - Formal Definitions (Basic)", "ml": 3 },
+                { "id": "OPR-03-opt-04", "optionText": "Operational Metrics - Formal Definitions (Advanced) - Business Unit", "ml": 4 },
+                { "id": "OPR-03-opt-05", "optionText": "Operational Metrics - Formal Definitions (Advanced) - Enterprise-wide", "ml": 5 }
             ],
-            "maxML": 3,
+            "maxML": 5,
             "maxCL": 5
         },
         {
@@ -112,25 +117,41 @@
             "category": "Operational Testing",
             "questionText": "Testing Frequency and Structured Processes",
             "options": [
-                { "id": "OPR-04-opt-01", "optionText": "Informal Recognition of Testing", "ml": 1 },
-                { "id": "OPR-04-opt-02", "optionText": "Ad-hoc Testing Structure and/or frequency", "ml": 2 },
-                { "id": "OPR-04-opt-03", "optionText": "Formalized Testing Frequency and Structure", "ml": 3 },
-                { "id": "OPR-04-opt-04", "optionText": "Self-Service continuous testing", "ml": 4 }
+                { "id": "OPR-04-opt-01", "optionText": "Operational Testing - Informal Recognition of Testing", "ml": 1 },
+                { "id": "OPR-04-opt-02", "optionText": "Operational Testing - Ad-hoc Testing Structure and Freq.", "ml": 2 },
+                { "id": "OPR-04-opt-03", "optionText": "Operational Testing - Formal Testing Structure & Freq. (Basic)", "ml": 3 },
+                { "id": "OPR-04-opt-04", "optionText": "Operational Testing - Formal Testing Structure & Freq. (Advanced) - Business Unit", "ml": 4 },
+                { "id": "OPR-04-opt-05", "optionText": "Operational Testing - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
-            "maxML": 4,
+            "maxML": 5,
             "maxCL": 5
         },
         {
             "id": "OPR-05",
+            "category": "Resource Life-Cycle",
+            "questionText": "Ability to provision and de-provision resources as required.",
+            "options": [
+                { "id": "OPR-05-opt-01", "optionText": "Resource Life-Cycle - Informal Needs Recognition", "ml": 1 },
+                { "id": "OPR-05-opt-02", "optionText": "Resource Life-Cycle - Ad-hoc Adoption", "ml": 2 },
+                { "id": "OPR-05-opt-03", "optionText": "Resource Life-Cycle - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "OPR-05-opt-04", "optionText": "Resource Life-Cycle - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "OPR-05-opt-05", "optionText": "Resource Life-Cycle - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "OPR-06",
             "category": "Change Management",
             "questionText": "Change, Monitoring and Reporting Management",
             "options": [
-                { "id": "OPR-05-opt-01", "optionText": "Informal Recognition of Change, monitoring and reporting requirements.", "ml": 1 },
-                { "id": "OPR-05-opt-02", "optionText": "Ad-hoc Change, monitoring and reporting", "ml": 2 },
-                { "id": "OPR-05-opt-03", "optionText": "Formal Change, monitoring and reporting", "ml": 3 },
-                { "id": "OPR-05-opt-04", "optionText": "Complete automated Change management integration w/ analytic insights", "ml": 4 }
+                { "id": "OPR-06-opt-01", "optionText": "Change Management - Informal Needs Recognition", "ml": 1 },
+                { "id": "OPR-06-opt-02", "optionText": "Change Management - Ad-hoc Adoption", "ml": 2 },
+                { "id": "OPR-06-opt-03", "optionText": "Change Management - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "OPR-06-opt-04", "optionText": "Change Management - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "OPR-06-opt-05", "optionText": "Change Management - Formal Automated/as-a-service/Analytic Tools/Processes - Enterprise-wide", "ml": 5 }
             ],
-            "maxML": 4,
+            "maxML": 5,
             "maxCL": 5
         },
         {
@@ -138,12 +159,13 @@
             "category": "Education",
             "questionText": "Education on how IT and Business Governance are needed in a cloud world.",
             "options": [
-                { "id": "GOV-01-opt-01", "optionText": "Internal Workshops", "ml": 1 },
-                { "id": "GOV-01-opt-02", "optionText": "External 3rd Party Workshops for Technical & Business Staff", "ml": 2 },
-                { "id": "GOV-01-opt-03", "optionText": "Ad-hoc Education for Technical and Business staff", "ml": 3 },
-                { "id": "GOV-01-opt-04", "optionText": "Formal Education Plans for Technical and Business staff", "ml": 4 }
+                { "id": "GOV-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                { "id": "GOV-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                { "id": "GOV-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                { "id": "GOV-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                { "id": "GOV-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
             ],
-            "maxML": 4,
+            "maxML": 5,
             "maxCL": 5
         },
         {
@@ -151,11 +173,251 @@
             "category": "Needs Recognition",
             "questionText": "Recognition of Governance Processes",
             "options": [
-                { "id": "GOV-02-opt-01", "optionText": "Informal Recognition", "ml": 1 },
-                { "id": "GOV-02-opt-02", "optionText": "Ad-hoc Recognition - IT Leadership", "ml": 2 },
-                { "id": "GOV-02-opt-03", "optionText": "Formal Recognition - IT & Business Leadership", "ml": 3 }
+                { "id": "GOV-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                { "id": "GOV-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                { "id": "GOV-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                { "id": "GOV-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                { "id": "GOV-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
             ],
-            "maxML": 3,
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "GOV-03",
+            "category": "Goverance Structure",
+            "questionText": "Established Governance Structures",
+            "options": [
+                { "id": "GOV-03-opt-01", "optionText": "Goverance Structure - Informal Needs Recognition", "ml": 1 },
+                { "id": "GOV-03-opt-02", "optionText": "Goverance Structure - Ad-hoc Adoption", "ml": 2 },
+                { "id": "GOV-03-opt-03", "optionText": "Goverance Structure - Formal Adoption (Basic)", "ml": 3 },
+                { "id": "GOV-03-opt-04", "optionText": "Goverance Structure - Formal Adoption (Advanced) - Business Unit", "ml": 4 },
+                { "id": "GOV-03-opt-05", "optionText": "Goverance Structure - Formal Adoption (Advanced) - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "GOV-04",
+            "category": "Governance Oversight",
+            "questionText": "Definition of functional accountabilities (escalation, veto and reporting)",
+            "options": [
+                { "id": "GOV-04-opt-01", "optionText": "Goverance Oversight - Informal Needs Recognition", "ml": 1 },
+                { "id": "GOV-04-opt-02", "optionText": "Goverance Oversight - Ad-hoc Adoption", "ml": 2 },
+                { "id": "GOV-04-opt-03", "optionText": "Goverance Oversight - Formal Adoption (Basic)", "ml": 3 },
+                { "id": "GOV-04-opt-04", "optionText": "Goverance Oversight - Formal Adoption (Advanced) - Business Unit", "ml": 4 },
+                { "id": "GOV-04-opt-05", "optionText": "Goverance Oversight - Formal Adoption (Advanced) - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "GOV-05",
+            "category": "Governance Culture",
+            "questionText": "Definition of core beliefs and foundation of corporate culture",
+            "options": [
+                { "id": "GOV-05-opt-01", "optionText": "Goverance Culture - Informal Needs Recognition", "ml": 1 },
+                { "id": "GOV-05-opt-02", "optionText": "Goverance Culture - Ad-hoc Adoption", "ml": 2 },
+                { "id": "GOV-05-opt-03", "optionText": "Goverance Culture - Formal Adoption (Basic)", "ml": 3 },
+                { "id": "GOV-05-opt-04", "optionText": "Goverance Culture - Formal Adoption (Advanced) - Business Unit", "ml": 4 },
+                { "id": "GOV-05-opt-05", "optionText": "Goverance Culture - Formal Adoption (Advanced) - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "GOV-06",
+            "category": "Governance Alignment",
+            "questionText": "Alignment of Governance with Technology (Manuals, Procedures, Scorecards, Metrics, etc.)",
+            "options": [
+                { "id": "GOV-06-opt-01", "optionText": "Goverance Alignment - Informal Needs Recognition", "ml": 1 },
+                { "id": "GOV-06-opt-02", "optionText": "Goverance Alignment - Ad-hoc Adoption", "ml": 2 },
+                { "id": "GOV-06-opt-03", "optionText": "Goverance Alignment - Formal Adoption (Basic)", "ml": 3 },
+                { "id": "GOV-06-opt-04", "optionText": "Goverance Alignment - Formal Adoption (Advanced) - Business Unit", "ml": 4 },
+                { "id": "GOV-06-opt-05", "optionText": "Goverance Alignment - Formal Adoption (Advanced) - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "PLT-01",
+            "category": "Education",
+            "questionText": "Education on available cloud platforms and their impact",
+            "options": [
+                { "id": "PLT-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                { "id": "PLT-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                { "id": "PLT-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                { "id": "PLT-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                { "id": "PLT-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "PLT-02",
+            "category": "Needs Recognition",
+            "questionText": "Recognition of need to understand the capabilities and constraints of Cloud Platforms.",
+            "options": [
+                { "id": "PLT-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                { "id": "PLT-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                { "id": "PLT-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                { "id": "PLT-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                { "id": "PLT-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "PLT-03",
+            "category": "Platform Selection Criteria",
+            "questionText": "Defintion of Platform Selection Criteria",
+            "options": [
+                { "id": "PLT-03-opt-01", "optionText": "Selection Criteria - Informal Definition", "ml": 1 },
+                { "id": "PLT-03-opt-02", "optionText": "Selection Criteria - Ad-hoc Definition", "ml": 2 },
+                { "id": "PLT-03-opt-03", "optionText": "Selection Criteria - Formal Definition (Basic)", "ml": 3 },
+                { "id": "PLT-03-opt-04", "optionText": "Selection Criteria - Formal Definition (Advanced) - Business Unit", "ml": 4 },
+                { "id": "PLT-03-opt-05", "optionText": "Selection Criteria - Formal Definition (Advanced) - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "PLT-04",
+            "category": "Platform Impact & Risk",
+            "questionText": "Definition of Platform technology Impact and Risk to the Business",
+            "options": [
+                { "id": "PLT-04-opt-01", "optionText": "Platform Impact & Risk - Informal Definition", "ml": 1 },
+                { "id": "PLT-04-opt-02", "optionText": "Platform Impact & Risk - Ad-hoc Definition", "ml": 2 },
+                { "id": "PLT-04-opt-03", "optionText": "Platform Impact & Risk - Formal Definition (Basic)", "ml": 3 },
+                { "id": "PLT-04-opt-04", "optionText": "Platform Impact & Risk - Formal Definition (Advanced) - Business Unit", "ml": 4 },
+                { "id": "PLT-04-opt-05", "optionText": "Platform Impact & Risk - Formal Definition (Advanced) - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "PLT-05",
+            "category": "Platform Terms & Conditions",
+            "questionText": "Definition of Platform T&C Impact and Risk to the Business",
+            "options": [
+                { "id": "PLT-05-opt-01", "optionText": "T&C Impact & Risk - Informal Definition", "ml": 1 },
+                { "id": "PLT-05-opt-02", "optionText": "T&C Impact & Risk - Ad-hoc Definition", "ml": 2 },
+                { "id": "PLT-05-opt-03", "optionText": "T&C Impact & Risk - Formal Definition (Basic)", "ml": 3 },
+                { "id": "PLT-05-opt-04", "optionText": "T&C Impact & Risk - Formal Definition (Advanced) - Business Unit", "ml": 4 },
+                { "id": "PLT-05-opt-05", "optionText": "T&C Impact & Risk - Formal Definition (Advanced) - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "IAM-01",
+            "category": "Education",
+            "questionText": "Education on how Identity and Access Management is required for any future cloud/platform adoption",
+            "options": [
+                { "id": "IAM-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                { "id": "IAM-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                { "id": "IAM-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                { "id": "IAM-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                { "id": "IAM-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "IAM-02",
+            "category": "Needs Recognition",
+            "questionText": "Recognition of need to understand Identity and Access Management",
+            "options": [
+                { "id": "IAM-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                { "id": "IAM-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                { "id": "IAM-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                { "id": "IAM-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                { "id": "IAM-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "IAM-03",
+            "category": "User Identity Life-Cycle",
+            "questionText": "Provisioning, modification and de-provisioning of user roles, priviledges and access",
+            "options": [
+                { "id": "IAM-03-opt-01", "optionText": "User Life-Cycle - Informal Needs Recognition", "ml": 1 },
+                { "id": "IAM-03-opt-02", "optionText": "User Life-Cycle - Ad-hoc Adoption", "ml": 2 },
+                { "id": "IAM-03-opt-03", "optionText": "User Life-Cycle - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "IAM-03-opt-04", "optionText": "User Life-Cycle - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "IAM-03-opt-05", "optionText": "User Life-Cycle - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "IAM-04",
+            "category": "Application Identity Life-Cycle",
+            "questionText": "Provisioning, modification and de-provisioning of application roles, priviledges and access",
+            "options": [
+                { "id": "IAM-04-opt-01", "optionText": "Application Life-Cycle - Informal Needs Recognition", "ml": 1 },
+                { "id": "IAM-04-opt-02", "optionText": "Application Life-Cycle - Ad-hoc Adoption", "ml": 2 },
+                { "id": "IAM-04-opt-03", "optionText": "Application Life-Cycle - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "IAM-04-opt-04", "optionText": "Application Life-Cycle - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "IAM-04-opt-05", "optionText": "Application Life-Cycle - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "IAM-05",
+            "category": "Device Identity Life-Cycle",
+            "questionText": "Provisioning, modification and de-provisioning of device roles, priviledges and access",
+            "options": [
+                { "id": "IAM-05-opt-01", "optionText": "Device Life-Cycle - Informal Needs Recognition", "ml": 1 },
+                { "id": "IAM-05-opt-02", "optionText": "Device Life-Cycle - Ad-hoc Adoption", "ml": 2 },
+                { "id": "IAM-05-opt-03", "optionText": "Device Life-Cycle - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "IAM-05-opt-04", "optionText": "Device Life-Cycle - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "IAM-05-opt-05", "optionText": "Device Life-Cycle - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "IAM-06",
+            "category": "Single Sign-On",
+            "questionText": "Integrated User/Application SSO",
+            "options": [
+                { "id": "IAM-06-opt-01", "optionText": "SSO - Informal Needs Recognition", "ml": 1 },
+                { "id": "IAM-06-opt-02", "optionText": "SSO - Ad-hoc Adoption", "ml": 2 },
+                { "id": "IAM-06-opt-03", "optionText": "SSO - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "IAM-06-opt-04", "optionText": "SSO - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "IAM-06-opt-05", "optionText": "SSO - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "IAM-07",
+            "category": "Multi-Factor Authentication",
+            "questionText": "Integrated User/Application MFA",
+            "options": [
+                { "id": "IAM-07-opt-01", "optionText": "MFA - Informal Needs Recognition", "ml": 1 },
+                { "id": "IAM-07-opt-02", "optionText": "MFA - Ad-hoc Adoption", "ml": 2 },
+                { "id": "IAM-07-opt-03", "optionText": "MFA - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "IAM-07-opt-04", "optionText": "MFA - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "IAM-07-opt-05", "optionText": "MFA - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "IAM-08",
+            "category": "SaaS Service Authentication",
+            "questionText": "Federated Identity for SaaS Service consumption",
+            "options": [
+                { "id": "IAM-08-opt-01", "optionText": "SaaS Identity Federation - Informal Needs Recognition", "ml": 1 },
+                { "id": "IAM-08-opt-02", "optionText": "SaaS Identity Federation - Ad-hoc Adoption", "ml": 2 },
+                { "id": "IAM-08-opt-03", "optionText": "SaaS Identity Federation - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "IAM-08-opt-04", "optionText": "SaaS Identity Federation - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "IAM-08-opt-05", "optionText": "SaaS Identity Federation - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
             "maxCL": 5
         },
                 

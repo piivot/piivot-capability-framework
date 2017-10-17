@@ -15,7 +15,7 @@
             "id": "S02-OPR",
             "order": 1,
             "questions": [
-                { "id": "OPR-01" }, { "id": "OPR-02" }, { "id": "OPR-03" }, { "id": "OPR-04" }, { "id": "OPR-05" }
+                { "id": "OPR-01" }, { "id": "OPR-02" }, { "id": "OPR-03" }, { "id": "OPR-04" }, { "id": "OPR-05" }, {"id": "OPR-06"}
             ]            
         },
         {
@@ -24,7 +24,7 @@
             "id": "S03-GOV",
             "order": 2,
             "questions": [
-                { "id": "GOV-01" }, { "id": "GOV-02" }
+                { "id": "GOV-01" }, { "id": "GOV-02" }, {"id": "GOV-03"}, {"id": "GOV-04"}, {"id": "GOV-05"}, {"id": "GOV-06"}
             ]            
         },
         {
@@ -33,7 +33,7 @@
             "id": "S04-PLT",
             "order": 3,
             "questions": [
-                
+                { "id": "PLT-01" }, { "id": "PLT-02" }, {"id": "PLT-03"}, {"id": "PLT-04"}, {"id": "PLT-05"}
             ]            
         },
         {
