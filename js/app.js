@@ -1,9 +1,26 @@
 var overallScore = [];
 
 var sections = [];
+var products = [];
 var questions = [];
 
-loadSections();
+var selectedProduct = "o365";
+
+loadProducts();
+
+
+function loadProducts()
+{
+    $.ajax({
+        url: "js/products.json",
+        async: true,
+        dataType: 'json',
+        success: function(data) {
+            products = data.products;            
+            loadSections();
+        }
+    });
+}
 
 function loadSections()
 {
@@ -12,12 +29,13 @@ function loadSections()
         async: true,
         dataType: 'json',
         success: function(data) {
-            sections = data.sections;
-            
+            sections = data.sections;            
             loadQuestions();
         }
     });
 }
+
+
 
 function loadQuestions()
 {
@@ -133,16 +151,26 @@ function loadQuestionContent()
 
         let selection = $(this).val();
 
-        let score = 0;
+        let ml = 0;
+        let cl = 2.5
 
         /*if (score == null)
         {
             score = $(this).attr('data-value');
         }*/
-    
-        let mainQuestion = $.grep(questions, function(e) {return e.id == questionId;});
-        let selectedOption = $.grep(mainQuestion[0].options, function(o) {return o.id == selection});
-        score = selectedOption[0].ml;
+
+        let mainQuestion = $.grep(questions, function(e) {return e.id == questionId;});        
+
+        if (selection != "0")
+        {    
+            let selectedOption = $.grep(mainQuestion[0].options, function(o) {return o.id == selection});
+            ml = selectedOption[0].ml;
+        }
+        else
+        {
+            ml = 0;
+        }
+
         let maxML = mainQuestion[0].maxML;
         let maxCL = mainQuestion[0].maxCL;
         
@@ -151,26 +179,26 @@ function loadQuestionContent()
     
         //$(contentHolder).text(mainQuestionContent[0].description);    
     
-        addScoreToArray(questionId,score,maxML,maxCL);
+        addScoreToArray(questionId,ml,cl,maxML,maxCL);
             
     });
 
     
 }
 
-function addScoreToArray(id,score,maxML,maxCL)
+function addScoreToArray(id,ml,cl,maxML,maxCL)
 {
     let currentQuestion = $.grep(overallScore, function(s) { return s.id == id;});
     
     if (currentQuestion != null && currentQuestion.length > 0)
     {
-        currentQuestion[0].score = score;
+        currentQuestion[0].score = ml > 0 ? ml - (cl / maxCL) : 0;
     }
     else
     {
         let newscore = {};
         newscore.id = id;
-        newscore.score = score;
+        newscore.score = ml > 0 ? ml - (cl / maxCL) : 0;
         overallScore.push(newscore);
     }
 
@@ -185,26 +213,33 @@ function updateChart()
         let order = thisSection.order;
         
         let calculatedML = 0;
-        let totalML = 0;
+        //let totalML = 0;
+
+        let totalSectionQuestions = thisSection.questions.length;
+
+        let targetProduct = $.grep(products, function(p) { return p.id == selectedProduct;});
+        let targetSection = $.grep(targetProduct[0].targetScores, function(t) { return t.id == thisSection.id;});
+        let targetScore = targetSection[0].targetScore;
+
 
 
         $.each(thisSection.questions, function() {
             let q = $(this)[0];
             
-            let thisQuestion = $.grep(questions, function(s) { return s.id == q.id;});
+            //let thisQuestion = $.grep(questions, function(s) { return s.id == q.id;});
             
-            totalML += thisQuestion[0].maxML;
+            //totalML += thisQuestion[0].maxML;
 
             let calculatedQuestion = $.grep(overallScore, function(s) { return s.id == q.id;});
 
             if (calculatedQuestion != null && calculatedQuestion.length > 0)
             {
-                calculatedML += calculatedQuestion[0].score;
+                calculatedML += (calculatedQuestion[0].score / totalSectionQuestions);
             }
 
         });
 
-        let calcPercentage = calculatedML / totalML * 100;
+        let calcPercentage = Math.round(calculatedML / targetScore * 100);
                
         myChart.data.datasets[0].data[order] = calcPercentage;
     });

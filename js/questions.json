@@ -3,14 +3,15 @@
         {
             "id": "ORG-01",
             "category": "Education",
-            "questionText": "Education on how IT and Business Operations change in a cloud world.",
+            "questionText": "Education of Cloud Platforms to Business & Technical Staff",
             "options": [
-                { "id": "ORG-01-opt-01", "optionText": "Internal Workshops", "ml": 1 },
-                { "id": "ORG-01-opt-02", "optionText": "External 3rd Party Workshops for Technical & Business Staff", "ml": 2 },
-                { "id": "ORG-01-opt-03", "optionText": "Ad-hoc Education for Technical and Business staff", "ml": 3 },
-                { "id": "ORG-01-opt-04", "optionText": "Formal Education Plans for Technical and Business staff", "ml": 4 }
+                { "id": "ORG-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                { "id": "ORG-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                { "id": "ORG-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                { "id": "ORG-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                { "id": "ORG-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
             ],
-            "maxML": 4,
+            "maxML": 5,
             "maxCL": 5
         },
         {
@@ -18,11 +19,13 @@
             "category": "Needs Recognition",
             "questionText": "Recognition of Organizational changes",
             "options": [
-                { "id": "ORG-02-opt-01", "optionText": "Informal Recognition", "ml": 1 },
-                { "id": "ORG-02-opt-02", "optionText": "Ad-hoc Recognition - IT Leadership", "ml": 2 },
-                { "id": "ORG-02-opt-03", "optionText": "Formal Recognition - IT & Business Leadership", "ml": 3 }
+                { "id": "ORG-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                { "id": "ORG-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                { "id": "ORG-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                { "id": "ORG-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                { "id": "ORG-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
             ],
-            "maxML": 3,
+            "maxML": 5,
             "maxCL": 5
         },
         {
@@ -30,11 +33,13 @@
             "category": "Cloud Teams",
             "questionText": "Creation of Cloud Teams/Roles",
             "options": [
-                { "id": "ORG-03-opt-01", "optionText": "Informal Team", "ml": 1 },
-                { "id": "ORG-03-opt-02", "optionText": "Ad-hoc Internal Teams", "ml": 2 },
-                { "id": "ORG-03-opt-03", "optionText": "Formalized Empowered Internal Team & 3rd Party Trusted Advisors", "ml": 3 }
+                { "id": "ORG-03-opt-01", "optionText": "Cloud Teams/Roles - Informal Creation", "ml": 1 },
+                { "id": "ORG-03-opt-02", "optionText": "Cloud Teams/Roles - Ad-hoc Creation", "ml": 2 },
+                { "id": "ORG-03-opt-03", "optionText": "Cloud Teams/Roles - Formal Creation (Basic)", "ml": 3 },
+                { "id": "ORG-03-opt-04", "optionText": "Cloud Teams/Roles - Formal Creation (Advanced) - Business Unit", "ml": 4 },
+                { "id": "ORG-03-opt-05", "optionText": "Cloud Teams/Roles - Formal Creation (Advanced) - Enterprise-wide", "ml": 5 }
             ],
-            "maxML": 3,
+            "maxML": 5,
             "maxCL": 5
         },
         {
@@ -42,11 +47,13 @@
             "category": "Business Commitment",
             "questionText": "Oraganizational Commitment to digital / business transformation",
             "options": [
-                { "id": "ORG-04-opt-01", "optionText": "Informal Commitment & Funding", "ml": 1 },
-                { "id": "ORG-04-opt-02", "optionText": "Ad-hoc Business commitment & funding", "ml": 2 },
-                { "id": "ORG-04-opt-03", "optionText": "Full digital / business transformation sponsorship & funding", "ml": 3 }
+                { "id": "ORG-04-opt-01", "optionText": "Business Commit - Informal Transformation Commitment", "ml": 1 },
+                { "id": "ORG-04-opt-02", "optionText": "Business Commit - Ad-hoc Transformation Commitment", "ml": 2 },
+                { "id": "ORG-04-opt-03", "optionText": "Business Commit - Formal Transformation Commitment (Basic)", "ml": 3 },
+                { "id": "ORG-04-opt-04", "optionText": "Business Commit - Formal Transformation Commitment (Advanced) - Business Unit", "ml": 4 },
+                { "id": "ORG-04-opt-05", "optionText": "Business Commit - Formal Transformation Commitment - Enterprise-wide", "ml": 5 }
             ],
-            "maxML": 3,
+            "maxML": 5,
             "maxCL": 5
         },
         {
@@ -54,12 +61,13 @@
             "category": "Technology Commitment",
             "questionText": "Organizational Commitment to flexible service delivery platform",
             "options": [
-                { "id": "ORG-05-opt-01", "optionText": "Informal technology commitment", "ml": 1 },
-                { "id": "ORG-05-opt-02", "optionText": "Ad-hoc technology commitment", "ml": 2 },
-                { "id": "ORG-05-opt-03", "optionText": "Formal technology planning and roadmapping", "ml": 3 },
-                { "id": "ORG-05-opt-04", "optionText": "Agile service delivery commitment", "ml": 4 }
+                { "id": "ORG-05-opt-01", "optionText": "Technology Commit - Informal Technology Commitment", "ml": 1 },
+                { "id": "ORG-05-opt-02", "optionText": "Technology Commit - Ad-hoc Technology Commitment", "ml": 2 },
+                { "id": "ORG-05-opt-03", "optionText": "Technology Commit - Formal Technology Commitment (Basic)", "ml": 3 },
+                { "id": "ORG-05-opt-04", "optionText": "Technology Commit - Formal Technology Commitment (Advanced)", "ml": 4 },
+                { "id": "ORG-05-opt-05", "optionText": "Technology Commit - Agile Service Delivery Commitment (Advanced)", "ml": 5 }
             ],
-            "maxML": 4,
+            "maxML": 5,
             "maxCL": 5
         },
         {

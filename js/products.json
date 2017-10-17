@@ -1,0 +1,18 @@
+{
+    "products": [
+        {
+            "name": "Office 365",
+            "id": "o365",
+            "targetScores": [
+                {"id": "S01-ORG", "targetScore": 3.4},
+                {"id": "S02-OPR", "targetScore": 3.666666667},
+                {"id": "S03-GOV", "targetScore": 3.33333333},
+                {"id": "S04-PLT", "targetScore": 3.8},
+                {"id": "S05-IAM", "targetScore": 3.625},
+                {"id": "S06-NET", "targetScore": 3.666666667},
+                {"id": "S07-SEC", "targetScore": 3.363636364},
+                {"id": "S08-DAT", "targetScore": 3.7}
+            ]
+        }
+    ]
+}
