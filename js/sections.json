@@ -51,7 +51,8 @@
             "id": "S06-NET",
             "order": 5,
             "questions": [
-                
+                { "id": "NET-01" }, { "id": "NET-02" }, {"id": "NET-03"}, {"id": "NET-04"}, {"id": "NET-05"}, { "id": "NET-06" }, { "id": "NET-07" }, 
+                {"id": "NET-08"}, {"id": "NET-09"}
             ]            
         },
         {
@@ -60,7 +61,8 @@
             "id": "S07-SEC",
             "order": 6,
             "questions": [
-                
+                { "id": "SEC-01" }, { "id": "SEC-02" }, {"id": "SEC-03"}, {"id": "SEC-04"}, {"id": "SEC-05"}, { "id": "SEC-06" }, { "id": "SEC-07" }, 
+                {"id": "SEC-08"}, {"id": "SEC-09"}, {"id": "SEC-10"}, {"id": "SEC-11"}
             ]            
         },
         {
@@ -69,7 +71,8 @@
             "id": "S08-DAT",
             "order": 7,
             "questions": [
-                
+                { "id": "DAT-01" }, { "id": "DAT-02" }, {"id": "DAT-03"}, {"id": "DAT-04"}, {"id": "DAT-05"}, { "id": "DAT-06" }, { "id": "DAT-07" }, 
+                {"id": "DAT-08"}, {"id": "DAT-09"}, {"id": "DAT-10"}
             ]            
         }
     ]

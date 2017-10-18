@@ -420,6 +420,421 @@
             "maxML": 5,
             "maxCL": 5
         },
+        {
+            "id": "NET-01",
+            "category": "Education",
+            "questionText": "Education on how federated Networks are required for any future cloud/platform adoption",
+            "options": [
+                { "id": "NET-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                { "id": "NET-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                { "id": "NET-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                { "id": "NET-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                { "id": "NET-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "NET-02",
+            "category": "Needs Recognition",
+            "questionText": "Recognition of need to understand federated networks",
+            "options": [
+                { "id": "NET-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                { "id": "NET-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                { "id": "NET-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                { "id": "NET-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                { "id": "NET-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "NET-03",
+            "category": "Data Centre Software Defined Network",
+            "questionText": "Primary Data Centre Adoption of Software Defined Network Capabilities",
+            "options": [
+                { "id": "NET-03-opt-01", "optionText": "Data Centre SDN - Informal Needs Recognition", "ml": 1 },
+                { "id": "NET-03-opt-02", "optionText": "Data Centre SDN - Ad-hoc Adoption", "ml": 2 },
+                { "id": "NET-03-opt-03", "optionText": "Data Centre SDN - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "NET-03-opt-04", "optionText": "Data Centre SDN - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "NET-03-opt-05", "optionText": "Data Centre SDN - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "NET-04",
+            "category": "Branch Software Defined Network",
+            "questionText": "Branch Adoption of Software Defined Network Capabilities",
+            "options": [
+                { "id": "NET-04-opt-01", "optionText": "Branch SDN - Informal Needs Recognition", "ml": 1 },
+                { "id": "NET-04-opt-02", "optionText": "Branch SDN - Ad-hoc Adoption", "ml": 2 },
+                { "id": "NET-04-opt-03", "optionText": "Branch SDN - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "NET-04-opt-04", "optionText": "Branch SDN - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "NET-04-opt-05", "optionText": "Branch SDN - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "NET-05",
+            "category": "Software Defined WAN",
+            "questionText": "Software Defined WAN Adoption for sites",
+            "options": [
+                { "id": "NET-05-opt-01", "optionText": "SD-WAN - Informal Needs Recognition", "ml": 1 },
+                { "id": "NET-05-opt-02", "optionText": "SD-WAN - Ad-hoc Adoption", "ml": 2 },
+                { "id": "NET-05-opt-03", "optionText": "SD-WAN - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "NET-05-opt-04", "optionText": "SD-WAN - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "NET-05-opt-05", "optionText": "SD-WAN - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "NET-06",
+            "category": "Cloud Network Platforms",
+            "questionText": "Ability to create efficient Cloud Networks",
+            "options": [
+                { "id": "NET-06-opt-01", "optionText": "Cloud Network Platforms - Informal Needs Recognition", "ml": 1 },
+                { "id": "NET-06-opt-02", "optionText": "Cloud Network Platforms - Ad-hoc Adoption", "ml": 2 },
+                { "id": "NET-06-opt-03", "optionText": "Cloud Network Platforms - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "NET-06-opt-04", "optionText": "Cloud Network Platforms - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "NET-06-opt-05", "optionText": "Cloud Network Platforms - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "NET-07",
+            "category": "Federated Networks",
+            "questionText": "Ability to Federate DC/Branch sites with Cloud Networks",
+            "options": [
+                { "id": "NET-07-opt-01", "optionText": "Federated Networks - Informal Needs Recognition", "ml": 1 },
+                { "id": "NET-07-opt-02", "optionText": "Federated Networks - Ad-hoc Adoption", "ml": 2 },
+                { "id": "NET-07-opt-03", "optionText": "Federated Networks - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "NET-07-opt-04", "optionText": "Federated Networks - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "NET-07-opt-05", "optionText": "Federated Networks - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "NET-08",
+            "category": "End-Point Networks",
+            "questionText": "End-Point Integration into Federated Network",
+            "options": [
+                { "id": "NET-08-opt-01", "optionText": "End-Point Networks - Informal Needs Recognition", "ml": 1 },
+                { "id": "NET-08-opt-02", "optionText": "End-Point Networks - Ad-hoc Adoption", "ml": 2 },
+                { "id": "NET-08-opt-03", "optionText": "End-Point Networks - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "NET-08-opt-04", "optionText": "End-Point Networks - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "NET-08-opt-05", "optionText": "End-Point Networks - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "NET-09",
+            "category": "Application Load Balancing",
+            "questionText": "Ability to create auto-scale Cloud Load Balancing Services",
+            "options": [
+                { "id": "NET-09-opt-01", "optionText": "Auto-scale LB - Informal Needs Recognition", "ml": 1 },
+                { "id": "NET-09-opt-02", "optionText": "Auto-scale LB - Ad-hoc Adoption", "ml": 2 },
+                { "id": "NET-09-opt-03", "optionText": "Auto-scale LB - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "NET-09-opt-04", "optionText": "Auto-scale LB - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "NET-09-opt-05", "optionText": "Auto-scale LB - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "SEC-01",
+            "category": "Education",
+            "questionText": "Education on how federated security is required for any future cloud/platform adoption",
+            "options": [
+                { "id": "SEC-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                { "id": "SEC-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                { "id": "SEC-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                { "id": "SEC-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                { "id": "SEC-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "SEC-02",
+            "category": "Needs Recognition",
+            "questionText": "Recognition of need to understand federated security",
+            "options": [
+                { "id": "SEC-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                { "id": "SEC-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                { "id": "SEC-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                { "id": "SEC-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                { "id": "SEC-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "SEC-03",
+            "category": "Infrastructure Security",
+            "questionText": "Ability for Next Generation Network Firewall functionality",
+            "options": [
+                { "id": "SEC-03-opt-01", "optionText": "NGFW Capabilities - Informal Needs Recognition", "ml": 1 },
+                { "id": "SEC-03-opt-02", "optionText": "NGFW Capabilities - Ad-hoc Adoption", "ml": 2 },
+                { "id": "SEC-03-opt-03", "optionText": "NGFW Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "SEC-03-opt-04", "optionText": "NGFW Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "SEC-03-opt-05", "optionText": "NGFW Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "SEC-04",
+            "category": "Infrastructure Security",
+            "questionText": "Ability for Intrusion Prevention Systems/Intrusion Detection Systems functionality",
+            "options": [
+                { "id": "SEC-04-opt-01", "optionText": "IPS/IDS Capabilities - Informal Needs Recognition", "ml": 1 },
+                { "id": "SEC-04-opt-02", "optionText": "IPS/IDS Capabilities - Ad-hoc Adoption", "ml": 2 },
+                { "id": "SEC-04-opt-03", "optionText": "IPS/IDS Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "SEC-04-opt-04", "optionText": "IPS/IDS Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "SEC-04-opt-05", "optionText": "IPS/IDS Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "SEC-05",
+            "category": "Infrastructure Security",
+            "questionText": "Ability for Network Monitoring functionality",
+            "options": [
+                { "id": "SEC-05-opt-01", "optionText": "Network Monitoring Capabilities - Informal Needs Recognition", "ml": 1 },
+                { "id": "SEC-05-opt-02", "optionText": "Network Monitoring Capabilities - Ad-hoc Adoption", "ml": 2 },
+                { "id": "SEC-05-opt-03", "optionText": "Network Monitoring Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "SEC-05-opt-04", "optionText": "Network Monitoring Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "SEC-05-opt-05", "optionText": "Network Monitoring Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "SEC-06",
+            "category": "Application Security",
+            "questionText": "Ability for Web Application Firewall functionality",
+            "options": [
+                { "id": "SEC-06-opt-01", "optionText": "WAF Capabilities - Informal Needs Recognition", "ml": 1 },
+                { "id": "SEC-06-opt-02", "optionText": "WAF Capabilities - Ad-hoc Adoption", "ml": 2 },
+                { "id": "SEC-06-opt-03", "optionText": "WAF Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "SEC-06-opt-04", "optionText": "WAF Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "SEC-06-opt-05", "optionText": "WAF Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "SEC-07",
+            "category": "End-Point Security",
+            "questionText": "Ability for Next Generation End-Point Protection functionality",
+            "options": [
+                { "id": "SEC-07-opt-01", "optionText": "NGEP Capabilities - Informal Needs Recognition", "ml": 1 },
+                { "id": "SEC-07-opt-02", "optionText": "NGEP Capabilities - Ad-hoc Adoption", "ml": 2 },
+                { "id": "SEC-07-opt-03", "optionText": "NGEP Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "SEC-07-opt-04", "optionText": "NGEP Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "SEC-07-opt-05", "optionText": "NGEP Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "SEC-08",
+            "category": "Risk & Compliance",
+            "questionText": "Ability to adheare to Risk and Compliance requirements",
+            "options": [
+                { "id": "SEC-08-opt-01", "optionText": "Risk & Compliance Security Adherence - Informal Needs Recognition", "ml": 1 },
+                { "id": "SEC-08-opt-02", "optionText": "Risk & Compliance Security Adherence - Ad-hoc Adoption", "ml": 2 },
+                { "id": "SEC-08-opt-03", "optionText": "Risk & Compliance Security Adherence - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "SEC-08-opt-04", "optionText": "Risk & Compliance Security Adherence - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "SEC-08-opt-05", "optionText": "Risk & Compliance Security Adherence - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "SEC-09",
+            "category": "Threat Intelligence",
+            "questionText": "Ability to provide Threat Intelligence functionality",
+            "options": [
+                { "id": "SEC-09-opt-01", "optionText": "Threat Intelligence - Informal Needs Recognition", "ml": 1 },
+                { "id": "SEC-09-opt-02", "optionText": "Threat Intelligence - Ad-hoc Adoption", "ml": 2 },
+                { "id": "SEC-09-opt-03", "optionText": "Threat Intelligence - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "SEC-09-opt-04", "optionText": "Threat Intelligence - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "SEC-09-opt-05", "optionText": "Threat Intelligence - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "SEC-10",
+            "category": "Threat Analysis",
+            "questionText": "Ability to provide Threat Analysis functionality",
+            "options": [
+                { "id": "SEC-10-opt-01", "optionText": "Threat Analysis - Informal Needs Recognition", "ml": 1 },
+                { "id": "SEC-10-opt-02", "optionText": "Threat Analysis - Ad-hoc Adoption", "ml": 2 },
+                { "id": "SEC-10-opt-03", "optionText": "Threat Analysis - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "SEC-10-opt-04", "optionText": "Threat Analysis - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "SEC-10-opt-05", "optionText": "Threat Analysis - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "SEC-11",
+            "category": "Data Security",
+            "questionText": "Ability to provide Data Security functionality (Encryption-in-flight/rest)",
+            "options": [
+                { "id": "SEC-11-opt-01", "optionText": "Data Security - Informal Needs Recognition", "ml": 1 },
+                { "id": "SEC-11-opt-02", "optionText": "Data Security - Ad-hoc Adoption", "ml": 2 },
+                { "id": "SEC-11-opt-03", "optionText": "Data Security - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "SEC-11-opt-04", "optionText": "Data Security - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "SEC-11-opt-05", "optionText": "Data Security - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "DAT-01",
+            "category": "Education",
+            "questionText": "Education on how Data Protection/Management is required for any future cloud/platform adoption",
+            "options": [
+                { "id": "DAT-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                { "id": "DAT-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                { "id": "DAT-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                { "id": "DAT-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                { "id": "DAT-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "DAT-02",
+            "category": "Needs Recognition",
+            "questionText": "Recognition of need to understand Data Protection/Management",
+            "options": [
+                { "id": "DAT-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                { "id": "DAT-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                { "id": "DAT-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                { "id": "DAT-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                { "id": "DAT-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "DAT-03",
+            "category": "Application Criticality",
+            "questionText": "Identification of App Service Tiers and Recovery objectives",
+            "options": [
+                { "id": "DAT-03-opt-01", "optionText": "Defined App Criticality - Informal Needs Recognition", "ml": 1 },
+                { "id": "DAT-03-opt-02", "optionText": "Defined App Criticality - Ad-hoc Adoption", "ml": 2 },
+                { "id": "DAT-03-opt-03", "optionText": "Defined App Criticality - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "DAT-03-opt-04", "optionText": "Defined App Criticality - Formal tools and processes (Advanced)- Business Unit", "ml": 4 },
+                { "id": "DAT-03-opt-05", "optionText": "Defined App Criticality - Formal Automated/as-a-service tools/Processes- Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "DAT-04",
+            "category": "Retention",
+            "questionText": "Identified Data Retention Requirements",
+            "options": [
+                { "id": "DAT-04-opt-01", "optionText": "Data Retention - Informal Needs Recognition", "ml": 1 },
+                { "id": "DAT-04-opt-02", "optionText": "Data Retention - Ad-hoc Adoption", "ml": 2 },
+                { "id": "DAT-04-opt-03", "optionText": "Data Retention - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "DAT-04-opt-04", "optionText": "Data Retention - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "DAT-04-opt-05", "optionText": "Data Retention - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "DAT-05",
+            "category": "Data Protection Software",
+            "questionText": "Ability for Point-In-Time copies/versions/snapshots",
+            "options": [
+                { "id": "DAT-05-opt-01", "optionText": "PIT Capabilities - Informal Needs Recognition", "ml": 1 },
+                { "id": "DAT-05-opt-02", "optionText": "PIT Capabilities - Ad-hoc Adoption", "ml": 2 },
+                { "id": "DAT-05-opt-03", "optionText": "PIT Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "DAT-05-opt-04", "optionText": "PIT Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "DAT-05-opt-05", "optionText": "PIT Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "DAT-06",
+            "category": "Data Protection Software",
+            "questionText": "Ability for searchable catalogue",
+            "options": [
+                { "id": "DAT-06-opt-01", "optionText": "Searchable Catalogue Capabilities - Informal Needs Recognition", "ml": 1 },
+                { "id": "DAT-06-opt-02", "optionText": "Searchable Catalogue Capabilities - Ad-hoc Adoption", "ml": 2 },
+                { "id": "DAT-06-opt-03", "optionText": "Searchable Catalogue Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "DAT-06-opt-04", "optionText": "Searchable Catalogue Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "DAT-06-opt-05", "optionText": "Searchable Catalogue Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "DAT-07",
+            "category": "Data Protection Software",
+            "questionText": "Ability for off-site replication",
+            "options": [
+                { "id": "DAT-07-opt-01", "optionText": "Off-Site Capabilities - Informal Needs Recognition", "ml": 1 },
+                { "id": "DAT-07-opt-02", "optionText": "Off-Site Capabilities - Ad-hoc Adoption", "ml": 2 },
+                { "id": "DAT-07-opt-03", "optionText": "Off-Site Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "DAT-07-opt-04", "optionText": "Off-Site Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "DAT-07-opt-05", "optionText": "Off-Site Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "DAT-08",
+            "category": "Data Protection Software",
+            "questionText": "Ability for file-level restores",
+            "options": [
+                { "id": "DAT-08-opt-01", "optionText": "File-Level Restore Capabilities - Informal Needs Recognition", "ml": 1 },
+                { "id": "DAT-08-opt-02", "optionText": "File-Level Restore Capabilities - Ad-hoc Adoption", "ml": 2 },
+                { "id": "DAT-08-opt-03", "optionText": "File-Level Restore Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "DAT-08-opt-04", "optionText": "File-Level Restore Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "DAT-08-opt-05", "optionText": "File-Level Restore Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "DAT-09",
+            "category": "Data Protection Software",
+            "questionText": "Ability for Cloud-capable data protection features",
+            "options": [
+                { "id": "DAT-09-opt-01", "optionText": "Cloud-capable DP Capabilities - Informal Needs Recognition", "ml": 1 },
+                { "id": "DAT-09-opt-02", "optionText": "Cloud-capable DP Capabilities - Ad-hoc Adoption", "ml": 2 },
+                { "id": "DAT-09-opt-03", "optionText": "Cloud-capable DP Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "DAT-09-opt-04", "optionText": "Cloud-capable DP Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "DAT-09-opt-05", "optionText": "Cloud-capable DP Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "DAT-10",
+            "category": "Data Protection Software",
+            "questionText": "Ability for cross cloud platform data protection services",
+            "options": [
+                { "id": "DAT-10-opt-01", "optionText": "Cross Cloud Platform Capabilities - Informal Needs Recognition", "ml": 1 },
+                { "id": "DAT-10-opt-02", "optionText": "Cross Cloud Platform Capabilities - Ad-hoc Adoption", "ml": 2 },
+                { "id": "DAT-10-opt-03", "optionText": "Cross Cloud Platform Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                { "id": "DAT-10-opt-04", "optionText": "Cross Cloud Platform Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                { "id": "DAT-10-opt-05", "optionText": "Cross Cloud Platform Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
                 
         {
             "id": "ORC-CL1-01",
