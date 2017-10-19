@@ -99,10 +99,10 @@ function loadQuestionContent()
             htmlContent += '<div class="bd-example py-1">';
             htmlContent += '<div class="row bg-white">';
             htmlContent += '<div class="input-group">';
-            htmlContent += '<div class="col-md-8">';
+            htmlContent += '<div class="col-md-6">';
             htmlContent += '<p class="form-control-plaintext flex-wrap">' + q.questionText + '</p>';
             htmlContent += '</div>';
-            htmlContent += '<div class="col-md-4">';
+            htmlContent += '<div class="col-md-6">';
             htmlContent += '<select class="piivot-question custom-select mb-4 mr-sm-4 mb-sm-0" id="' + q.id + '" piivot-question-id="' + q.id + '" piivot-section="' + sectionId + '" piivot-section-order="' + sectionOrder + '">';
             htmlContent += '<option value="0">Choose...</option>';
 
