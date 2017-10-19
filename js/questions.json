@@ -5,7 +5,7 @@
             "category": "Education",
             "questionText": "Education of Cloud Platforms to Business & Technical Staff",
             "options": [
-                { "id": "ORG-01-opt-01", "optionText": "Education - Ass Informal Education", "ml": 1 },
+                { "id": "ORG-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
                 { "id": "ORG-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
                 { "id": "ORG-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
                 { "id": "ORG-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
