@@ -3,13 +3,13 @@
         {
             "id": "ORG-01",
             "category": "Education",
-            "questionText": "Education of Cloud Platforms to Business & Technical Staff",
+            "questionText": "Has the organisation begun the educational process of business and technical staff on Cloud Platforms including its value and definition of terms?",
             "options": [
-                { "id": "ORG-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
-                { "id": "ORG-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
-                { "id": "ORG-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
-                { "id": "ORG-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
-                { "id": "ORG-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "ORG-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                 {  "id": "ORG-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                 {  "id": "ORG-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                 {  "id": "ORG-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "ORG-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -17,13 +17,13 @@
         {
             "id": "ORG-02",
             "category": "Needs Recognition",
-            "questionText": "Recognition of Organizational changes",
+            "questionText": "Has the organisation recognised the need to start addressing the required transformation changes to compete in the digital economy?",
             "options": [
-                { "id": "ORG-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
-                { "id": "ORG-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
-                { "id": "ORG-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
-                { "id": "ORG-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
-                { "id": "ORG-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
+                 {  "id": "ORG-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                 {  "id": "ORG-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                 {  "id": "ORG-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                 {  "id": "ORG-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                 {  "id": "ORG-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -31,13 +31,13 @@
         {
             "id": "ORG-03",
             "category": "Cloud Teams",
-            "questionText": "Creation of Cloud Teams/Roles",
+            "questionText": "Has the organisation recognised the importance for the creation of a group of Cloud Team specialists to understand the impact and processes required to adopt Cloud platforms efficiently?",
             "options": [
-                { "id": "ORG-03-opt-01", "optionText": "Cloud Teams/Roles - Informal Creation", "ml": 1 },
-                { "id": "ORG-03-opt-02", "optionText": "Cloud Teams/Roles - Ad-hoc Creation", "ml": 2 },
-                { "id": "ORG-03-opt-03", "optionText": "Cloud Teams/Roles - Formal Creation (Basic)", "ml": 3 },
-                { "id": "ORG-03-opt-04", "optionText": "Cloud Teams/Roles - Formal Creation (Advanced) - Business Unit", "ml": 4 },
-                { "id": "ORG-03-opt-05", "optionText": "Cloud Teams/Roles - Formal Creation (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "ORG-03-opt-01", "optionText": "Cloud Teams/Roles - Informal Creation", "ml": 1 },
+                 {  "id": "ORG-03-opt-02", "optionText": "Cloud Teams/Roles - Ad-hoc Creation", "ml": 2 },
+                 {  "id": "ORG-03-opt-03", "optionText": "Cloud Teams/Roles - Formal Creation (Basic)", "ml": 3 },
+                 {  "id": "ORG-03-opt-04", "optionText": "Cloud Teams/Roles - Formal Creation (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "ORG-03-opt-05", "optionText": "Cloud Teams/Roles - Formal Creation (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -45,13 +45,13 @@
         {
             "id": "ORG-04",
             "category": "Business Commitment",
-            "questionText": "Oraganizational Commitment to digital / business transformation",
+            "questionText": "Has the organisation committed to a digital/business transformation strategy?",
             "options": [
-                { "id": "ORG-04-opt-01", "optionText": "Business Commit - Informal Transformation Commitment", "ml": 1 },
-                { "id": "ORG-04-opt-02", "optionText": "Business Commit - Ad-hoc Transformation Commitment", "ml": 2 },
-                { "id": "ORG-04-opt-03", "optionText": "Business Commit - Formal Transformation Commitment (Basic)", "ml": 3 },
-                { "id": "ORG-04-opt-04", "optionText": "Business Commit - Formal Transformation Commitment (Advanced) - Business Unit", "ml": 4 },
-                { "id": "ORG-04-opt-05", "optionText": "Business Commit - Formal Transformation Commitment - Enterprise-wide", "ml": 5 }
+                 {  "id": "ORG-04-opt-01", "optionText": "Business Commit - Informal Transformation Commitment", "ml": 1 },
+                 {  "id": "ORG-04-opt-02", "optionText": "Business Commit - Ad-hoc Transformation Commitment", "ml": 2 },
+                 {  "id": "ORG-04-opt-03", "optionText": "Business Commit - Formal Transformation Commitment (Basic)", "ml": 3 },
+                 {  "id": "ORG-04-opt-04", "optionText": "Business Commit - Formal Transformation Commitment (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "ORG-04-opt-05", "optionText": "Business Commit - Formal Transformation Commitment - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -59,13 +59,13 @@
         {
             "id": "ORG-05",
             "category": "Technology Commitment",
-            "questionText": "Organizational Commitment to flexible service delivery platform",
+            "questionText": "Has the organisation committed to the possible adoption of required hardware/software for flexible service delivery capabilities?",
             "options": [
-                { "id": "ORG-05-opt-01", "optionText": "Technology Commit - Informal Technology Commitment", "ml": 1 },
-                { "id": "ORG-05-opt-02", "optionText": "Technology Commit - Ad-hoc Technology Commitment", "ml": 2 },
-                { "id": "ORG-05-opt-03", "optionText": "Technology Commit - Formal Technology Commitment (Basic)", "ml": 3 },
-                { "id": "ORG-05-opt-04", "optionText": "Technology Commit - Formal Technology Commitment (Advanced)", "ml": 4 },
-                { "id": "ORG-05-opt-05", "optionText": "Technology Commit - Agile Service Delivery Commitment (Advanced)", "ml": 5 }
+                 {  "id": "ORG-05-opt-01", "optionText": "Technology Commit - Informal Technology Commitment", "ml": 1 },
+                 {  "id": "ORG-05-opt-02", "optionText": "Technology Commit - Ad-hoc Technology Commitment", "ml": 2 },
+                 {  "id": "ORG-05-opt-03", "optionText": "Technology Commit - Formal Technology Commitment (Basic)", "ml": 3 },
+                 {  "id": "ORG-05-opt-04", "optionText": "Technology Commit - Formal Technology Commitment (Advanced)", "ml": 4 },
+                 {  "id": "ORG-05-opt-05", "optionText": "Technology Commit - Agile Service Delivery Commitment (Advanced)", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -73,13 +73,13 @@
         {
             "id": "OPR-01",
             "category": "Education",
-            "questionText": "Education on how IT and Business Operations change in a cloud world.",
+            "questionText": "Have operational teams begun the educational process to understand what IT and Business Operations mean as they relate to the adoption of Cloud Platforms?",
             "options": [
-                { "id": "OPR-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
-                { "id": "OPR-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
-                { "id": "OPR-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
-                { "id": "OPR-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
-                { "id": "OPR-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "OPR-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                 {  "id": "OPR-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                 {  "id": "OPR-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                 {  "id": "OPR-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "OPR-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -87,13 +87,13 @@
         {
             "id": "OPR-02",
             "category": "Needs Recognition",
-            "questionText": "Recognition of Operational Process changes",
+            "questionText": "Have operational teams recognised the need to address operational changes as they relate to the adoption of Cloud Platforms?",
             "options": [
-                { "id": "OPR-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
-                { "id": "OPR-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
-                { "id": "OPR-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
-                { "id": "OPR-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
-                { "id": "OPR-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
+                 {  "id": "OPR-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                 {  "id": "OPR-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                 {  "id": "OPR-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                 {  "id": "OPR-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                 {  "id": "OPR-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -101,13 +101,13 @@
         {
             "id": "OPR-03",
             "category": "Operational Metrics",
-            "questionText": "Definition of current & target Operational Metrics",
+            "questionText": "Has operational metrics been defined for both current environments and the adoption of future cloud platforms?",
             "options": [
-                { "id": "OPR-03-opt-01", "optionText": "Operational Metrics - Informal Definitions", "ml": 1 },
-                { "id": "OPR-03-opt-02", "optionText": "Operational Metrics - Ad-hoc Definitions", "ml": 2 },
-                { "id": "OPR-03-opt-03", "optionText": "Operational Metrics - Formal Definitions (Basic)", "ml": 3 },
-                { "id": "OPR-03-opt-04", "optionText": "Operational Metrics - Formal Definitions (Advanced) - Business Unit", "ml": 4 },
-                { "id": "OPR-03-opt-05", "optionText": "Operational Metrics - Formal Definitions (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "OPR-03-opt-01", "optionText": "Operational Metrics - Informal Definitions", "ml": 1 },
+                 {  "id": "OPR-03-opt-02", "optionText": "Operational Metrics - Ad-hoc Definitions", "ml": 2 },
+                 {  "id": "OPR-03-opt-03", "optionText": "Operational Metrics - Formal Definitions (Basic)", "ml": 3 },
+                 {  "id": "OPR-03-opt-04", "optionText": "Operational Metrics - Formal Definitions (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "OPR-03-opt-05", "optionText": "Operational Metrics - Formal Definitions (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -115,13 +115,13 @@
         {
             "id": "OPR-04",
             "category": "Operational Testing",
-            "questionText": "Testing Frequency and Structured Processes",
+            "questionText": "Have structured operational testing processes and frequency been defined for business applications and services?",
             "options": [
-                { "id": "OPR-04-opt-01", "optionText": "Operational Testing - Informal Recognition of Testing", "ml": 1 },
-                { "id": "OPR-04-opt-02", "optionText": "Operational Testing - Ad-hoc Testing Structure and Freq.", "ml": 2 },
-                { "id": "OPR-04-opt-03", "optionText": "Operational Testing - Formal Testing Structure & Freq. (Basic)", "ml": 3 },
-                { "id": "OPR-04-opt-04", "optionText": "Operational Testing - Formal Testing Structure & Freq. (Advanced) - Business Unit", "ml": 4 },
-                { "id": "OPR-04-opt-05", "optionText": "Operational Testing - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "OPR-04-opt-01", "optionText": "Operational Testing - Informal Recognition of Testing", "ml": 1 },
+                 {  "id": "OPR-04-opt-02", "optionText": "Operational Testing - Ad-hoc Testing Structure and Freq.", "ml": 2 },
+                 {  "id": "OPR-04-opt-03", "optionText": "Operational Testing - Formal Testing Structure & Freq. (Basic)", "ml": 3 },
+                 {  "id": "OPR-04-opt-04", "optionText": "Operational Testing - Formal Testing Structure & Freq. (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "OPR-04-opt-05", "optionText": "Operational Testing - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -129,13 +129,13 @@
         {
             "id": "OPR-05",
             "category": "Resource Life-Cycle",
-            "questionText": "Ability to provision and de-provision resources as required.",
+            "questionText": "Can operational teams provide resource life-cycle capabilities?  (ie. provision and de-provision resources as required?)",
             "options": [
-                { "id": "OPR-05-opt-01", "optionText": "Resource Life-Cycle - Informal Needs Recognition", "ml": 1 },
-                { "id": "OPR-05-opt-02", "optionText": "Resource Life-Cycle - Ad-hoc Adoption", "ml": 2 },
-                { "id": "OPR-05-opt-03", "optionText": "Resource Life-Cycle - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "OPR-05-opt-04", "optionText": "Resource Life-Cycle - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "OPR-05-opt-05", "optionText": "Resource Life-Cycle - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "OPR-05-opt-01", "optionText": "Resource Life-Cycle - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "OPR-05-opt-02", "optionText": "Resource Life-Cycle - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "OPR-05-opt-03", "optionText": "Resource Life-Cycle - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "OPR-05-opt-04", "optionText": "Resource Life-Cycle - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "OPR-05-opt-05", "optionText": "Resource Life-Cycle - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -143,13 +143,13 @@
         {
             "id": "OPR-06",
             "category": "Change Management",
-            "questionText": "Change, Monitoring and Reporting Management",
+            "questionText": "Do operational teams have the ability for operational change management reporting and monitoring?",
             "options": [
-                { "id": "OPR-06-opt-01", "optionText": "Change Management - Informal Needs Recognition", "ml": 1 },
-                { "id": "OPR-06-opt-02", "optionText": "Change Management - Ad-hoc Adoption", "ml": 2 },
-                { "id": "OPR-06-opt-03", "optionText": "Change Management - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "OPR-06-opt-04", "optionText": "Change Management - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "OPR-06-opt-05", "optionText": "Change Management - Formal Automated/as-a-service/Analytic Tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "OPR-06-opt-01", "optionText": "Change Management - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "OPR-06-opt-02", "optionText": "Change Management - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "OPR-06-opt-03", "optionText": "Change Management - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "OPR-06-opt-04", "optionText": "Change Management - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "OPR-06-opt-05", "optionText": "Change Management - Formal Automated/as-a-service/Analytic Tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -157,13 +157,13 @@
         {
             "id": "GOV-01",
             "category": "Education",
-            "questionText": "Education on how IT and Business Governance are needed in a cloud world.",
+            "questionText": "Has the organisation or governance body begun the educational process to understand what IT and Business governance mean as they relate to the adoption of Cloud Platforms?",
             "options": [
-                { "id": "GOV-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
-                { "id": "GOV-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
-                { "id": "GOV-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
-                { "id": "GOV-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
-                { "id": "GOV-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "GOV-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                 {  "id": "GOV-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                 {  "id": "GOV-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                 {  "id": "GOV-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "GOV-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -171,13 +171,13 @@
         {
             "id": "GOV-02",
             "category": "Needs Recognition",
-            "questionText": "Recognition of Governance Processes",
+            "questionText": "Has the organisation recognised the need for a governance body to address governance methods as they relate to the adoption of Cloud Platforms?",
             "options": [
-                { "id": "GOV-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
-                { "id": "GOV-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
-                { "id": "GOV-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
-                { "id": "GOV-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
-                { "id": "GOV-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
+                 {  "id": "GOV-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                 {  "id": "GOV-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                 {  "id": "GOV-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                 {  "id": "GOV-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                 {  "id": "GOV-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -185,13 +185,13 @@
         {
             "id": "GOV-03",
             "category": "Goverance Structure",
-            "questionText": "Established Governance Structures",
+            "questionText": "Has the organisation or governance body established adequate governance structures?",
             "options": [
-                { "id": "GOV-03-opt-01", "optionText": "Goverance Structure - Informal Needs Recognition", "ml": 1 },
-                { "id": "GOV-03-opt-02", "optionText": "Goverance Structure - Ad-hoc Adoption", "ml": 2 },
-                { "id": "GOV-03-opt-03", "optionText": "Goverance Structure - Formal Adoption (Basic)", "ml": 3 },
-                { "id": "GOV-03-opt-04", "optionText": "Goverance Structure - Formal Adoption (Advanced) - Business Unit", "ml": 4 },
-                { "id": "GOV-03-opt-05", "optionText": "Goverance Structure - Formal Adoption (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "GOV-03-opt-01", "optionText": "Goverance Structure - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "GOV-03-opt-02", "optionText": "Goverance Structure - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "GOV-03-opt-03", "optionText": "Goverance Structure - Formal Adoption (Basic)", "ml": 3 },
+                 {  "id": "GOV-03-opt-04", "optionText": "Goverance Structure - Formal Adoption (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "GOV-03-opt-05", "optionText": "Goverance Structure - Formal Adoption (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -199,13 +199,13 @@
         {
             "id": "GOV-04",
             "category": "Governance Oversight",
-            "questionText": "Definition of functional accountabilities (escalation, veto and reporting)",
+            "questionText": "Has the organisation or governance body defined functional oversight accountabilities?  (ie. escalation, veto and reporting)",
             "options": [
-                { "id": "GOV-04-opt-01", "optionText": "Goverance Oversight - Informal Needs Recognition", "ml": 1 },
-                { "id": "GOV-04-opt-02", "optionText": "Goverance Oversight - Ad-hoc Adoption", "ml": 2 },
-                { "id": "GOV-04-opt-03", "optionText": "Goverance Oversight - Formal Adoption (Basic)", "ml": 3 },
-                { "id": "GOV-04-opt-04", "optionText": "Goverance Oversight - Formal Adoption (Advanced) - Business Unit", "ml": 4 },
-                { "id": "GOV-04-opt-05", "optionText": "Goverance Oversight - Formal Adoption (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "GOV-04-opt-01", "optionText": "Goverance Oversight - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "GOV-04-opt-02", "optionText": "Goverance Oversight - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "GOV-04-opt-03", "optionText": "Goverance Oversight - Formal Adoption (Basic)", "ml": 3 },
+                 {  "id": "GOV-04-opt-04", "optionText": "Goverance Oversight - Formal Adoption (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "GOV-04-opt-05", "optionText": "Goverance Oversight - Formal Adoption (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -213,13 +213,13 @@
         {
             "id": "GOV-05",
             "category": "Governance Culture",
-            "questionText": "Definition of core beliefs and foundation of corporate culture",
+            "questionText": "Has the organisation or governance body defined corporate culture foundations and core beliefs?",
             "options": [
-                { "id": "GOV-05-opt-01", "optionText": "Goverance Culture - Informal Needs Recognition", "ml": 1 },
-                { "id": "GOV-05-opt-02", "optionText": "Goverance Culture - Ad-hoc Adoption", "ml": 2 },
-                { "id": "GOV-05-opt-03", "optionText": "Goverance Culture - Formal Adoption (Basic)", "ml": 3 },
-                { "id": "GOV-05-opt-04", "optionText": "Goverance Culture - Formal Adoption (Advanced) - Business Unit", "ml": 4 },
-                { "id": "GOV-05-opt-05", "optionText": "Goverance Culture - Formal Adoption (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "GOV-05-opt-01", "optionText": "Goverance Culture - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "GOV-05-opt-02", "optionText": "Goverance Culture - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "GOV-05-opt-03", "optionText": "Goverance Culture - Formal Adoption (Basic)", "ml": 3 },
+                 {  "id": "GOV-05-opt-04", "optionText": "Goverance Culture - Formal Adoption (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "GOV-05-opt-05", "optionText": "Goverance Culture - Formal Adoption (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -227,13 +227,13 @@
         {
             "id": "GOV-06",
             "category": "Governance Alignment",
-            "questionText": "Alignment of Governance with Technology (Manuals, Procedures, Scorecards, Metrics, etc.)",
+            "questionText": "Has the organisation or governance body defined points of alignment between governance and technology?  (Ie. manuals, defined procedures, scorecards, general metrics, etc.)",
             "options": [
-                { "id": "GOV-06-opt-01", "optionText": "Goverance Alignment - Informal Needs Recognition", "ml": 1 },
-                { "id": "GOV-06-opt-02", "optionText": "Goverance Alignment - Ad-hoc Adoption", "ml": 2 },
-                { "id": "GOV-06-opt-03", "optionText": "Goverance Alignment - Formal Adoption (Basic)", "ml": 3 },
-                { "id": "GOV-06-opt-04", "optionText": "Goverance Alignment - Formal Adoption (Advanced) - Business Unit", "ml": 4 },
-                { "id": "GOV-06-opt-05", "optionText": "Goverance Alignment - Formal Adoption (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "GOV-06-opt-01", "optionText": "Goverance Alignment - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "GOV-06-opt-02", "optionText": "Goverance Alignment - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "GOV-06-opt-03", "optionText": "Goverance Alignment - Formal Adoption (Basic)", "ml": 3 },
+                 {  "id": "GOV-06-opt-04", "optionText": "Goverance Alignment - Formal Adoption (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "GOV-06-opt-05", "optionText": "Goverance Alignment - Formal Adoption (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -241,13 +241,13 @@
         {
             "id": "PLT-01",
             "category": "Education",
-            "questionText": "Education on available cloud platforms and their impact",
+            "questionText": "Has the IT organisation begun the educational process to understand what Cloud Platform Selection means and how it impacts application agility?",
             "options": [
-                { "id": "PLT-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
-                { "id": "PLT-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
-                { "id": "PLT-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
-                { "id": "PLT-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
-                { "id": "PLT-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "PLT-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                 {  "id": "PLT-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                 {  "id": "PLT-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                 {  "id": "PLT-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "PLT-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -255,13 +255,13 @@
         {
             "id": "PLT-02",
             "category": "Needs Recognition",
-            "questionText": "Recognition of need to understand the capabilities and constraints of Cloud Platforms.",
+            "questionText": "Has the IT organisation recognised the need to understand the capabilities and constraints of Cloud Platforms?",
             "options": [
-                { "id": "PLT-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
-                { "id": "PLT-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
-                { "id": "PLT-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
-                { "id": "PLT-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
-                { "id": "PLT-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
+                 {  "id": "PLT-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                 {  "id": "PLT-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                 {  "id": "PLT-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                 {  "id": "PLT-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                 {  "id": "PLT-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -269,13 +269,13 @@
         {
             "id": "PLT-03",
             "category": "Platform Selection Criteria",
-            "questionText": "Defintion of Platform Selection Criteria",
+            "questionText": "Has the IT organisation created selection criteria listing critical requirements for Cloud Platform adoption?",
             "options": [
-                { "id": "PLT-03-opt-01", "optionText": "Selection Criteria - Informal Definition", "ml": 1 },
-                { "id": "PLT-03-opt-02", "optionText": "Selection Criteria - Ad-hoc Definition", "ml": 2 },
-                { "id": "PLT-03-opt-03", "optionText": "Selection Criteria - Formal Definition (Basic)", "ml": 3 },
-                { "id": "PLT-03-opt-04", "optionText": "Selection Criteria - Formal Definition (Advanced) - Business Unit", "ml": 4 },
-                { "id": "PLT-03-opt-05", "optionText": "Selection Criteria - Formal Definition (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "PLT-03-opt-01", "optionText": "Selection Criteria - Informal Definition", "ml": 1 },
+                 {  "id": "PLT-03-opt-02", "optionText": "Selection Criteria - Ad-hoc Definition", "ml": 2 },
+                 {  "id": "PLT-03-opt-03", "optionText": "Selection Criteria - Formal Definition (Basic)", "ml": 3 },
+                 {  "id": "PLT-03-opt-04", "optionText": "Selection Criteria - Formal Definition (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "PLT-03-opt-05", "optionText": "Selection Criteria - Formal Definition (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -283,13 +283,13 @@
         {
             "id": "PLT-04",
             "category": "Platform Impact & Risk",
-            "questionText": "Definition of Platform technology Impact and Risk to the Business",
+            "questionText": "Does the IT organisation understand the business and technology impact/risk for Cloud Platform adoption?",
             "options": [
-                { "id": "PLT-04-opt-01", "optionText": "Platform Impact & Risk - Informal Definition", "ml": 1 },
-                { "id": "PLT-04-opt-02", "optionText": "Platform Impact & Risk - Ad-hoc Definition", "ml": 2 },
-                { "id": "PLT-04-opt-03", "optionText": "Platform Impact & Risk - Formal Definition (Basic)", "ml": 3 },
-                { "id": "PLT-04-opt-04", "optionText": "Platform Impact & Risk - Formal Definition (Advanced) - Business Unit", "ml": 4 },
-                { "id": "PLT-04-opt-05", "optionText": "Platform Impact & Risk - Formal Definition (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "PLT-04-opt-01", "optionText": "Platform Impact & Risk - Informal Definition", "ml": 1 },
+                 {  "id": "PLT-04-opt-02", "optionText": "Platform Impact & Risk - Ad-hoc Definition", "ml": 2 },
+                 {  "id": "PLT-04-opt-03", "optionText": "Platform Impact & Risk - Formal Definition (Basic)", "ml": 3 },
+                 {  "id": "PLT-04-opt-04", "optionText": "Platform Impact & Risk - Formal Definition (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "PLT-04-opt-05", "optionText": "Platform Impact & Risk - Formal Definition (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -297,13 +297,27 @@
         {
             "id": "PLT-05",
             "category": "Platform Terms & Conditions",
-            "questionText": "Definition of Platform T&C Impact and Risk to the Business",
+            "questionText": "Does the IT organisation understand the impact/risk to the business of Cloud Platform terms and conditions?",
             "options": [
-                { "id": "PLT-05-opt-01", "optionText": "T&C Impact & Risk - Informal Definition", "ml": 1 },
-                { "id": "PLT-05-opt-02", "optionText": "T&C Impact & Risk - Ad-hoc Definition", "ml": 2 },
-                { "id": "PLT-05-opt-03", "optionText": "T&C Impact & Risk - Formal Definition (Basic)", "ml": 3 },
-                { "id": "PLT-05-opt-04", "optionText": "T&C Impact & Risk - Formal Definition (Advanced) - Business Unit", "ml": 4 },
-                { "id": "PLT-05-opt-05", "optionText": "T&C Impact & Risk - Formal Definition (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "PLT-05-opt-01", "optionText": "T&C Impact & Risk - Informal Definition", "ml": 1 },
+                 {  "id": "PLT-05-opt-02", "optionText": "T&C Impact & Risk - Ad-hoc Definition", "ml": 2 },
+                 {  "id": "PLT-05-opt-03", "optionText": "T&C Impact & Risk - Formal Definition (Basic)", "ml": 3 },
+                 {  "id": "PLT-05-opt-04", "optionText": "T&C Impact & Risk - Formal Definition (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "PLT-05-opt-05", "optionText": "T&C Impact & Risk - Formal Definition (Advanced) - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "PLT-06",
+            "category": "Platform Terms & Conditions",
+            "questionText": "Has the IT organisation investigated and built exit strategy options and scenarios from public cloud service providers?",
+            "options": [
+                 {  "id": "PLT-06-opt-01", "optionText": "Exit strategy options - Informal Definition", "ml": 1 },
+                 {  "id": "PLT-06-opt-02", "optionText": "Exit strategy options - Ad-hoc Definition", "ml": 2 },
+                 {  "id": "PLT-06-opt-03", "optionText": "Exit strategy options - Formal Definition (Basic)", "ml": 3 },
+                 {  "id": "PLT-06-opt-04", "optionText": "Exit strategy options - Formal Definition (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "PLT-06-opt-05", "optionText": "Exit strategy options - Formal Definition (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -311,13 +325,13 @@
         {
             "id": "IAM-01",
             "category": "Education",
-            "questionText": "Education on how Identity and Access Management is required for any future cloud/platform adoption",
+            "questionText": "Has the IT organisation begun the educational process to understand what Identity and Access Management mean as it relates to the adoption of Cloud Platforms?",
             "options": [
-                { "id": "IAM-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
-                { "id": "IAM-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
-                { "id": "IAM-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
-                { "id": "IAM-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
-                { "id": "IAM-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "IAM-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                 {  "id": "IAM-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                 {  "id": "IAM-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                 {  "id": "IAM-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "IAM-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -325,13 +339,13 @@
         {
             "id": "IAM-02",
             "category": "Needs Recognition",
-            "questionText": "Recognition of need to understand Identity and Access Management",
+            "questionText": "Has the IT organisation recognised the need and importance of Identity and Access Management?",
             "options": [
-                { "id": "IAM-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
-                { "id": "IAM-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
-                { "id": "IAM-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
-                { "id": "IAM-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
-                { "id": "IAM-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
+                 {  "id": "IAM-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                 {  "id": "IAM-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                 {  "id": "IAM-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                 {  "id": "IAM-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                 {  "id": "IAM-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -339,13 +353,13 @@
         {
             "id": "IAM-03",
             "category": "User Identity Life-Cycle",
-            "questionText": "Provisioning, modification and de-provisioning of user roles, priviledges and access",
+            "questionText": "Has the IT organisation provided user life-cycle capabilities?  (ie. provision and de-provision users as required?)",
             "options": [
-                { "id": "IAM-03-opt-01", "optionText": "User Life-Cycle - Informal Needs Recognition", "ml": 1 },
-                { "id": "IAM-03-opt-02", "optionText": "User Life-Cycle - Ad-hoc Adoption", "ml": 2 },
-                { "id": "IAM-03-opt-03", "optionText": "User Life-Cycle - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "IAM-03-opt-04", "optionText": "User Life-Cycle - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "IAM-03-opt-05", "optionText": "User Life-Cycle - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "IAM-03-opt-01", "optionText": "User Life-Cycle - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "IAM-03-opt-02", "optionText": "User Life-Cycle - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "IAM-03-opt-03", "optionText": "User Life-Cycle - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "IAM-03-opt-04", "optionText": "User Life-Cycle - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "IAM-03-opt-05", "optionText": "User Life-Cycle - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -353,13 +367,13 @@
         {
             "id": "IAM-04",
             "category": "Application Identity Life-Cycle",
-            "questionText": "Provisioning, modification and de-provisioning of application roles, priviledges and access",
+            "questionText": "Has the IT organisation provided application life-cycle capabilities?  (ie. provision and de-provision application identity profiles as required?)",
             "options": [
-                { "id": "IAM-04-opt-01", "optionText": "Application Life-Cycle - Informal Needs Recognition", "ml": 1 },
-                { "id": "IAM-04-opt-02", "optionText": "Application Life-Cycle - Ad-hoc Adoption", "ml": 2 },
-                { "id": "IAM-04-opt-03", "optionText": "Application Life-Cycle - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "IAM-04-opt-04", "optionText": "Application Life-Cycle - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "IAM-04-opt-05", "optionText": "Application Life-Cycle - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "IAM-04-opt-01", "optionText": "Application Life-Cycle - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "IAM-04-opt-02", "optionText": "Application Life-Cycle - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "IAM-04-opt-03", "optionText": "Application Life-Cycle - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "IAM-04-opt-04", "optionText": "Application Life-Cycle - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "IAM-04-opt-05", "optionText": "Application Life-Cycle - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -367,13 +381,13 @@
         {
             "id": "IAM-05",
             "category": "Device Identity Life-Cycle",
-            "questionText": "Provisioning, modification and de-provisioning of device roles, priviledges and access",
+            "questionText": "Has the IT organisation provided device life-cycle capabilities?  (ie. provision and de-provision device identity profiles as required?)",
             "options": [
-                { "id": "IAM-05-opt-01", "optionText": "Device Life-Cycle - Informal Needs Recognition", "ml": 1 },
-                { "id": "IAM-05-opt-02", "optionText": "Device Life-Cycle - Ad-hoc Adoption", "ml": 2 },
-                { "id": "IAM-05-opt-03", "optionText": "Device Life-Cycle - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "IAM-05-opt-04", "optionText": "Device Life-Cycle - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "IAM-05-opt-05", "optionText": "Device Life-Cycle - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "IAM-05-opt-01", "optionText": "Device Life-Cycle - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "IAM-05-opt-02", "optionText": "Device Life-Cycle - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "IAM-05-opt-03", "optionText": "Device Life-Cycle - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "IAM-05-opt-04", "optionText": "Device Life-Cycle - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "IAM-05-opt-05", "optionText": "Device Life-Cycle - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -381,13 +395,13 @@
         {
             "id": "IAM-06",
             "category": "Single Sign-On",
-            "questionText": "Integrated User/Application SSO",
+            "questionText": "Has the IT organisation provided integrated user or application federated single sign-on (SSO) capabilities?",
             "options": [
-                { "id": "IAM-06-opt-01", "optionText": "SSO - Informal Needs Recognition", "ml": 1 },
-                { "id": "IAM-06-opt-02", "optionText": "SSO - Ad-hoc Adoption", "ml": 2 },
-                { "id": "IAM-06-opt-03", "optionText": "SSO - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "IAM-06-opt-04", "optionText": "SSO - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "IAM-06-opt-05", "optionText": "SSO - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "IAM-06-opt-01", "optionText": "SSO - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "IAM-06-opt-02", "optionText": "SSO - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "IAM-06-opt-03", "optionText": "SSO - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "IAM-06-opt-04", "optionText": "SSO - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "IAM-06-opt-05", "optionText": "SSO - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -395,13 +409,13 @@
         {
             "id": "IAM-07",
             "category": "Multi-Factor Authentication",
-            "questionText": "Integrated User/Application MFA",
+            "questionText": "Has the IT organisation provided integrated user or application federated multi-factor authentication (MFA) capabilities?",
             "options": [
-                { "id": "IAM-07-opt-01", "optionText": "MFA - Informal Needs Recognition", "ml": 1 },
-                { "id": "IAM-07-opt-02", "optionText": "MFA - Ad-hoc Adoption", "ml": 2 },
-                { "id": "IAM-07-opt-03", "optionText": "MFA - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "IAM-07-opt-04", "optionText": "MFA - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "IAM-07-opt-05", "optionText": "MFA - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "IAM-07-opt-01", "optionText": "MFA - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "IAM-07-opt-02", "optionText": "MFA - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "IAM-07-opt-03", "optionText": "MFA - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "IAM-07-opt-04", "optionText": "MFA - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "IAM-07-opt-05", "optionText": "MFA - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -409,13 +423,13 @@
         {
             "id": "IAM-08",
             "category": "SaaS Service Authentication",
-            "questionText": "Federated Identity for SaaS Service consumption",
+            "questionText": "Has the IT organisation provided federated identity and control for SaaS service consumption?  (ie. O365, SalesForce, etc.)",
             "options": [
-                { "id": "IAM-08-opt-01", "optionText": "SaaS Identity Federation - Informal Needs Recognition", "ml": 1 },
-                { "id": "IAM-08-opt-02", "optionText": "SaaS Identity Federation - Ad-hoc Adoption", "ml": 2 },
-                { "id": "IAM-08-opt-03", "optionText": "SaaS Identity Federation - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "IAM-08-opt-04", "optionText": "SaaS Identity Federation - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "IAM-08-opt-05", "optionText": "SaaS Identity Federation - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "IAM-08-opt-01", "optionText": "SaaS Identity Federation - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "IAM-08-opt-02", "optionText": "SaaS Identity Federation - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "IAM-08-opt-03", "optionText": "SaaS Identity Federation - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "IAM-08-opt-04", "optionText": "SaaS Identity Federation - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "IAM-08-opt-05", "optionText": "SaaS Identity Federation - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -423,13 +437,13 @@
         {
             "id": "NET-01",
             "category": "Education",
-            "questionText": "Education on how federated Networks are required for any future cloud/platform adoption",
+            "questionText": "Has the IT organisation begun the educational process to understand what federated networks mean as it relates to the adoption of Cloud Platforms?",
             "options": [
-                { "id": "NET-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
-                { "id": "NET-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
-                { "id": "NET-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
-                { "id": "NET-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
-                { "id": "NET-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "NET-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                 {  "id": "NET-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                 {  "id": "NET-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                 {  "id": "NET-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "NET-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -437,13 +451,13 @@
         {
             "id": "NET-02",
             "category": "Needs Recognition",
-            "questionText": "Recognition of need to understand federated networks",
+            "questionText": "Recognition of needHas the IT organisation recognised the need and importance of federated networks? to understand federated networks",
             "options": [
-                { "id": "NET-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
-                { "id": "NET-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
-                { "id": "NET-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
-                { "id": "NET-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
-                { "id": "NET-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
+                 {  "id": "NET-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                 {  "id": "NET-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                 {  "id": "NET-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                 {  "id": "NET-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                 {  "id": "NET-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -451,13 +465,13 @@
         {
             "id": "NET-03",
             "category": "Data Centre Software Defined Network",
-            "questionText": "Primary Data Centre Adoption of Software Defined Network Capabilities",
+            "questionText": "Has the IT organisation provided software defined-network capabilities within the on-premise data centre?  (ie.  not including private or public cloud)",
             "options": [
-                { "id": "NET-03-opt-01", "optionText": "Data Centre SDN - Informal Needs Recognition", "ml": 1 },
-                { "id": "NET-03-opt-02", "optionText": "Data Centre SDN - Ad-hoc Adoption", "ml": 2 },
-                { "id": "NET-03-opt-03", "optionText": "Data Centre SDN - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "NET-03-opt-04", "optionText": "Data Centre SDN - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "NET-03-opt-05", "optionText": "Data Centre SDN - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "NET-03-opt-01", "optionText": "Data Centre SDN - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "NET-03-opt-02", "optionText": "Data Centre SDN - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "NET-03-opt-03", "optionText": "Data Centre SDN - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "NET-03-opt-04", "optionText": "Data Centre SDN - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "NET-03-opt-05", "optionText": "Data Centre SDN - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -465,13 +479,13 @@
         {
             "id": "NET-04",
             "category": "Branch Software Defined Network",
-            "questionText": "Branch Adoption of Software Defined Network Capabilities",
+            "questionText": "Has the IT organisation provided software defined-network capabilities with the branch site?  (ie. not including private or public cloud)",
             "options": [
-                { "id": "NET-04-opt-01", "optionText": "Branch SDN - Informal Needs Recognition", "ml": 1 },
-                { "id": "NET-04-opt-02", "optionText": "Branch SDN - Ad-hoc Adoption", "ml": 2 },
-                { "id": "NET-04-opt-03", "optionText": "Branch SDN - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "NET-04-opt-04", "optionText": "Branch SDN - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "NET-04-opt-05", "optionText": "Branch SDN - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "NET-04-opt-01", "optionText": "Branch SDN - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "NET-04-opt-02", "optionText": "Branch SDN - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "NET-04-opt-03", "optionText": "Branch SDN - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "NET-04-opt-04", "optionText": "Branch SDN - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "NET-04-opt-05", "optionText": "Branch SDN - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -479,13 +493,13 @@
         {
             "id": "NET-05",
             "category": "Software Defined WAN",
-            "questionText": "Software Defined WAN Adoption for sites",
+            "questionText": "Has the IT organisation provided software-defined WAN features and functionality?  (ie. Between on-premise, branch site, private and public IaaS/PaaS Clouds)",
             "options": [
-                { "id": "NET-05-opt-01", "optionText": "SD-WAN - Informal Needs Recognition", "ml": 1 },
-                { "id": "NET-05-opt-02", "optionText": "SD-WAN - Ad-hoc Adoption", "ml": 2 },
-                { "id": "NET-05-opt-03", "optionText": "SD-WAN - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "NET-05-opt-04", "optionText": "SD-WAN - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "NET-05-opt-05", "optionText": "SD-WAN - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "NET-05-opt-01", "optionText": "SD-WAN - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "NET-05-opt-02", "optionText": "SD-WAN - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "NET-05-opt-03", "optionText": "SD-WAN - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "NET-05-opt-04", "optionText": "SD-WAN - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "NET-05-opt-05", "optionText": "SD-WAN - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -493,13 +507,13 @@
         {
             "id": "NET-06",
             "category": "Cloud Network Platforms",
-            "questionText": "Ability to create efficient Cloud Networks",
+            "questionText": "Has the IT organisation built and maintain efficient public Cloud networks?  (Ie. Azure User Defined Routes, Routing Tables, etc.)",
             "options": [
-                { "id": "NET-06-opt-01", "optionText": "Cloud Network Platforms - Informal Needs Recognition", "ml": 1 },
-                { "id": "NET-06-opt-02", "optionText": "Cloud Network Platforms - Ad-hoc Adoption", "ml": 2 },
-                { "id": "NET-06-opt-03", "optionText": "Cloud Network Platforms - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "NET-06-opt-04", "optionText": "Cloud Network Platforms - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "NET-06-opt-05", "optionText": "Cloud Network Platforms - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "NET-06-opt-01", "optionText": "Cloud Network Platforms - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "NET-06-opt-02", "optionText": "Cloud Network Platforms - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "NET-06-opt-03", "optionText": "Cloud Network Platforms - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "NET-06-opt-04", "optionText": "Cloud Network Platforms - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "NET-06-opt-05", "optionText": "Cloud Network Platforms - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -507,13 +521,13 @@
         {
             "id": "NET-07",
             "category": "Federated Networks",
-            "questionText": "Ability to Federate DC/Branch sites with Cloud Networks",
+            "questionText": "Has the IT organisation federated on-premise data centre/branch sites with private/public Cloud networks?  (Ie. similar segmentation structures, etc.)",
             "options": [
-                { "id": "NET-07-opt-01", "optionText": "Federated Networks - Informal Needs Recognition", "ml": 1 },
-                { "id": "NET-07-opt-02", "optionText": "Federated Networks - Ad-hoc Adoption", "ml": 2 },
-                { "id": "NET-07-opt-03", "optionText": "Federated Networks - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "NET-07-opt-04", "optionText": "Federated Networks - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "NET-07-opt-05", "optionText": "Federated Networks - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "NET-07-opt-01", "optionText": "Federated Networks - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "NET-07-opt-02", "optionText": "Federated Networks - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "NET-07-opt-03", "optionText": "Federated Networks - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "NET-07-opt-04", "optionText": "Federated Networks - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "NET-07-opt-05", "optionText": "Federated Networks - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -521,13 +535,13 @@
         {
             "id": "NET-08",
             "category": "End-Point Networks",
-            "questionText": "End-Point Integration into Federated Network",
+            "questionText": "Has the IT organisation federated user end-point devices with on-premise data centre/branch sites/private/public Cloud networks?",
             "options": [
-                { "id": "NET-08-opt-01", "optionText": "End-Point Networks - Informal Needs Recognition", "ml": 1 },
-                { "id": "NET-08-opt-02", "optionText": "End-Point Networks - Ad-hoc Adoption", "ml": 2 },
-                { "id": "NET-08-opt-03", "optionText": "End-Point Networks - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "NET-08-opt-04", "optionText": "End-Point Networks - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "NET-08-opt-05", "optionText": "End-Point Networks - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "NET-08-opt-01", "optionText": "End-Point Networks - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "NET-08-opt-02", "optionText": "End-Point Networks - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "NET-08-opt-03", "optionText": "End-Point Networks - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "NET-08-opt-04", "optionText": "End-Point Networks - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "NET-08-opt-05", "optionText": "End-Point Networks - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -535,13 +549,13 @@
         {
             "id": "NET-09",
             "category": "Application Load Balancing",
-            "questionText": "Ability to create auto-scale Cloud Load Balancing Services",
+            "questionText": "Has the IT organisation built efficient auto-scale cloud load balancing services?  (Ie. either through application containers or public PaaS services?)",
             "options": [
-                { "id": "NET-09-opt-01", "optionText": "Auto-scale LB - Informal Needs Recognition", "ml": 1 },
-                { "id": "NET-09-opt-02", "optionText": "Auto-scale LB - Ad-hoc Adoption", "ml": 2 },
-                { "id": "NET-09-opt-03", "optionText": "Auto-scale LB - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "NET-09-opt-04", "optionText": "Auto-scale LB - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "NET-09-opt-05", "optionText": "Auto-scale LB - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "NET-09-opt-01", "optionText": "Auto-scale LB - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "NET-09-opt-02", "optionText": "Auto-scale LB - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "NET-09-opt-03", "optionText": "Auto-scale LB - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "NET-09-opt-04", "optionText": "Auto-scale LB - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "NET-09-opt-05", "optionText": "Auto-scale LB - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -549,13 +563,13 @@
         {
             "id": "SEC-01",
             "category": "Education",
-            "questionText": "Education on how federated security is required for any future cloud/platform adoption",
+            "questionText": "Has the IT organisation begun the educational process to understand what federated security means as it relates to the adoption of Cloud Platforms?",
             "options": [
-                { "id": "SEC-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
-                { "id": "SEC-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
-                { "id": "SEC-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
-                { "id": "SEC-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
-                { "id": "SEC-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "SEC-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                 {  "id": "SEC-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                 {  "id": "SEC-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                 {  "id": "SEC-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "SEC-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -563,13 +577,13 @@
         {
             "id": "SEC-02",
             "category": "Needs Recognition",
-            "questionText": "Recognition of need to understand federated security",
+            "questionText": "Has the IT organisation recognised the need and importance of federated security?",
             "options": [
-                { "id": "SEC-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
-                { "id": "SEC-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
-                { "id": "SEC-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
-                { "id": "SEC-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
-                { "id": "SEC-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
+                 {  "id": "SEC-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                 {  "id": "SEC-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                 {  "id": "SEC-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                 {  "id": "SEC-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                 {  "id": "SEC-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -577,13 +591,13 @@
         {
             "id": "SEC-03",
             "category": "Infrastructure Security",
-            "questionText": "Ability for Next Generation Network Firewall functionality",
+            "questionText": "Has the IT organisation built next-generation firewall functionality into its infrastructure security strategy?",
             "options": [
-                { "id": "SEC-03-opt-01", "optionText": "NGFW Capabilities - Informal Needs Recognition", "ml": 1 },
-                { "id": "SEC-03-opt-02", "optionText": "NGFW Capabilities - Ad-hoc Adoption", "ml": 2 },
-                { "id": "SEC-03-opt-03", "optionText": "NGFW Capabilities - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "SEC-03-opt-04", "optionText": "NGFW Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "SEC-03-opt-05", "optionText": "NGFW Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "SEC-03-opt-01", "optionText": "NGFW Capabilities - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "SEC-03-opt-02", "optionText": "NGFW Capabilities - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "SEC-03-opt-03", "optionText": "NGFW Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "SEC-03-opt-04", "optionText": "NGFW Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "SEC-03-opt-05", "optionText": "NGFW Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -591,13 +605,13 @@
         {
             "id": "SEC-04",
             "category": "Infrastructure Security",
-            "questionText": "Ability for Intrusion Prevention Systems/Intrusion Detection Systems functionality",
+            "questionText": "Has the IT organisation built intrusion prevention system/intrusion detection system (IPS/IDS) into its infrastructure security strategy?",
             "options": [
-                { "id": "SEC-04-opt-01", "optionText": "IPS/IDS Capabilities - Informal Needs Recognition", "ml": 1 },
-                { "id": "SEC-04-opt-02", "optionText": "IPS/IDS Capabilities - Ad-hoc Adoption", "ml": 2 },
-                { "id": "SEC-04-opt-03", "optionText": "IPS/IDS Capabilities - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "SEC-04-opt-04", "optionText": "IPS/IDS Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "SEC-04-opt-05", "optionText": "IPS/IDS Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "SEC-04-opt-01", "optionText": "IPS/IDS Capabilities - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "SEC-04-opt-02", "optionText": "IPS/IDS Capabilities - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "SEC-04-opt-03", "optionText": "IPS/IDS Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "SEC-04-opt-04", "optionText": "IPS/IDS Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "SEC-04-opt-05", "optionText": "IPS/IDS Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -605,13 +619,13 @@
         {
             "id": "SEC-05",
             "category": "Infrastructure Security",
-            "questionText": "Ability for Network Monitoring functionality",
+            "questionText": "Has the IT organisation built network monitoring functionality into its infrastructure security strategy?",
             "options": [
-                { "id": "SEC-05-opt-01", "optionText": "Network Monitoring Capabilities - Informal Needs Recognition", "ml": 1 },
-                { "id": "SEC-05-opt-02", "optionText": "Network Monitoring Capabilities - Ad-hoc Adoption", "ml": 2 },
-                { "id": "SEC-05-opt-03", "optionText": "Network Monitoring Capabilities - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "SEC-05-opt-04", "optionText": "Network Monitoring Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "SEC-05-opt-05", "optionText": "Network Monitoring Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "SEC-05-opt-01", "optionText": "Network Monitoring Capabilities - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "SEC-05-opt-02", "optionText": "Network Monitoring Capabilities - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "SEC-05-opt-03", "optionText": "Network Monitoring Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "SEC-05-opt-04", "optionText": "Network Monitoring Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "SEC-05-opt-05", "optionText": "Network Monitoring Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -619,13 +633,13 @@
         {
             "id": "SEC-06",
             "category": "Application Security",
-            "questionText": "Ability for Web Application Firewall functionality",
+            "questionText": "Has the IT organisation built web application firewall (WAF) functionality into its application security strategy?",
             "options": [
-                { "id": "SEC-06-opt-01", "optionText": "WAF Capabilities - Informal Needs Recognition", "ml": 1 },
-                { "id": "SEC-06-opt-02", "optionText": "WAF Capabilities - Ad-hoc Adoption", "ml": 2 },
-                { "id": "SEC-06-opt-03", "optionText": "WAF Capabilities - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "SEC-06-opt-04", "optionText": "WAF Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "SEC-06-opt-05", "optionText": "WAF Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "SEC-06-opt-01", "optionText": "WAF Capabilities - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "SEC-06-opt-02", "optionText": "WAF Capabilities - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "SEC-06-opt-03", "optionText": "WAF Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "SEC-06-opt-04", "optionText": "WAF Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "SEC-06-opt-05", "optionText": "WAF Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -633,13 +647,13 @@
         {
             "id": "SEC-07",
             "category": "End-Point Security",
-            "questionText": "Ability for Next Generation End-Point Protection functionality",
+            "questionText": "Has the IT organisation built next-generation end-point protection functionality into its end-point security strategy?  (ie. added analytics and machine learning capabilities)",
             "options": [
-                { "id": "SEC-07-opt-01", "optionText": "NGEP Capabilities - Informal Needs Recognition", "ml": 1 },
-                { "id": "SEC-07-opt-02", "optionText": "NGEP Capabilities - Ad-hoc Adoption", "ml": 2 },
-                { "id": "SEC-07-opt-03", "optionText": "NGEP Capabilities - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "SEC-07-opt-04", "optionText": "NGEP Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "SEC-07-opt-05", "optionText": "NGEP Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "SEC-07-opt-01", "optionText": "NGEP Capabilities - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "SEC-07-opt-02", "optionText": "NGEP Capabilities - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "SEC-07-opt-03", "optionText": "NGEP Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "SEC-07-opt-04", "optionText": "NGEP Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "SEC-07-opt-05", "optionText": "NGEP Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -647,13 +661,13 @@
         {
             "id": "SEC-08",
             "category": "Risk & Compliance",
-            "questionText": "Ability to adheare to Risk and Compliance requirements",
+            "questionText": "Has the IT organisation provided the ability to adhere to risk and compliance requirements into its security strategy?",
             "options": [
-                { "id": "SEC-08-opt-01", "optionText": "Risk & Compliance Security Adherence - Informal Needs Recognition", "ml": 1 },
-                { "id": "SEC-08-opt-02", "optionText": "Risk & Compliance Security Adherence - Ad-hoc Adoption", "ml": 2 },
-                { "id": "SEC-08-opt-03", "optionText": "Risk & Compliance Security Adherence - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "SEC-08-opt-04", "optionText": "Risk & Compliance Security Adherence - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "SEC-08-opt-05", "optionText": "Risk & Compliance Security Adherence - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "SEC-08-opt-01", "optionText": "Risk & Compliance Security Adherence - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "SEC-08-opt-02", "optionText": "Risk & Compliance Security Adherence - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "SEC-08-opt-03", "optionText": "Risk & Compliance Security Adherence - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "SEC-08-opt-04", "optionText": "Risk & Compliance Security Adherence - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "SEC-08-opt-05", "optionText": "Risk & Compliance Security Adherence - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -661,52 +675,55 @@
         {
             "id": "SEC-09",
             "category": "Threat Intelligence",
-            "questionText": "Ability to provide Threat Intelligence functionality",
+            "questionText": "Has the IT organisation built threat intelligence functionality into its security strategy?",
             "options": [
-                { "id": "SEC-09-opt-01", "optionText": "Threat Intelligence - Informal Needs Recognition", "ml": 1 },
-                { "id": "SEC-09-opt-02", "optionText": "Threat Intelligence - Ad-hoc Adoption", "ml": 2 },
-                { "id": "SEC-09-opt-03", "optionText": "Threat Intelligence - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "SEC-09-opt-04", "optionText": "Threat Intelligence - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "SEC-09-opt-05", "optionText": "Threat Intelligence - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }            ],
+                 {  "id": "SEC-09-opt-01", "optionText": "Threat Intelligence - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "SEC-09-opt-02", "optionText": "Threat Intelligence - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "SEC-09-opt-03", "optionText": "Threat Intelligence - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "SEC-09-opt-04", "optionText": "Threat Intelligence - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "SEC-09-opt-05", "optionText": "Threat Intelligence - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
             "maxML": 5,
             "maxCL": 5
         },
         {
             "id": "SEC-10",
             "category": "Threat Analysis",
-            "questionText": "Ability to provide Threat Analysis functionality",
+            "questionText": "Has the IT organisation built threat analysis functionality into its security strategy?",
             "options": [
-                { "id": "SEC-10-opt-01", "optionText": "Threat Analysis - Informal Needs Recognition", "ml": 1 },
-                { "id": "SEC-10-opt-02", "optionText": "Threat Analysis - Ad-hoc Adoption", "ml": 2 },
-                { "id": "SEC-10-opt-03", "optionText": "Threat Analysis - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "SEC-10-opt-04", "optionText": "Threat Analysis - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "SEC-10-opt-05", "optionText": "Threat Analysis - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }            ],
+                 {  "id": "SEC-10-opt-01", "optionText": "Threat Analysis - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "SEC-10-opt-02", "optionText": "Threat Analysis - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "SEC-10-opt-03", "optionText": "Threat Analysis - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "SEC-10-opt-04", "optionText": "Threat Analysis - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "SEC-10-opt-05", "optionText": "Threat Analysis - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
             "maxML": 5,
             "maxCL": 5
         },
         {
             "id": "SEC-11",
             "category": "Data Security",
-            "questionText": "Ability to provide Data Security functionality (Encryption-in-flight/rest)",
+            "questionText": "Has the IT organisation built data security functionality into its security strategy?  (ie. data encryption in flight/at rest)",
             "options": [
-                { "id": "SEC-11-opt-01", "optionText": "Data Security - Informal Needs Recognition", "ml": 1 },
-                { "id": "SEC-11-opt-02", "optionText": "Data Security - Ad-hoc Adoption", "ml": 2 },
-                { "id": "SEC-11-opt-03", "optionText": "Data Security - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "SEC-11-opt-04", "optionText": "Data Security - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "SEC-11-opt-05", "optionText": "Data Security - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }            ],
+                 {  "id": "SEC-11-opt-01", "optionText": "Data Security - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "SEC-11-opt-02", "optionText": "Data Security - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "SEC-11-opt-03", "optionText": "Data Security - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "SEC-11-opt-04", "optionText": "Data Security - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "SEC-11-opt-05", "optionText": "Data Security - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
             "maxML": 5,
             "maxCL": 5
         },
         {
             "id": "DAT-01",
             "category": "Education",
-            "questionText": "Education on how Data Protection/Management is required for any future cloud/platform adoption",
+            "questionText": "Has the IT organisation begun the educational process to understand what data management/protection means as it relates to the adoption of Cloud Platforms?",
             "options": [
-                { "id": "DAT-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
-                { "id": "DAT-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
-                { "id": "DAT-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
-                { "id": "DAT-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
-                { "id": "DAT-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "DAT-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                 {  "id": "DAT-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                 {  "id": "DAT-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                 {  "id": "DAT-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "DAT-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -714,13 +731,13 @@
         {
             "id": "DAT-02",
             "category": "Needs Recognition",
-            "questionText": "Recognition of need to understand Data Protection/Management",
+            "questionText": "Has the IT organisation recognised the need and importance of data management/protection?",
             "options": [
-                { "id": "DAT-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
-                { "id": "DAT-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
-                { "id": "DAT-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
-                { "id": "DAT-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
-                { "id": "DAT-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
+                 {  "id": "DAT-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                 {  "id": "DAT-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                 {  "id": "DAT-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                 {  "id": "DAT-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                 {  "id": "DAT-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -728,13 +745,13 @@
         {
             "id": "DAT-03",
             "category": "Application Criticality",
-            "questionText": "Identification of App Service Tiers and Recovery objectives",
+            "questionText": "Has the IT organisation identified application service tiers and recovery objectives?",
             "options": [
-                { "id": "DAT-03-opt-01", "optionText": "Defined App Criticality - Informal Needs Recognition", "ml": 1 },
-                { "id": "DAT-03-opt-02", "optionText": "Defined App Criticality - Ad-hoc Adoption", "ml": 2 },
-                { "id": "DAT-03-opt-03", "optionText": "Defined App Criticality - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "DAT-03-opt-04", "optionText": "Defined App Criticality - Formal tools and processes (Advanced)- Business Unit", "ml": 4 },
-                { "id": "DAT-03-opt-05", "optionText": "Defined App Criticality - Formal Automated/as-a-service tools/Processes- Enterprise-wide", "ml": 5 }
+                 {  "id": "DAT-03-opt-01", "optionText": "Defined App Criticality - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "DAT-03-opt-02", "optionText": "Defined App Criticality - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "DAT-03-opt-03", "optionText": "Defined App Criticality - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "DAT-03-opt-04", "optionText": "Defined App Criticality - Formal tools and processes (Advanced)- Business Unit", "ml": 4 },
+                 {  "id": "DAT-03-opt-05", "optionText": "Defined App Criticality - Formal Automated/as-a-service tools/Processes- Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -742,13 +759,13 @@
         {
             "id": "DAT-04",
             "category": "Retention",
-            "questionText": "Identified Data Retention Requirements",
+            "questionText": "Has the IT organisation identified data retention requirements?",
             "options": [
-                { "id": "DAT-04-opt-01", "optionText": "Data Retention - Informal Needs Recognition", "ml": 1 },
-                { "id": "DAT-04-opt-02", "optionText": "Data Retention - Ad-hoc Adoption", "ml": 2 },
-                { "id": "DAT-04-opt-03", "optionText": "Data Retention - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "DAT-04-opt-04", "optionText": "Data Retention - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "DAT-04-opt-05", "optionText": "Data Retention - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "DAT-04-opt-01", "optionText": "Data Retention - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "DAT-04-opt-02", "optionText": "Data Retention - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "DAT-04-opt-03", "optionText": "Data Retention - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "DAT-04-opt-04", "optionText": "Data Retention - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "DAT-04-opt-05", "optionText": "Data Retention - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -756,13 +773,13 @@
         {
             "id": "DAT-05",
             "category": "Data Protection Software",
-            "questionText": "Ability for Point-In-Time copies/versions/snapshots",
+            "questionText": "Has the IT organisation provided the ability for point-in-time data copies/version/snapshots?",
             "options": [
-                { "id": "DAT-05-opt-01", "optionText": "PIT Capabilities - Informal Needs Recognition", "ml": 1 },
-                { "id": "DAT-05-opt-02", "optionText": "PIT Capabilities - Ad-hoc Adoption", "ml": 2 },
-                { "id": "DAT-05-opt-03", "optionText": "PIT Capabilities - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "DAT-05-opt-04", "optionText": "PIT Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "DAT-05-opt-05", "optionText": "PIT Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "DAT-05-opt-01", "optionText": "PIT Capabilities - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "DAT-05-opt-02", "optionText": "PIT Capabilities - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "DAT-05-opt-03", "optionText": "PIT Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "DAT-05-opt-04", "optionText": "PIT Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "DAT-05-opt-05", "optionText": "PIT Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -770,13 +787,13 @@
         {
             "id": "DAT-06",
             "category": "Data Protection Software",
-            "questionText": "Ability for searchable catalogue",
+            "questionText": "Has the IT organisation provided the ability for a searchable data protection catalogue of point-in-time copies?",
             "options": [
-                { "id": "DAT-06-opt-01", "optionText": "Searchable Catalogue Capabilities - Informal Needs Recognition", "ml": 1 },
-                { "id": "DAT-06-opt-02", "optionText": "Searchable Catalogue Capabilities - Ad-hoc Adoption", "ml": 2 },
-                { "id": "DAT-06-opt-03", "optionText": "Searchable Catalogue Capabilities - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "DAT-06-opt-04", "optionText": "Searchable Catalogue Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "DAT-06-opt-05", "optionText": "Searchable Catalogue Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "DAT-06-opt-01", "optionText": "Searchable Catalogue Capabilities - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "DAT-06-opt-02", "optionText": "Searchable Catalogue Capabilities - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "DAT-06-opt-03", "optionText": "Searchable Catalogue Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "DAT-06-opt-04", "optionText": "Searchable Catalogue Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "DAT-06-opt-05", "optionText": "Searchable Catalogue Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -784,13 +801,13 @@
         {
             "id": "DAT-07",
             "category": "Data Protection Software",
-            "questionText": "Ability for off-site replication",
+            "questionText": "Has the IT organisation provided the ability for the off-site replication of active data or point-in-time copies of data?",
             "options": [
-                { "id": "DAT-07-opt-01", "optionText": "Off-Site Capabilities - Informal Needs Recognition", "ml": 1 },
-                { "id": "DAT-07-opt-02", "optionText": "Off-Site Capabilities - Ad-hoc Adoption", "ml": 2 },
-                { "id": "DAT-07-opt-03", "optionText": "Off-Site Capabilities - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "DAT-07-opt-04", "optionText": "Off-Site Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "DAT-07-opt-05", "optionText": "Off-Site Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "DAT-07-opt-01", "optionText": "Off-Site Capabilities - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "DAT-07-opt-02", "optionText": "Off-Site Capabilities - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "DAT-07-opt-03", "optionText": "Off-Site Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "DAT-07-opt-04", "optionText": "Off-Site Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "DAT-07-opt-05", "optionText": "Off-Site Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -798,13 +815,13 @@
         {
             "id": "DAT-08",
             "category": "Data Protection Software",
-            "questionText": "Ability for file-level restores",
+            "questionText": "Has the IT organisation provided for the ability for file-level restore of point-in-time copies of data?",
             "options": [
-                { "id": "DAT-08-opt-01", "optionText": "File-Level Restore Capabilities - Informal Needs Recognition", "ml": 1 },
-                { "id": "DAT-08-opt-02", "optionText": "File-Level Restore Capabilities - Ad-hoc Adoption", "ml": 2 },
-                { "id": "DAT-08-opt-03", "optionText": "File-Level Restore Capabilities - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "DAT-08-opt-04", "optionText": "File-Level Restore Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "DAT-08-opt-05", "optionText": "File-Level Restore Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "DAT-08-opt-01", "optionText": "File-Level Restore Capabilities - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "DAT-08-opt-02", "optionText": "File-Level Restore Capabilities - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "DAT-08-opt-03", "optionText": "File-Level Restore Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "DAT-08-opt-04", "optionText": "File-Level Restore Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "DAT-08-opt-05", "optionText": "File-Level Restore Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -812,26 +829,42 @@
         {
             "id": "DAT-09",
             "category": "Data Protection Software",
-            "questionText": "Ability for Cloud-capable data protection features",
+            "questionText": "Has the IT organisation taken advantage of cloud-capable features into their data protection strategy?",
             "options": [
-                { "id": "DAT-09-opt-01", "optionText": "Cloud-capable DP Capabilities - Informal Needs Recognition", "ml": 1 },
-                { "id": "DAT-09-opt-02", "optionText": "Cloud-capable DP Capabilities - Ad-hoc Adoption", "ml": 2 },
-                { "id": "DAT-09-opt-03", "optionText": "Cloud-capable DP Capabilities - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "DAT-09-opt-04", "optionText": "Cloud-capable DP Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "DAT-09-opt-05", "optionText": "Cloud-capable DP Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }            ],
+                 {  "id": "DAT-09-opt-01", "optionText": "Cloud-capable DP Capabilities - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "DAT-09-opt-02", "optionText": "Cloud-capable DP Capabilities - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "DAT-09-opt-03", "optionText": "Cloud-capable DP Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "DAT-09-opt-04", "optionText": "Cloud-capable DP Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "DAT-09-opt-05", "optionText": "Cloud-capable DP Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
             "maxML": 5,
             "maxCL": 5
         },
         {
             "id": "DAT-10",
             "category": "Data Protection Software",
-            "questionText": "Ability for cross cloud platform data protection services",
+            "questionText": "Has the IT organisation provided cross-cloud data protection services?  (ie. data replication between cloud providers or availability zones)",
             "options": [
-                { "id": "DAT-10-opt-01", "optionText": "Cross Cloud Platform Capabilities - Informal Needs Recognition", "ml": 1 },
-                { "id": "DAT-10-opt-02", "optionText": "Cross Cloud Platform Capabilities - Ad-hoc Adoption", "ml": 2 },
-                { "id": "DAT-10-opt-03", "optionText": "Cross Cloud Platform Capabilities - Formal tools and processes (Basic)", "ml": 3 },
-                { "id": "DAT-10-opt-04", "optionText": "Cross Cloud Platform Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                { "id": "DAT-10-opt-05", "optionText": "Cross Cloud Platform Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }            ],
+                 {  "id": "DAT-10-opt-01", "optionText": "Cross Cloud DP Capabilities - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "DAT-10-opt-02", "optionText": "Cross Cloud DP Capabilities - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "DAT-10-opt-03", "optionText": "Cross Cloud DP Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "DAT-10-opt-04", "optionText": "Cross Cloud DP Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "DAT-10-opt-05", "optionText": "Cross Cloud DP Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
+            "maxML": 5,
+            "maxCL": 5
+        },
+        {
+            "id": "DAT-11",
+            "category": "High Availability",
+            "questionText": "Has the IT organisation taken advantage of cross-cloud platform high availability services?  (ie. protection between availability zones)",
+            "options": [
+                 {  "id": "DAT-11-opt-01", "optionText": "Cross Cloud HA Capabilities - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "DAT-11-opt-02", "optionText": "Cross Cloud HA Capabilities - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "DAT-11-opt-03", "optionText": "Cross Cloud HA Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "DAT-11-opt-04", "optionText": "Cross Cloud HA Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "DAT-11-opt-05", "optionText": "Cross Cloud HA Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+            ],
             "maxML": 5,
             "maxCL": 5
         },

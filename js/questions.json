@@ -297,7 +297,7 @@
         {
             "id": "PLT-05",
             "category": "Platform Terms & Conditions",
-            "questionText": "Does the IT organisation understand the impact/risk to the business of Cloud Platform terms and conditions?",
+            "questionText": "Does the IT organisation understand the business and technology impact/risk of Cloud Platform terms and conditions? (T&C)",
             "options": [
                  {  "id": "PLT-05-opt-01", "optionText": "T&C Impact & Risk - Informal Definition", "ml": 1 },
                  {  "id": "PLT-05-opt-02", "optionText": "T&C Impact & Risk - Ad-hoc Definition", "ml": 2 },
