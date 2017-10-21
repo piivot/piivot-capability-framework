@@ -37,7 +37,7 @@
             "tabClass": "four",            
             "order": 3,
             "questions": [
-                { "id": "PLT-01" }, { "id": "PLT-02" }, {"id": "PLT-03"}, {"id": "PLT-04"}, {"id": "PLT-05"}
+                { "id": "PLT-01" }, { "id": "PLT-02" }, {"id": "PLT-03"}, {"id": "PLT-04"}, {"id": "PLT-05"}, {"id": "PLT-06"}
             ]            
         },
         {
