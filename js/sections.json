@@ -1,7 +1,8 @@
 {
     "sections": [
         {
-            "name": "Organizational Capability",
+            "name": "Organizational",
+
             "shortName": "organizational",
             "id": "S01-ORG",
             "tabClass": "one",
@@ -11,7 +12,7 @@
             ]            
         },
         {
-            "name": "Operational Capability",
+            "name": "Operational ",
             "shortName": "operational",
             "id": "S02-OPR",
             "tabClass": "two",            
@@ -21,7 +22,7 @@
             ]            
         },
         {
-            "name": "Governance Capability",
+            "name": "Governance",
             "shortName": "governance",
             "id": "S03-GOV",
             "tabClass": "three",            
@@ -41,7 +42,7 @@
             ]            
         },
         {
-            "name": "Identity & Access Management",
+            "name": "Identity Access Management",
             "shortName": "identity",
             "id": "S05-IAM",
             "tabClass": "five",

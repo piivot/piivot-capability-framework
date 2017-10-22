@@ -6,6 +6,131 @@ var questions = [];
 
 var selectedProduct = "o365";
 
+var currentSection = '';
+var currentSectionOrder = 0;
+
+
+var options = {};
+
+
+google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawInitialChart);
+
+
+
+
+function resetChartAreaForNewSection() {
+    
+    let thisSection = sections[currentSectionOrder];
+    
+    let order = thisSection.order;
+    
+    let calculatedML = 0;
+    
+    let totalSectionQuestions = thisSection.questions.length;
+
+    let targetProduct = $.grep(products, function(p) { return p.id == selectedProduct;});
+    let targetSection = $.grep(targetProduct[0].targetScores, function(t) { return t.id == thisSection.id;});
+    let targetScore = targetSection[0].targetScore;
+
+
+
+    $.each(thisSection.questions, function() {
+        let q = $(this)[0];
+        
+        let calculatedQuestion = $.grep(overallScore, function(s) { return s.id == q.id;});
+
+        if (calculatedQuestion != null && calculatedQuestion.length > 0)
+        {
+            calculatedML += (calculatedQuestion[0].score / totalSectionQuestions);
+        }        
+
+    });
+
+    let calcPercentage = calculatedML / targetScore;
+    let calcPercentageText = (Math.round(calculatedML / targetScore * 100)) + '%';
+    let targetValue = 1.0 - calcPercentage;
+
+    google.charts.load('current', {packages: ['corechart', 'bar'],
+    callback: function() {
+        let chartData = new google.visualization.DataTable();
+        
+    
+        chartData.addColumn('string', 'Dimension');
+        chartData.addColumn('number', 'Customer');
+        chartData.addColumn({type: 'string', role: 'annotation'});
+        chartData.addColumn('number', 'Target');
+        chartData.addColumn({type: 'string', role: 'annotation'});
+    
+        chartData.addRows([[currentSection, calcPercentage, calcPercentageText, targetValue, selectedProduct]]);
+
+        let chart = new google.visualization.ColumnChart(document.getElementById('chartarea'));      
+        chart.draw(chartData, options);
+    }
+    });
+    
+
+    //chart.draw(chartData, options);
+}
+
+
+function drawInitialChart() {
+    let chartData = new google.visualization.DataTable();    
+
+    chartData.addColumn('string', 'Dimension');
+    chartData.addColumn('number', 'Customer');
+    chartData.addColumn({type: 'string', role: 'annotation'});
+    chartData.addColumn('number', 'Target');
+    chartData.addColumn({type: 'string', role: 'annotation'});
+
+    
+
+    //globalData.addRows([['organize', .1, '10%', .9, 'IaaS']]);
+
+    //chartData.removeRows(0);
+
+    
+
+    options = {
+        title: 'Cloud Adoption Capability',
+        annotations: {
+      textStyle: {
+            fontSize: 12,
+            color: '#000',
+            auraColor: 'none'
+          }
+        },
+        isStacked: 'percent',
+        height: 250,
+        width: 650,
+        orientation: 'vertical',
+        chartArea: {
+      left: 250,
+          width: 350,
+          height: 100
+        },
+        legend: {
+      position: 'bottom'
+        },
+        hAxis: {
+          title: 'Percentage',
+          format: 'percent',
+          minValue: 0
+        },
+        vAxis: {
+          title: 'Capability Dimensions',
+        }
+      };
+      
+      let chart = new google.visualization.ColumnChart(document.getElementById('chartarea'));      
+      chart.draw(chartData, options);
+      
+}
+
+
+
+
+
 loadProducts();
 
 
@@ -65,6 +190,13 @@ function loadQuestionContent()
     let currentChar = 'a';
     let totalSections = sections.length;
 
+    /*myChart.data.datasets[0].data = [1];
+    myChart.data.datasets[1].data = [100];
+    myChart.data.labels.pop();
+    myChart.update();
+    myChart.data.labels.push(["Organizational"]);
+    myChart.update();*/
+
     $.each(sections, function() {
         let section = $(this)[0];
         let shortName = section.shortName;
@@ -77,7 +209,6 @@ function loadQuestionContent()
 
         
 
-
         /*********** Build out the circular tab *******************/
         let tabAClass = 'piivot-tab-circular';
         let tabShow = '';
@@ -89,6 +220,10 @@ function loadQuestionContent()
             //ariaExpanded = 'true';
             tabShow += ' active show';
             sectionTabClass = 'current';
+
+            currentSection = fullName;
+
+            resetChartAreaForNewSection();
         }
 
         let piivotTabName = '3' + currentChar;
@@ -139,7 +274,7 @@ function loadQuestionContent()
             htmlContent += '<div class="col-12 questionarea">';
             htmlContent += '<p class="text-center">Question ' + questionCount + ' of ' + totalSectionQuestions + '</p>';
             htmlContent += '<p class="lead">' + q.questionText + '</p>';
-            htmlContent += '<select class="piivot-question custom-select" id="' + q.id + '" piivot-question-id="' + q.id + '" piivot-section="' + sectionId + '" piivot-section-order="' + sectionOrder + '">';
+            htmlContent += '<select class="piivot-question custom-select form-control" id="' + q.id + '" piivot-question-id="' + q.id + '" piivot-section="' + sectionId + '" piivot-section-order="' + sectionOrder + '">';
             htmlContent += '<option value="0">Choose...</option>';
 
             $.each(q.options, function() {
@@ -246,12 +381,15 @@ function loadQuestionContent()
         let thissection = thisbtn.attr('piivot-this-section-count');
         let nextsection = thisbtn.attr('piivot-next-section-count');
 
-        console.log($('.piivot-tab-circular[piivot-section-count=' + nextsection + ']').html());
-        $('.piivot-tab-circular[piivot-section-count=' + nextsection + ']').removeClass('secondary').addClass('current');
+         $('.piivot-tab-circular[piivot-section-count=' + nextsection + ']').removeClass('secondary').addClass('current');
         $('.piivot-tab-circular[piivot-section-count=' + nextsection + '] span').removeClass('secondary').addClass('current');
         $('.piivot-tab-circular[piivot-section-count=' + nextsection + ']')[0].click(); //.first().find('span').trigger('click');
         
         $('.piivot-tab-circular[piivot-section-count=' + thissection + '] span').html('<i class="fa fa-check" aria-hidden="true"></i>');
+
+        currentSection = sections[nextsection].name;
+        currentSectionOrder = nextsection;
+        resetChartAreaForNewSection();
 
         
     });
@@ -263,6 +401,10 @@ function loadQuestionContent()
         let prevsection = thisbtn.attr('piivot-prev-section-count');
 
         $('.piivot-tab-circular[piivot-section-count=' + prevsection + ']')[0].click(); //.first().find('span').trigger('click');
+
+        currentSection = sections[prevsection].name;
+        currentSectionOrder = prevsection;
+        resetChartAreaForNewSection();
         
     });
 
@@ -315,14 +457,14 @@ function loadQuestionContent()
     
         //$(contentHolder).text(mainQuestionContent[0].description);    
     
-        addScoreToArray(questionId,ml,cl,maxML,maxCL);
+        addScoreToArray(questionId,sectionId,ml,cl,maxML,maxCL);
             
     });
 
     
 }
 
-function addScoreToArray(id,ml,cl,maxML,maxCL)
+function addScoreToArray(id,sectionId,ml,cl,maxML,maxCL)
 {
     let currentQuestion = $.grep(overallScore, function(s) { return s.id == id;});
     
@@ -334,11 +476,14 @@ function addScoreToArray(id,ml,cl,maxML,maxCL)
     {
         let newscore = {};
         newscore.id = id;
+        newscore.sectionId = sectionId;
         newscore.score = ml > 0 ? ml - (cl / maxCL) : 0;
         overallScore.push(newscore);
     }
 
-    updateChart();
+    resetChartAreaForNewSection();
+
+    //updateChart();
 }
 
 function updateChart()
