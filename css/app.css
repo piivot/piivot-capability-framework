@@ -97,6 +97,10 @@
     transform: translateX(-50%);
   }
 
+  .questionarea {
+    min-height: 10rem;
+  }
+
 
 
 

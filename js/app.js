@@ -71,7 +71,7 @@ function loadQuestionContent()
         let fullName = section.name;
         let sectionId = section.id;
         let sectionOrder = section.order;
-        let sectionTabClass = section.tabClass;
+        //let sectionTabClass = section.tabClass;
 
         let totalSectionQuestions = section.questions.length;
 
@@ -81,12 +81,14 @@ function loadQuestionContent()
         /*********** Build out the circular tab *******************/
         let tabAClass = 'piivot-tab-circular';
         let tabShow = '';
+        let sectionTabClass = 'secondary';
 
         if (count == 0)
         {
             tabAClass += ' active';
             //ariaExpanded = 'true';
             tabShow += ' active show';
+            sectionTabClass = 'current';
         }
 
         let piivotTabName = '3' + currentChar;
@@ -133,7 +135,7 @@ function loadQuestionContent()
                         
             htmlContent += '<div class="py-1 ' + showQuestion + ' section-' + sectionId + '" id="question-' + q.id + '" piivot-question-number="' + questionCount + '">';
             htmlContent += '<div class="row bg-white">';
-            htmlContent += '<div class="col-12">';
+            htmlContent += '<div class="col-12 questionarea">';
             htmlContent += '<p class="text-center">Question ' + questionCount + ' of ' + totalSectionQuestions + '</p>';
             htmlContent += '<p class="lead">' + q.questionText + '</p>';
             htmlContent += '<select class="piivot-question custom-select" id="' + q.id + '" piivot-question-id="' + q.id + '" piivot-section="' + sectionId + '" piivot-section-order="' + sectionOrder + '">';
@@ -153,23 +155,23 @@ function loadQuestionContent()
             htmlContent += '<div class="row bg-white py-3">';
             if (questionCount > 1) {
                 htmlContent += '<div class="col text-left">';
-                htmlContent += '<button class="btn prevquestion" id="btn-' + q.id + '-prev" piivot-section="' + sectionId + '" piivot-this-question-count="' + (questionCount) + '" piivot-prev-question-count="' + (questionCount - 1) + '" ><<< Previous</button>';
+                htmlContent += '<button class="btn btn-outline-secondary prevquestion" id="btn-' + q.id + '-prev" piivot-section="' + sectionId + '" piivot-this-question-count="' + (questionCount) + '" piivot-prev-question-count="' + (questionCount - 1) + '" ><<< Previous</button>';
                 htmlContent += '</div>';
             }
             else if (count > 0)  {
                 htmlContent += '<div class="col text-left">';
-                htmlContent += '<button class="btn prevsection" id="btn-' + q.id + '-nextsec" piivot-section="' + sectionId + '" piivot-this-section-count="' + (count) + '" piivot-prev-section-count="' + (count - 1) + '">Go Back to Previous Section</button>';
+                htmlContent += '<button class="btn btn-secondary btn-lg prevsection" id="btn-' + q.id + '-nextsec" piivot-section="' + sectionId + '" piivot-this-section-count="' + (count) + '" piivot-prev-section-count="' + (count - 1) + '">Go Back to Previous Section</button>';
                 htmlContent += '</div>';
             }
 
             if (questionCount < totalSectionQuestions) {
                 htmlContent += '<div class="col text-right">';
-                htmlContent += '<button class="btn nextquestion" id="btn-' + q.id + '-next" piivot-section="' + sectionId + '" piivot-this-question-count="' + (questionCount) + '" piivot-next-question-count="' + (questionCount + 1) + '">Next >>></button>';
+                htmlContent += '<button class="btn btn-outline-primary nextquestion" id="btn-' + q.id + '-next" piivot-section="' + sectionId + '" piivot-this-question-count="' + (questionCount) + '" piivot-next-question-count="' + (questionCount + 1) + '">Next >>></button>';
                 htmlContent += '</div>';
             }
             else if (count < totalSections - 1) {
                 htmlContent += '<div class="col text-right">';
-                htmlContent += '<button class="btn nextsection" id="btn-' + q.id + '-nextsec" piivot-section="' + sectionId + '" piivot-this-section-count="' + (count) + '" piivot-next-section-count="' + (count + 1) + '">Complete Section</button>';
+                htmlContent += '<button class="btn btn-primary btn-lg nextsection" id="btn-' + q.id + '-nextsec" piivot-section="' + sectionId + '" piivot-this-section-count="' + (count) + '" piivot-next-section-count="' + (count + 1) + '">Complete Section</button>';
                 htmlContent += '</div>';
             }
 
@@ -243,10 +245,14 @@ function loadQuestionContent()
         let thissection = thisbtn.attr('piivot-this-section-count');
         let nextsection = thisbtn.attr('piivot-next-section-count');
 
+        console.log($('.piivot-tab-circular[piivot-section-count=' + nextsection + ']').html());
+        $('.piivot-tab-circular[piivot-section-count=' + nextsection + ']').removeClass('secondary').addClass('current');
+        $('.piivot-tab-circular[piivot-section-count=' + nextsection + '] span').removeClass('secondary').addClass('current');
         $('.piivot-tab-circular[piivot-section-count=' + nextsection + ']')[0].click(); //.first().find('span').trigger('click');
+        
+        $('.piivot-tab-circular[piivot-section-count=' + thissection + '] span').html('<i class="fa fa-check" aria-hidden="true"></i>');
 
-        //$(section + '[piivot-question-number=' + nextquestion + ']').removeClass('d-none').addClass('d-block');
-        //$(section + '[piivot-question-number=' + thisquestion + ']' ).removeClass('d-block').addClass('d-none');
+        
     });
 
     $('.prevsection').on("click", function() {
@@ -256,9 +262,7 @@ function loadQuestionContent()
         let prevsection = thisbtn.attr('piivot-prev-section-count');
 
         $('.piivot-tab-circular[piivot-section-count=' + prevsection + ']')[0].click(); //.first().find('span').trigger('click');
-
-        //$(section + '[piivot-question-number=' + nextquestion + ']').removeClass('d-none').addClass('d-block');
-        //$(section + '[piivot-question-number=' + thisquestion + ']' ).removeClass('d-block').addClass('d-none');
+        
     });
 
 

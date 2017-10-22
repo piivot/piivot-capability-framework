@@ -63,11 +63,11 @@
       font-size: 25px;
   }
   
-  span.round-tabs.one{
+  span.round-tabs.current{
       color: rgb(34, 194, 34);border: 2px solid rgb(34, 194, 34);
   }
   
-  li.active span.round-tabs.one{
+  li.active span.round-tabs.current{
       background: #fff !important;
       border: 2px solid #ddd;
       color: rgb(34, 194, 34);
@@ -103,11 +103,11 @@
       color: #f1685e;
   }
   
-  span.round-tabs.five{
+  span.round-tabs.secondary{
       color: #999;border: 2px solid #999;
   }
   
-  li.active span.round-tabs.five{
+  li.active span.round-tabs.secondary{
       background: #fff !important;
       border: 2px solid #ddd;
       color: #999;
@@ -185,7 +185,7 @@ li.active span.round-tabs.eight{
       border-bottom-color: #ddd;
       
   }*/
-  a.one:after, a.two:after, a.three:after, a.four:after, a.five:after, a.six:after, a.seven:after, a.eight:after {
+  a.one:after, a.two:after, a.three:after, a.four:after, a.five:after, a.six:after, a.seven:after, a.eight:after, a.current:after, a.secondary:after {
     content:"";
     position:relative;
     /*bottom:-0.5rem; /* value = - border-top-width - border-bottom-width */
@@ -200,7 +200,7 @@ li.active span.round-tabs.eight{
   }
 
   a.active.one:after, a.active.two:after, a.active.three:after, a.active.four:after, a.active.five:after,
-  a.active.six:after, a.active.seven:after, a.active.eight:after {
+  a.active.six:after, a.active.seven:after, a.active.eight:after, a.active.current:after, a.active.secondary:after {
     content:"";
     position:relative;
     bottom:-0.5rem; /* value = - border-top-width - border-bottom-width */
