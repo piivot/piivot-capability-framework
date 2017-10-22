@@ -2,32 +2,32 @@
     "questions": [
         {
             "id": "ORG-01",
-            "category": "Education",
-            "questionText": "Has the organisation begun the educational process of business and technical staff on Cloud Platforms including its value and definition of terms?",
+            "category": "Needs Recognition",
+            "questionText": "Has the organisation recognised the need to start addressing the required transformation changes to compete in the digital economy?",
             "options": [
-                 {  "id": "ORG-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
-                 {  "id": "ORG-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
-                 {  "id": "ORG-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
-                 {  "id": "ORG-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
-                 {  "id": "ORG-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "ORG-01-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                 {  "id": "ORG-01-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                 {  "id": "ORG-01-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                 {  "id": "ORG-01-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                 {  "id": "ORG-01-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
         },
         {
             "id": "ORG-02",
-            "category": "Needs Recognition",
-            "questionText": "Has the organisation recognised the need to start addressing the required transformation changes to compete in the digital economy?",
+            "category": "Education",
+            "questionText": "Has the organisation begun the educational process of business and technical staff on Cloud Platforms including its value and definition of terms?",
             "options": [
-                 {  "id": "ORG-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
-                 {  "id": "ORG-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
-                 {  "id": "ORG-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
-                 {  "id": "ORG-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
-                 {  "id": "ORG-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
+                 {  "id": "ORG-02-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                 {  "id": "ORG-02-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                 {  "id": "ORG-02-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                 {  "id": "ORG-02-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "ORG-02-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
-        },
+        },        
         {
             "id": "ORG-03",
             "category": "Cloud Teams",
@@ -69,31 +69,31 @@
             ],
             "maxML": 5,
             "maxCL": 5
-        },
+        },        
         {
             "id": "OPR-01",
-            "category": "Education",
-            "questionText": "Have operational teams begun the educational process to understand what IT and Business Operations mean as they relate to the adoption of Cloud Platforms?",
+            "category": "Needs Recognition",
+            "questionText": "Have operational teams recognised the need to address operational changes as they relate to the adoption of Cloud Platforms?",
             "options": [
-                 {  "id": "OPR-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
-                 {  "id": "OPR-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
-                 {  "id": "OPR-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
-                 {  "id": "OPR-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
-                 {  "id": "OPR-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "OPR-01-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                 {  "id": "OPR-01-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                 {  "id": "OPR-01-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                 {  "id": "OPR-01-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                 {  "id": "OPR-01-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
         },
         {
             "id": "OPR-02",
-            "category": "Needs Recognition",
-            "questionText": "Have operational teams recognised the need to address operational changes as they relate to the adoption of Cloud Platforms?",
+            "category": "Education",
+            "questionText": "Have operational teams begun the educational process to understand what IT and Business Operations mean as they relate to the adoption of Cloud Platforms?",
             "options": [
-                 {  "id": "OPR-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
-                 {  "id": "OPR-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
-                 {  "id": "OPR-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
-                 {  "id": "OPR-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
-                 {  "id": "OPR-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
+                 {  "id": "OPR-02-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                 {  "id": "OPR-02-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                 {  "id": "OPR-02-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                 {  "id": "OPR-02-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "OPR-02-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -153,31 +153,31 @@
             ],
             "maxML": 5,
             "maxCL": 5
-        },
+        },        
         {
             "id": "GOV-01",
-            "category": "Education",
-            "questionText": "Has the organisation or governance body begun the educational process to understand what IT and Business governance mean as they relate to the adoption of Cloud Platforms?",
+            "category": "Needs Recognition",
+            "questionText": "Has the organisation recognised the need for a governance body to address governance methods as they relate to the adoption of Cloud Platforms?",
             "options": [
-                 {  "id": "GOV-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
-                 {  "id": "GOV-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
-                 {  "id": "GOV-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
-                 {  "id": "GOV-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
-                 {  "id": "GOV-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "GOV-01-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                 {  "id": "GOV-01-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                 {  "id": "GOV-01-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                 {  "id": "GOV-01-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                 {  "id": "GOV-01-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
         },
         {
             "id": "GOV-02",
-            "category": "Needs Recognition",
-            "questionText": "Has the organisation recognised the need for a governance body to address governance methods as they relate to the adoption of Cloud Platforms?",
+            "category": "Education",
+            "questionText": "Has the organisation or governance body begun the educational process to understand what IT and Business governance mean as they relate to the adoption of Cloud Platforms?",
             "options": [
-                 {  "id": "GOV-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
-                 {  "id": "GOV-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
-                 {  "id": "GOV-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
-                 {  "id": "GOV-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
-                 {  "id": "GOV-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
+                 {  "id": "GOV-02-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                 {  "id": "GOV-02-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                 {  "id": "GOV-02-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                 {  "id": "GOV-02-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "GOV-02-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -237,31 +237,31 @@
             ],
             "maxML": 5,
             "maxCL": 5
-        },
+        },        
         {
             "id": "PLT-01",
-            "category": "Education",
-            "questionText": "Has the IT organisation begun the educational process to understand what Cloud Platform Selection means and how it impacts application agility?",
+            "category": "Needs Recognition",
+            "questionText": "Has the IT organisation recognised the need to understand the capabilities and constraints of Cloud Platforms?",
             "options": [
-                 {  "id": "PLT-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
-                 {  "id": "PLT-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
-                 {  "id": "PLT-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
-                 {  "id": "PLT-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
-                 {  "id": "PLT-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "PLT-01-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                 {  "id": "PLT-01-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                 {  "id": "PLT-01-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                 {  "id": "PLT-01-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                 {  "id": "PLT-01-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
         },
         {
             "id": "PLT-02",
-            "category": "Needs Recognition",
-            "questionText": "Has the IT organisation recognised the need to understand the capabilities and constraints of Cloud Platforms?",
+            "category": "Education",
+            "questionText": "Has the IT organisation begun the educational process to understand what Cloud Platform Selection means and how it impacts application agility?",
             "options": [
-                 {  "id": "PLT-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
-                 {  "id": "PLT-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
-                 {  "id": "PLT-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
-                 {  "id": "PLT-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
-                 {  "id": "PLT-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
+                 {  "id": "PLT-02-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                 {  "id": "PLT-02-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                 {  "id": "PLT-02-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                 {  "id": "PLT-02-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "PLT-02-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -324,28 +324,28 @@
         },
         {
             "id": "IAM-01",
-            "category": "Education",
-            "questionText": "Has the IT organisation begun the educational process to understand what Identity and Access Management mean as it relates to the adoption of Cloud Platforms?",
+            "category": "Needs Recognition",
+            "questionText": "Has the IT organisation recognised the need and importance of Identity and Access Management?",
             "options": [
-                 {  "id": "IAM-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
-                 {  "id": "IAM-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
-                 {  "id": "IAM-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
-                 {  "id": "IAM-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
-                 {  "id": "IAM-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "IAM-01-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                 {  "id": "IAM-01-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                 {  "id": "IAM-01-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                 {  "id": "IAM-01-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                 {  "id": "IAM-01-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
         },
         {
             "id": "IAM-02",
-            "category": "Needs Recognition",
-            "questionText": "Has the IT organisation recognised the need and importance of Identity and Access Management?",
+            "category": "Education",
+            "questionText": "Has the IT organisation begun the educational process to understand what Identity and Access Management mean as it relates to the adoption of Cloud Platforms?",
             "options": [
-                 {  "id": "IAM-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
-                 {  "id": "IAM-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
-                 {  "id": "IAM-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
-                 {  "id": "IAM-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
-                 {  "id": "IAM-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
+                 {  "id": "IAM-02-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                 {  "id": "IAM-02-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                 {  "id": "IAM-02-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                 {  "id": "IAM-02-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "IAM-02-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -436,28 +436,28 @@
         },
         {
             "id": "NET-01",
-            "category": "Education",
-            "questionText": "Has the IT organisation begun the educational process to understand what federated networks mean as it relates to the adoption of Cloud Platforms?",
+            "category": "Needs Recognition",
+            "questionText": "Recognition of needHas the IT organisation recognised the need and importance of federated networks? to understand federated networks",
             "options": [
-                 {  "id": "NET-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
-                 {  "id": "NET-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
-                 {  "id": "NET-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
-                 {  "id": "NET-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
-                 {  "id": "NET-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "NET-01-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                 {  "id": "NET-01-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                 {  "id": "NET-01-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                 {  "id": "NET-01-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                 {  "id": "NET-01-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
         },
         {
             "id": "NET-02",
-            "category": "Needs Recognition",
-            "questionText": "Recognition of needHas the IT organisation recognised the need and importance of federated networks? to understand federated networks",
+            "category": "Education",
+            "questionText": "Has the IT organisation begun the educational process to understand what federated networks mean as it relates to the adoption of Cloud Platforms?",
             "options": [
-                 {  "id": "NET-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
-                 {  "id": "NET-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
-                 {  "id": "NET-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
-                 {  "id": "NET-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
-                 {  "id": "NET-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
+                 {  "id": "NET-02-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                 {  "id": "NET-02-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                 {  "id": "NET-02-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                 {  "id": "NET-02-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "NET-02-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -562,28 +562,28 @@
         },
         {
             "id": "SEC-01",
-            "category": "Education",
-            "questionText": "Has the IT organisation begun the educational process to understand what federated security means as it relates to the adoption of Cloud Platforms?",
+            "category": "Needs Recognition",
+            "questionText": "Has the IT organisation recognised the need and importance of federated security?",
             "options": [
-                 {  "id": "SEC-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
-                 {  "id": "SEC-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
-                 {  "id": "SEC-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
-                 {  "id": "SEC-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
-                 {  "id": "SEC-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "SEC-01-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                 {  "id": "SEC-01-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                 {  "id": "SEC-01-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                 {  "id": "SEC-01-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                 {  "id": "SEC-01-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
         },
         {
             "id": "SEC-02",
-            "category": "Needs Recognition",
-            "questionText": "Has the IT organisation recognised the need and importance of federated security?",
+            "category": "Education",
+            "questionText": "Has the IT organisation begun the educational process to understand what federated security means as it relates to the adoption of Cloud Platforms?",
             "options": [
-                 {  "id": "SEC-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
-                 {  "id": "SEC-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
-                 {  "id": "SEC-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
-                 {  "id": "SEC-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
-                 {  "id": "SEC-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
+                 {  "id": "SEC-02-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                 {  "id": "SEC-02-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                 {  "id": "SEC-02-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                 {  "id": "SEC-02-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "SEC-02-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
@@ -716,28 +716,28 @@
         },
         {
             "id": "DAT-01",
-            "category": "Education",
-            "questionText": "Has the IT organisation begun the educational process to understand what data management/protection means as it relates to the adoption of Cloud Platforms?",
+            "category": "Needs Recognition",
+            "questionText": "Has the IT organisation recognised the need and importance of data management/protection?",
             "options": [
-                 {  "id": "DAT-01-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
-                 {  "id": "DAT-01-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
-                 {  "id": "DAT-01-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
-                 {  "id": "DAT-01-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
-                 {  "id": "DAT-01-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
+                 {  "id": "DAT-01-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
+                 {  "id": "DAT-01-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
+                 {  "id": "DAT-01-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
+                 {  "id": "DAT-01-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
+                 {  "id": "DAT-01-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
         },
         {
             "id": "DAT-02",
-            "category": "Needs Recognition",
-            "questionText": "Has the IT organisation recognised the need and importance of data management/protection?",
+            "category": "Education",
+            "questionText": "Has the IT organisation begun the educational process to understand what data management/protection means as it relates to the adoption of Cloud Platforms?",
             "options": [
-                 {  "id": "DAT-02-opt-01", "optionText": "Needs Recognition - Informal Identification", "ml": 1 },
-                 {  "id": "DAT-02-opt-02", "optionText": "Needs Recognition - Ad-hoc Identification", "ml": 2 },
-                 {  "id": "DAT-02-opt-03", "optionText": "Needs Recognition - Formal Identification (Basic - IT & Business Leadership)", "ml": 3 },
-                 {  "id": "DAT-02-opt-04", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Business Units", "ml": 4 },
-                 {  "id": "DAT-02-opt-05", "optionText": "Needs Recognition - Formal Identification (IT & Business) - Enterprise-wide", "ml": 5 }
+                 {  "id": "DAT-02-opt-01", "optionText": "Education - Informal Education", "ml": 1 },
+                 {  "id": "DAT-02-opt-02", "optionText": "Education - Ad-hoc Educational Workshops (with 3rd Party Vendors)", "ml": 2 },
+                 {  "id": "DAT-02-opt-03", "optionText": "Education - Formal Education Plans (Basic)", "ml": 3 },
+                 {  "id": "DAT-02-opt-04", "optionText": "Education - Formal Education Plans (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "DAT-02-opt-05", "optionText": "Education - Formal Education Plans (Advanced) - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
