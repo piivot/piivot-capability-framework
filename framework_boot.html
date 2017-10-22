@@ -8,8 +8,10 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="css/fontawesome/font-awesome-4.7.0/css/font-awesome.min.css">
     
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/tabs.css">
 
 </head>
 <body class="bg-dark">
@@ -59,6 +61,29 @@
         <!-- End Nav Bar -->
     </div>
 
+    <section>
+            <div class="container">
+                <div class="row bg-light">
+                    <div class="piivot-board">
+                        <div class="piivot-board-inner">                                
+                            <ul class="nav nav-tabs" id="piivot-tabs">
+                                <!--<div class="piivot-liner"></div>-->
+                                                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row bg-light">
+                    <div class="col-12 tab-content" id="piivot-tab-content">
+        
+                    </div>
+                </div>
+
+
+            </div>
+    </section>
+
     <div class="container">
         <!-- Empty row to add space -->
         <div class="row">
@@ -66,7 +91,13 @@
         </div>
         <!-- End Empty row-->
 
-        <div class="row bg-light">            
+        <!--div class="row bg-light" id="piivot-tab-menu">
+            
+        </div>-->
+
+        
+
+        <!--<div class="row bg-light">            
             <div class="col-md-8 py-3">
                 <h1 class="display-4">People</h1>
                 <p class="lead">Creation of the capability model comes from PiiVOT's technical expertise and interpretation of 
@@ -82,9 +113,14 @@
                     
                 </div>
             </div>
-            <div class="col-md-4 py-3">
-                    <canvas id="myChart" width="400" height="400"></canvas>
-                
+            
+        </div>-->
+    </div>
+
+    <div class="container">
+        <div class="row bg-light">
+            <div class="col-8 py-2">
+                <canvas id="myChart" class="chart-piivot"></canvas>
             </div>
         </div>
     </div>

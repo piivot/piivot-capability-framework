@@ -9,6 +9,12 @@ var selectedProduct = "o365";
 loadProducts();
 
 
+function nextChar(c) {
+    return String.fromCharCode(c.charCodeAt(0) + 1);
+}
+
+
+
 function loadProducts()
 {
     $.ajax({
@@ -56,35 +62,62 @@ function loadQuestionContent()
     $('#piivotTabContent').html('');
 
     let count = 0;
+    let currentChar = 'a';
 
     $.each(sections, function() {
         let section = $(this)[0];
         let shortName = section.shortName;
+        let fullName = section.name;
         let sectionId = section.id;
         let sectionOrder = section.order;
+        let sectionTabClass = section.tabClass;
 
-        /****** Update tab content *************************/
+        let totalSectionQuestions = section.questions.length;
 
-        let tabAClass = 'nav-link text-capitalize';
-        let ariaExpanded = 'false';
-        let tabShow = 'tab-pane fade';
+        
+
+
+        /*********** Build out the circular tab *******************/
+        let tabAClass = 'piivot-tab-circular';
+        let tabShow = '';
 
         if (count == 0)
         {
             tabAClass += ' active';
-            ariaExpanded = 'true';
+            //ariaExpanded = 'true';
             tabShow += ' active show';
         }
 
-        let tabContent = '';
-        tabContent += '<li class="nav-item">';
-        tabContent += '<a class="' + tabAClass + '" id="' + shortName + '-tab" data-toggle="tab" href="#' + shortName + '" role="tab" aria-controls="' + shortName + '" aria-expanded="true">' + shortName + '</a></li>';
+        let piivotTabName = '3' + currentChar;
+        let circularTabContent = '';
 
-        $('#piivotTab').append(tabContent);
+        circularTabContent += '<li><a class="' + tabAClass + ' ' + sectionTabClass + '" href="#' + shortName + '" data-toggle="tab" title="' + shortName + '">';
+        circularTabContent += '<span class="round-tabs ' + sectionTabClass + '" piivot-tab-name="' + piivotTabName + '">' + piivotTabName + '</span></a></li>';
+        console.log(circularTabContent);
+        $('#piivot-tabs').append(circularTabContent);
+
+
+
+        /****** Update tab content *************************/
+
+        //let tabAClass = 'nav-link text-capitalize';
+        //let ariaExpanded = 'false';
+        //let tabShow = 'tab-pane fade';
+
+        
+
+        let tabContent = '';
+        tabContent += '<div class="tab-pane fade in ' + tabShow + '" id="' + shortName + '">'
+        tabContent += '<h2 class="text-center">' + fullName + '</h2>';
+        //tabContent += '<li class="nav-item">';
+        //tabContent += '<a class="' + tabAClass + '" id="' + shortName + '-tab" data-toggle="tab" href="#' + shortName + '" role="tab" aria-controls="' + shortName + '" aria-expanded="true">' + shortName + '</a></li>';
+
+        
+        //$('#piivotTab').append(tabContent);
 
 
         /************ Update question content *****************/
-
+        let questionCount = 1;
         let questionsArray = [];
         $.each(section.questions, function() { questionsArray.push( $(this)[0].id); });
 
@@ -92,13 +125,51 @@ function loadQuestionContent()
 
         let htmlContent = '';
         
-        htmlContent += '<div class="' + tabShow + '" id="' + shortName + '" role="tabpanel" aria-labelledby="' + shortName + '-tab" piivot-section="' + sectionId + '" piivot-section-order="' + sectionOrder + '" aria-expanded="' + ariaExpanded + '">';
+        //htmlContent += '<div class="' + tabShow + '" id="' + shortName + '" role="tabpanel" aria-labelledby="' + shortName + '-tab" piivot-section="' + sectionId + '" piivot-section-order="' + sectionOrder + '" aria-expanded="' + ariaExpanded + '">';
 
         $.each(questionsSection, function() {
-            let q = $(this)[0];                
-            htmlContent += '<div class="bd-example py-1">';
+            let q = $(this)[0]; 
+            let showQuestion = questionCount != 1 ? 'd-none' : 'd-block';
+                        
+            htmlContent += '<div class="py-1 ' + showQuestion + ' section-' + sectionId + '" id="question-' + q.id + '" piivot-question-number="' + questionCount + '">';
             htmlContent += '<div class="row bg-white">';
-            htmlContent += '<div class="input-group">';
+            htmlContent += '<div class="col-12">';
+            htmlContent += '<p class="text-center">Question ' + questionCount + ' of ' + totalSectionQuestions + '</p>';
+            htmlContent += '<p class="lead">' + q.questionText + '</p>';
+            htmlContent += '<select class="piivot-question custom-select" id="' + q.id + '" piivot-question-id="' + q.id + '" piivot-section="' + sectionId + '" piivot-section-order="' + sectionOrder + '">';
+            htmlContent += '<option value="0">Choose...</option>';
+
+            $.each(q.options, function() {
+                let o = $(this)[0];
+                htmlContent += '<option value="' + o.id + '">' + o.optionText + '</option>';
+            });
+
+            htmlContent += '</select>';
+            htmlContent += '</div>';
+            htmlContent += '</div>';
+
+            htmlContent += '<div class="row bg-white py-3"></div>';
+
+            htmlContent += '<div class="row bg-white py-3">';
+            if (questionCount > 1) {
+                htmlContent += '<div class="col text-left">';
+                htmlContent += '<button class="btn prevquestion" id="btn-' + q.id + '-prev" piivot-section="' + sectionId + '" piivot-this-question-count="' + (questionCount) + '" piivot-prev-question-count="' + (questionCount - 1) + '" >Previous</button>';
+                htmlContent += '</div>';
+            }
+
+            if (questionCount < totalSectionQuestions) {
+                htmlContent += '<div class="col text-right">';
+                htmlContent += '<button class="btn nextquestion" id="btn-' + q.id + '-next" piivot-section="' + sectionId + '" piivot-this-question-count="' + (questionCount) + '" piivot-next-question-count="' + (questionCount + 1) + '">Next</button>';
+                htmlContent += '</div>';
+            }
+
+            
+            htmlContent += '</div>';
+            htmlContent += '</div>';
+
+            questionCount++;
+
+            /*htmlContent += '<div class="input-group">';
             htmlContent += '<div class="col-md-6">';
             htmlContent += '<p class="form-control-plaintext flex-wrap">' + q.questionText + '</p>';
             htmlContent += '</div>';
@@ -119,17 +190,34 @@ function loadQuestionContent()
             htmlContent += '<div class="row bg-white">';
             htmlContent += '<p id="' + q.id + '-CONTENT" class="font-weight-bold form-control-plaintext col-12 small flex-wrap">Move slider to view the score definitions</p>';
             htmlContent += '</div>'
-            htmlContent += '</div>'                
+            htmlContent += '</div>'*/                
         });
 
-        htmlContent += "</div>";
+        //htmlContent += "</div>";
+        
+        tabContent += htmlContent;
+        tabContent += '</div>';        
+        $('#piivot-tab-content').append(tabContent);
+        
 
         $('#piivotTabContent').append(htmlContent);
         
         count++;
+        currentChar = nextChar(currentChar);
     });
 
     
+    $('.nextquestion').on("click", function() {
+        let thisbtn = $(this);
+        let section = '.section-' + thisbtn.attr('piivot-section');
+        let thisquestion = thisbtn.attr('piivot-this-question-count');
+        let nextquestion = thisbtn.attr('piivot-next-question-count');
+
+        $(section + '[piivot-question-number=' + nextquestion + ']').removeClass('d-none').addClass('d-block');
+        $(section + '[piivot-question-number=' + thisquestion + ']' ).removeClass('d-block').addClass('d-none');
+    });
+
+
 
     $('.piivot-slider').slider({
         ticks: [1,2,3,4,5],

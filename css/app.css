@@ -3,6 +3,11 @@
   color: #ffffff;
 }
 
+.chart-piivot {
+  height: 40vh;
+  width: 80vw;
+}
+
 .slider-handle {
   background-color: #f69320;
   background-image: linear-gradient(to bottom,#f69320 0,#f69320 100%)
@@ -91,3 +96,15 @@
     /*display: block;*/
     transform: translateX(-50%);
   }
+
+
+
+
+
+
+
+
+
+
+
+

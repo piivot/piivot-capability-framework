@@ -39,7 +39,16 @@ var myChart = new Chart(ctx, {
             borderWidth: 1,
             pointRadius: 10,
             datalabels: {
-                display: false
+                color: 'white',
+                display: function(context) {
+                    return context.dataset.data[context.dataIndex] < 80;
+                },
+                font: {
+                    weight: 'bold'
+                },
+                formatter: function(value, context) {
+                    return value + '--';
+                }
             }                
         }        
         ]
