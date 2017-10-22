@@ -94,7 +94,7 @@ function loadQuestionContent()
         let piivotTabName = '3' + currentChar;
         let circularTabContent = '';
 
-        circularTabContent += '<li><a class="' + tabAClass + ' ' + sectionTabClass + '" href="#' + shortName + '" data-toggle="tab" title="' + shortName + '" piivot-section-count="' + count + '">';
+        circularTabContent += '<li class="d-none d-lg-block d-xl-block"><a class="' + tabAClass + ' ' + sectionTabClass + '" href="#' + shortName + '" data-toggle="tab" title="' + shortName + '" piivot-section-count="' + count + '">';
         circularTabContent += '<span class="round-tabs ' + sectionTabClass + '" piivot-tab-name="' + piivotTabName + '">' + piivotTabName + '</span></a></li>';
         $('#piivot-tabs').append(circularTabContent);
 
