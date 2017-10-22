@@ -4,7 +4,7 @@ var sections = [];
 var products = [];
 var questions = [];
 
-var selectedProduct = "o365";
+var selectedProduct = "IaaS";
 
 var currentSection = '';
 var currentSectionOrder = 0;
@@ -33,6 +33,7 @@ function resetChartAreaForNewSection() {
     let targetSection = $.grep(targetProduct[0].targetScores, function(t) { return t.id == thisSection.id;});
     let targetScore = targetSection[0].targetScore;
 
+    
 
 
     $.each(thisSection.questions, function() {
@@ -47,9 +48,15 @@ function resetChartAreaForNewSection() {
 
     });
 
-    let calcPercentage = calculatedML / targetScore;
-    let calcPercentageText = (Math.round(calculatedML / targetScore * 100)) + '%';
-    let targetValue = 1.0 - calcPercentage;
+    console.log(calculatedML);
+
+    //let calcPercentage = calculatedML / targetScore;
+    let custValue = calculatedML / 5;
+    //let calcPercentageText = (Math.round(calculatedML / targetScore * 100)) + '%';
+    let custPercentageText = (Math.round(custValue * 100)) + '%';
+    let targetValue = targetScore / 5;
+    let targetPercentageText = selectedProduct + ' - ' + (Math.round(targetValue * 100)) + '%';
+    let maxValue = 1 - targetValue;
 
     google.charts.load('current', {packages: ['corechart', 'bar'],
     callback: function() {
@@ -61,8 +68,10 @@ function resetChartAreaForNewSection() {
         chartData.addColumn({type: 'string', role: 'annotation'});
         chartData.addColumn('number', 'Target');
         chartData.addColumn({type: 'string', role: 'annotation'});
+        chartData.addColumn('number', 'Maximum Cloud Capacity');
+        chartData.addColumn({type: 'string', role: 'annotation'});
     
-        chartData.addRows([[currentSection, calcPercentage, calcPercentageText, targetValue, selectedProduct]]);
+        chartData.addRows([[currentSection, custValue, custPercentageText, targetValue, targetPercentageText, maxValue, 'Max Cap.']]);
 
         let chart = new google.visualization.ColumnChart(document.getElementById('chartarea'));      
         chart.draw(chartData, options);
@@ -274,7 +283,7 @@ function loadQuestionContent()
             htmlContent += '<div class="col-12 questionarea">';
             htmlContent += '<p class="text-center">Question ' + questionCount + ' of ' + totalSectionQuestions + '</p>';
             htmlContent += '<p class="lead">' + q.questionText + '</p>';
-            htmlContent += '<select class="piivot-question custom-select form-control" id="' + q.id + '" piivot-question-id="' + q.id + '" piivot-section="' + sectionId + '" piivot-section-order="' + sectionOrder + '">';
+            htmlContent += '<select class="piivot-question custom-select form-control" id="' + q.id + '" piivot-question-id="' + q.id + '" piivot-section="' + sectionId + '" piivot-section-order="' + sectionOrder + '" piivot-question-content="' + q.id + '-CONTENT" >';
             htmlContent += '<option value="0">Choose...</option>';
 
             $.each(q.options, function() {
@@ -286,7 +295,10 @@ function loadQuestionContent()
             htmlContent += '</div>';
             htmlContent += '</div>';
 
-            htmlContent += '<div class="row bg-white py-3"></div>';
+            htmlContent += '<div class="row bg-white py-1"></div>';
+            htmlContent += '<div class="row bg-white">';
+            htmlContent += '<p id="' + q.id + '-CONTENT" class="font-weight-bold form-control-plaintext col-12 small flex-wrap">&nbsp;</p>';
+            htmlContent += '</div>'
 
             htmlContent += '<div class="row bg-white py-3">';
             if (questionCount > 1) {
@@ -437,12 +449,33 @@ function loadQuestionContent()
             score = $(this).attr('data-value');
         }*/
 
-        let mainQuestion = $.grep(questions, function(e) {return e.id == questionId;});        
+        let mainQuestion = $.grep(questions, function(e) {return e.id == questionId;});    
+        let description = '';    
 
         if (selection != "0")
         {    
             let selectedOption = $.grep(mainQuestion[0].options, function(o) {return o.id == selection});
             ml = selectedOption[0].ml;
+
+            switch (ml) {
+                case 1:
+                    description = '(Informal) Actions or processes have either not started, or informally discussed.';
+                    break;
+                case 2:
+                    description = '(Ad-hoc) Implementation of actions or processes performed in an ad-hoc manner usually to address a set of isolated requests from the business.';
+                    break;
+                case 3:
+                    description = '(Formal - Basic) Implementation of actions or processes performed in a formalised way, but only takes into account most basic common business/technical use cases.';
+                    break;
+                case 4:
+                    description = '(Formal - Advanced - Business Unit) Implementation of actions or processes performed in a formalised way to account for most uses cases for a particular group(s) of critical business units.';
+                    break;
+                case 5:
+                    description = '(Formal - Advanced - Enterprise-wide) Implementation of actions or processes performed in a mature formalised way and takes into account up to 90% of business/technical use cases for the entire Enterprise.';
+                    break;
+
+
+            }
         }
         else
         {
@@ -455,7 +488,7 @@ function loadQuestionContent()
         //let mainQuestionComparisonScore = mainQuestion[0].comparisonScore;
         //let mainQuestionContent = $.grep(mainQuestion[0].scores, function(e) {return e.value == score;});
     
-        //$(contentHolder).text(mainQuestionContent[0].description);    
+        $(contentHolder).text(description);    
     
         addScoreToArray(questionId,sectionId,ml,cl,maxML,maxCL);
             

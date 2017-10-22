@@ -1,8 +1,8 @@
 {
     "products": [
         {
-            "name": "Office 365",
-            "id": "o365",
+            "name": "IaaS",
+            "id": "IaaS",
             "targetScores": [
                 {"id": "S01-ORG", "targetScore": 3.4},
                 {"id": "S02-OPR", "targetScore": 3.666666667},
