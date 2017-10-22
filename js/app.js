@@ -63,6 +63,7 @@ function loadQuestionContent()
 
     let count = 0;
     let currentChar = 'a';
+    let totalSections = sections.length;
 
     $.each(sections, function() {
         let section = $(this)[0];
@@ -91,9 +92,8 @@ function loadQuestionContent()
         let piivotTabName = '3' + currentChar;
         let circularTabContent = '';
 
-        circularTabContent += '<li><a class="' + tabAClass + ' ' + sectionTabClass + '" href="#' + shortName + '" data-toggle="tab" title="' + shortName + '">';
+        circularTabContent += '<li><a class="' + tabAClass + ' ' + sectionTabClass + '" href="#' + shortName + '" data-toggle="tab" title="' + shortName + '" piivot-section-count="' + count + '">';
         circularTabContent += '<span class="round-tabs ' + sectionTabClass + '" piivot-tab-name="' + piivotTabName + '">' + piivotTabName + '</span></a></li>';
-        console.log(circularTabContent);
         $('#piivot-tabs').append(circularTabContent);
 
 
@@ -153,13 +153,23 @@ function loadQuestionContent()
             htmlContent += '<div class="row bg-white py-3">';
             if (questionCount > 1) {
                 htmlContent += '<div class="col text-left">';
-                htmlContent += '<button class="btn prevquestion" id="btn-' + q.id + '-prev" piivot-section="' + sectionId + '" piivot-this-question-count="' + (questionCount) + '" piivot-prev-question-count="' + (questionCount - 1) + '" >Previous</button>';
+                htmlContent += '<button class="btn prevquestion" id="btn-' + q.id + '-prev" piivot-section="' + sectionId + '" piivot-this-question-count="' + (questionCount) + '" piivot-prev-question-count="' + (questionCount - 1) + '" ><<< Previous</button>';
+                htmlContent += '</div>';
+            }
+            else if (count > 0)  {
+                htmlContent += '<div class="col text-left">';
+                htmlContent += '<button class="btn prevsection" id="btn-' + q.id + '-nextsec" piivot-section="' + sectionId + '" piivot-this-section-count="' + (count) + '" piivot-prev-section-count="' + (count - 1) + '">Go Back to Previous Section</button>';
                 htmlContent += '</div>';
             }
 
             if (questionCount < totalSectionQuestions) {
                 htmlContent += '<div class="col text-right">';
-                htmlContent += '<button class="btn nextquestion" id="btn-' + q.id + '-next" piivot-section="' + sectionId + '" piivot-this-question-count="' + (questionCount) + '" piivot-next-question-count="' + (questionCount + 1) + '">Next</button>';
+                htmlContent += '<button class="btn nextquestion" id="btn-' + q.id + '-next" piivot-section="' + sectionId + '" piivot-this-question-count="' + (questionCount) + '" piivot-next-question-count="' + (questionCount + 1) + '">Next >>></button>';
+                htmlContent += '</div>';
+            }
+            else if (count < totalSections - 1) {
+                htmlContent += '<div class="col text-right">';
+                htmlContent += '<button class="btn nextsection" id="btn-' + q.id + '-nextsec" piivot-section="' + sectionId + '" piivot-this-section-count="' + (count) + '" piivot-next-section-count="' + (count + 1) + '">Complete Section</button>';
                 htmlContent += '</div>';
             }
 
@@ -217,6 +227,39 @@ function loadQuestionContent()
         $(section + '[piivot-question-number=' + thisquestion + ']' ).removeClass('d-block').addClass('d-none');
     });
 
+    $('.prevquestion').on("click", function() {
+        let thisbtn = $(this);
+        let section = '.section-' + thisbtn.attr('piivot-section');
+        let thisquestion = thisbtn.attr('piivot-this-question-count');
+        let prevquestion = thisbtn.attr('piivot-prev-question-count');
+
+        $(section + '[piivot-question-number=' + prevquestion + ']').removeClass('d-none').addClass('d-block');
+        $(section + '[piivot-question-number=' + thisquestion + ']' ).removeClass('d-block').addClass('d-none');
+    });
+
+    $('.nextsection').on("click", function() {
+        let thisbtn = $(this);
+        let section = '.section-' + thisbtn.attr('piivot-section');
+        let thissection = thisbtn.attr('piivot-this-section-count');
+        let nextsection = thisbtn.attr('piivot-next-section-count');
+
+        $('.piivot-tab-circular[piivot-section-count=' + nextsection + ']')[0].click(); //.first().find('span').trigger('click');
+
+        //$(section + '[piivot-question-number=' + nextquestion + ']').removeClass('d-none').addClass('d-block');
+        //$(section + '[piivot-question-number=' + thisquestion + ']' ).removeClass('d-block').addClass('d-none');
+    });
+
+    $('.prevsection').on("click", function() {
+        let thisbtn = $(this);
+        let section = '.section-' + thisbtn.attr('piivot-section');
+        let thissection = thisbtn.attr('piivot-this-section-count');
+        let prevsection = thisbtn.attr('piivot-prev-section-count');
+
+        $('.piivot-tab-circular[piivot-section-count=' + prevsection + ']')[0].click(); //.first().find('span').trigger('click');
+
+        //$(section + '[piivot-question-number=' + nextquestion + ']').removeClass('d-none').addClass('d-block');
+        //$(section + '[piivot-question-number=' + thisquestion + ']' ).removeClass('d-block').addClass('d-none');
+    });
 
 
     $('.piivot-slider').slider({
