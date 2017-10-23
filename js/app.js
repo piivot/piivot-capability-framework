@@ -251,6 +251,8 @@ function loadQuestions()
     });
 }
 
+
+
 function loadQuestionContent()
 {
     $('#piivotTab').html('');
@@ -592,5 +594,10 @@ function addScoreToArray(id,sectionId,ml,cl,maxML,maxCL)
     resetChartAreaForNewSection();    
 }
 
+$('#submitcontact').on('click', function() {
+    $('#infosection').removeClass('d-block').addClass('d-none');
+    $('#questionsection').removeClass('d-none').addClass('d-block');
+    $('#chartsection').removeClass('d-none').addClass('d-block');
+});
 
 loadProducts();

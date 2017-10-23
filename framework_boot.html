@@ -61,7 +61,45 @@
         <!-- End Nav Bar -->
     </div>
 
-    <section id="questionsection" class="d-block">
+    <section id="infosection" class="d-block">
+        <div class="container">
+            <div class="row bg-light">
+                <div class="col text-center">
+                    <h1>Provide us your info</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row bg-light d-flex justify-content-center">
+                <div class="col-md-6 text-center py-2">
+                    <div class="form-group">
+                        <label for="name">
+                            Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">
+                            Email Address</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="fa fa-envelope"></span>
+                            </span>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">
+                            Company</label>
+                        <input type="text" class="form-control" id="company" placeholder="Enter you company name" required="required" />
+                    </div>
+                    <div class="form-group">
+                        <button id="submitcontact" class="btn-lg btn-primary">Move to next step</button>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="questionsection" class="d-none">
             <div class="container">
                 <div class="row bg-light">
                     <div class="piivot-board">
@@ -85,7 +123,7 @@
     </section>
 
     
-    <section id="chartsection" class="d-block">
+    <section id="chartsection" class="d-none">
         <div class="container border border-dark rounded">
             <div class="row bg-light">
                 <div class="col py-2" id="chartarea">
