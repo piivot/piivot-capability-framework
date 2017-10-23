@@ -53,12 +53,12 @@ textStyle: {
     }
     },
     isStacked: 'percent',
-    height: 400,
-    width: 650,
+    height: 525,
+    width: 750,
     orientation: 'vertical',
     chartArea: {
 left: 250,
-    width: 350,
+    width: 600,
     height: 400
     },
     legend: {
