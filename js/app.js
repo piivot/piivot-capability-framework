@@ -525,7 +525,7 @@ function loadQuestionContent()
         let selection = $(this).val();
 
         let ml = 0;
-        let cl = 2.5
+        let cl = 5
 
         let mainQuestion = $.grep(questions, function(e) {return e.id == questionId;});    
         let description = '';    
@@ -578,14 +578,14 @@ function addScoreToArray(id,sectionId,ml,cl,maxML,maxCL)
     
     if (currentQuestion != null && currentQuestion.length > 0)
     {
-        currentQuestion[0].score = ml > 0 ? ml - (cl / maxCL) : 0;
+        currentQuestion[0].score = ml > 0 ? ml - (1 - (cl / maxCL)) : 0;
     }
     else
     {
         let newscore = {};
         newscore.id = id;
         newscore.sectionId = sectionId;
-        newscore.score = ml > 0 ? ml - (cl / maxCL) : 0;
+        newscore.score = ml > 0 ? ml - (1 - (cl / maxCL)) : 0;
         overallScore.push(newscore);
     }
 
