@@ -210,6 +210,13 @@ function nextChar(c) {
     return String.fromCharCode(c.charCodeAt(0) + 1);
 }
 
+function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+};
+
 
 
 function loadProducts()
@@ -621,3 +628,63 @@ $('#submitproduct').on('click', function() {
 });
 
 loadProducts();
+
+var final = getUrlParameter('final');
+if (final == "1") {
+    $('#infosection').removeClass('d-block').addClass('d-none');
+    $('#productsection').removeClass('d-block').addClass('d-none');
+    $('#questionsection').removeClass('d-block').addClass('d-none');
+    $('#chartsection').removeClass('d-block').addClass('d-none');
+    
+    google.charts.load('current', {packages: ['corechart', 'bar'],
+    callback: function() {
+        let chartData = new google.visualization.DataTable();
+        
+    
+        chartData.addColumn('string', 'Dimension');
+        chartData.addColumn('number', 'Customer');
+        chartData.addColumn({type: 'string', role: 'annotation'});
+        chartData.addColumn('number', 'Target');
+        chartData.addColumn({type: 'string', role: 'annotation'});
+        chartData.addColumn('number', 'Maximum Cloud Capacity');
+        chartData.addColumn({type: 'string', role: 'annotation'});
+
+        $.each(sections, function() {
+            let thisSection = $(this)[0];
+            
+            let order = thisSection.order;
+            
+            let calculatedML = 0;
+            
+            let totalSectionQuestions = thisSection.questions.length;
+        
+            //calculate target product score
+            let targetProduct = $.grep(products, function(p) { return p.id == selectedProduct;});
+            let targetSection = $.grep(targetProduct[0].targetScores, function(t) { return t.id == thisSection.id;});
+            let targetScore = targetSection[0].targetScore;   
+            
+            calculatedML = targetScore - .93;
+        
+            //calculate score for all the questions
+            
+            //calculate values for chart
+            let custValue = calculatedML / 5;
+            let custPercentageText = (Math.round(custValue * 100)) + '%';
+            let targetValue = targetScore / 5;
+            let targetShowValue = custValue < targetValue ? targetValue - custValue : 0;
+            let targetPercentageText = targetShowValue > 0 ? selectedProduct + ' - ' + (Math.round(targetValue * 100)) + '%' : '';    
+            let maxValue = custValue < targetValue ? 1 - targetValue : 1 - custValue;
+            
+
+            chartData.addRows([[thisSection.name, custValue, custPercentageText, targetShowValue, targetPercentageText, maxValue, 'Max Cap.']]);
+        });
+    
+        
+
+        let chart = new google.visualization.ColumnChart(document.getElementById('finalchartarea'));      
+        chart.draw(chartData, finalChartOptions);
+    }
+    });
+
+    $('#finalstepsection').removeClass('d-none').addClass('d-block');
+}

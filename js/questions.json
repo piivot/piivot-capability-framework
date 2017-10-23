@@ -671,31 +671,31 @@
             ],
             "maxML": 5,
             "maxCL": 5
-        },
+        },        
         {
             "id": "SEC-09",
-            "category": "Threat Intelligence",
-            "questionText": "Has the IT organisation built threat intelligence functionality into its security strategy?",
+            "category": "Threat Analysis",
+            "questionText": "Has the IT organisation built threat analysis functionality into its security strategy?",
             "options": [
-                 {  "id": "SEC-09-opt-01", "optionText": "Threat Intelligence - Informal Needs Recognition", "ml": 1 },
-                 {  "id": "SEC-09-opt-02", "optionText": "Threat Intelligence - Ad-hoc Adoption", "ml": 2 },
-                 {  "id": "SEC-09-opt-03", "optionText": "Threat Intelligence - Formal tools and processes (Basic)", "ml": 3 },
-                 {  "id": "SEC-09-opt-04", "optionText": "Threat Intelligence - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                 {  "id": "SEC-09-opt-05", "optionText": "Threat Intelligence - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "SEC-09-opt-01", "optionText": "Threat Analysis - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "SEC-09-opt-02", "optionText": "Threat Analysis - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "SEC-09-opt-03", "optionText": "Threat Analysis - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "SEC-09-opt-04", "optionText": "Threat Analysis - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "SEC-09-opt-05", "optionText": "Threat Analysis - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
         },
         {
             "id": "SEC-10",
-            "category": "Threat Analysis",
-            "questionText": "Has the IT organisation built threat analysis functionality into its security strategy?",
+            "category": "Threat Intelligence",
+            "questionText": "Has the IT organisation built threat intelligence functionality into its security strategy?",
             "options": [
-                 {  "id": "SEC-10-opt-01", "optionText": "Threat Analysis - Informal Needs Recognition", "ml": 1 },
-                 {  "id": "SEC-10-opt-02", "optionText": "Threat Analysis - Ad-hoc Adoption", "ml": 2 },
-                 {  "id": "SEC-10-opt-03", "optionText": "Threat Analysis - Formal tools and processes (Basic)", "ml": 3 },
-                 {  "id": "SEC-10-opt-04", "optionText": "Threat Analysis - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                 {  "id": "SEC-10-opt-05", "optionText": "Threat Analysis - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "SEC-10-opt-01", "optionText": "Threat Intelligence - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "SEC-10-opt-02", "optionText": "Threat Intelligence - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "SEC-10-opt-03", "optionText": "Threat Intelligence - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "SEC-10-opt-04", "optionText": "Threat Intelligence - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "SEC-10-opt-05", "optionText": "Threat Intelligence - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
