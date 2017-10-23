@@ -287,7 +287,7 @@ function loadQuestionContent()
         /*********** Build out the circular tab *******************/
         let tabAClass = 'piivot-tab-circular';
         let tabShow = '';
-        let sectionTabClass = 'secondary';
+        let sectionTabClass = 'secondary disabled';
 
         if (count == 0)
         {
@@ -464,8 +464,8 @@ function loadQuestionContent()
 
         if (checkIfSelected(questionId)) { 
 
-            $('.piivot-tab-circular[piivot-section-count=' + nextsection + ']').removeClass('secondary').addClass('current');
-            $('.piivot-tab-circular[piivot-section-count=' + nextsection + '] span').removeClass('secondary').addClass('current');
+            $('.piivot-tab-circular[piivot-section-count=' + nextsection + ']').removeClass('secondary').removeClass('disabled').addClass('current');
+            $('.piivot-tab-circular[piivot-section-count=' + nextsection + '] span').removeClass('secondary').removeClass('disabled').addClass('current');
             $('.piivot-tab-circular[piivot-section-count=' + nextsection + ']')[0].click(); //.first().find('span').trigger('click');
             
             $('.piivot-tab-circular[piivot-section-count=' + thissection + '] span').html('<i class="fa fa-check" aria-hidden="true"></i>');
