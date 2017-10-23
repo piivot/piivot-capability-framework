@@ -219,7 +219,17 @@ function loadProducts()
         async: true,
         dataType: 'json',
         success: function(data) {
-            products = data.products;            
+            products = data.products;
+            let htmlContent = '';
+            let count = 0;
+            let selected = '';
+            $.each(products, function() {
+                let p = $(this)[0];
+                selected = count > 0 ? '' : 'selected';
+                htmlContent += '<option ' + selected + ' value="' + p.id + '">' + p.name + '</option>';
+                count++;
+            });  
+            $('#productname').append(htmlContent);          
             loadSections();
         }
     });
@@ -596,8 +606,18 @@ function addScoreToArray(id,sectionId,ml,cl,maxML,maxCL)
 
 $('#submitcontact').on('click', function() {
     $('#infosection').removeClass('d-block').addClass('d-none');
+    $('#productsection').removeClass('d-none').addClass('d-block');
+});
+
+$('#submitproduct').on('click', function() {
+    selectedProduct = $('#productname').val();
+    
+    
+    $('#productsection').removeClass('d-block').addClass('d-none');
     $('#questionsection').removeClass('d-none').addClass('d-block');
     $('#chartsection').removeClass('d-none').addClass('d-block');
+
+    resetChartAreaForNewSection();
 });
 
 loadProducts();

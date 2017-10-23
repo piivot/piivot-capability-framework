@@ -1,9 +1,9 @@
 {
     "sections": [
         {
-            "name": "Organizational",
+            "name": "Organisational",
 
-            "shortName": "organizational",
+            "shortName": "organisational",
             "id": "S01-ORG",
             "tabClass": "one",
             "order": 0,
