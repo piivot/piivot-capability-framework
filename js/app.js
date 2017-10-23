@@ -199,7 +199,11 @@ function showFinalArea() {
     });
 }
 
-
+function checkIfSelected(question) {
+    let selection = $('#' + question).val();
+    
+    return selection != '0' ? true : false;
+}
 
 
 function nextChar(c) {
@@ -340,28 +344,28 @@ function loadQuestionContent()
             htmlContent += '<div class="row bg-white py-3">';
             if (questionCount > 1) {
                 htmlContent += '<div class="col text-left">';
-                htmlContent += '<button class="btn btn-outline-secondary prevquestion" id="btn-' + q.id + '-prev" piivot-section="' + sectionId + '" piivot-this-question-count="' + (questionCount) + '" piivot-prev-question-count="' + (questionCount - 1) + '" ><<< Previous</button>';
+                htmlContent += '<button class="btn btn-outline-secondary prevquestion" id="btn-' + q.id + '-prev" iivot-question-id="' + q.id + '" piivot-section="' + sectionId + '" piivot-this-question-count="' + (questionCount) + '" piivot-prev-question-count="' + (questionCount - 1) + '" ><<< Previous</button>';
                 htmlContent += '</div>';
             }
             else if (count > 0)  {
                 htmlContent += '<div class="col text-left">';
-                htmlContent += '<button class="btn btn-secondary btn-lg prevsection" id="btn-' + q.id + '-nextsec" piivot-section="' + sectionId + '" piivot-this-section-count="' + (count) + '" piivot-prev-section-count="' + (count - 1) + '">Go Back to Previous Section</button>';
+                htmlContent += '<button class="btn btn-secondary btn-lg prevsection" id="btn-' + q.id + '-nextsec" iivot-question-id="' + q.id + '" piivot-section="' + sectionId + '" piivot-this-section-count="' + (count) + '" piivot-prev-section-count="' + (count - 1) + '">Go Back to Previous Section</button>';
                 htmlContent += '</div>';
             }
 
             if (questionCount < totalSectionQuestions) {
                 htmlContent += '<div class="col text-right">';
-                htmlContent += '<button class="btn btn-outline-primary nextquestion" id="btn-' + q.id + '-next" piivot-section="' + sectionId + '" piivot-this-question-count="' + (questionCount) + '" piivot-next-question-count="' + (questionCount + 1) + '">Next >>></button>';
+                htmlContent += '<button class="btn btn-outline-primary nextquestion" id="btn-' + q.id + '-next" piivot-question-id="' + q.id + '" piivot-section="' + sectionId + '" piivot-this-question-count="' + (questionCount) + '" piivot-next-question-count="' + (questionCount + 1) + '">Next >>></button>';
                 htmlContent += '</div>';
             }
             else if (count < totalSections - 1) {
                 htmlContent += '<div class="col text-right">';
-                htmlContent += '<button class="btn btn-primary btn-lg nextsection" id="btn-' + q.id + '-nextsec" piivot-section="' + sectionId + '" piivot-this-section-count="' + (count) + '" piivot-next-section-count="' + (count + 1) + '">Complete Section</button>';
+                htmlContent += '<button class="btn btn-primary btn-lg nextsection" id="btn-' + q.id + '-nextsec" piivot-question-id="' + q.id + '" piivot-section="' + sectionId + '" piivot-this-section-count="' + (count) + '" piivot-next-section-count="' + (count + 1) + '">Complete Section</button>';
                 htmlContent += '</div>';
             }
             else {
                 htmlContent += '<div class="col text-right">';
-                htmlContent += '<button class="btn btn-success btn-lg finalizesections" id="btn-' + q.id + '-nextsec" piivot-section="' + sectionId + '" piivot-this-section-count="' + (count) + '" piivot-next-section-count="' + (count + 1) + '">Finalize</button>';
+                htmlContent += '<button class="btn btn-success btn-lg finalizesections" id="btn-' + q.id + '-finalize" piivot-question-id="' + q.id + '" piivot-section="' + sectionId + '" piivot-this-section-count="' + (count) + '" piivot-next-section-count="' + (count + 1) + '">Finalize</button>';
                 htmlContent += '</div>';
             }
 
@@ -414,9 +418,17 @@ function loadQuestionContent()
         let section = '.section-' + thisbtn.attr('piivot-section');
         let thisquestion = thisbtn.attr('piivot-this-question-count');
         let nextquestion = thisbtn.attr('piivot-next-question-count');
+        let questionId = thisbtn.attr('piivot-question-id');
 
-        $(section + '[piivot-question-number=' + nextquestion + ']').removeClass('d-none').addClass('d-block');
-        $(section + '[piivot-question-number=' + thisquestion + ']' ).removeClass('d-block').addClass('d-none');
+        if (checkIfSelected(questionId)) { 
+            $(section + '[piivot-question-number=' + nextquestion + ']').removeClass('d-none').addClass('d-block');
+            $(section + '[piivot-question-number=' + thisquestion + ']' ).removeClass('d-block').addClass('d-none');
+        }
+        else {
+            alert("Please select a response");
+        }
+
+        
     });
 
     $('.prevquestion').on("click", function() {
@@ -424,6 +436,8 @@ function loadQuestionContent()
         let section = '.section-' + thisbtn.attr('piivot-section');
         let thisquestion = thisbtn.attr('piivot-this-question-count');
         let prevquestion = thisbtn.attr('piivot-prev-question-count');
+        let questionId = thisbtn.attr('piivot-question-id');
+       
 
         $(section + '[piivot-question-number=' + prevquestion + ']').removeClass('d-none').addClass('d-block');
         $(section + '[piivot-question-number=' + thisquestion + ']' ).removeClass('d-block').addClass('d-none');
@@ -434,16 +448,23 @@ function loadQuestionContent()
         let section = '.section-' + thisbtn.attr('piivot-section');
         let thissection = thisbtn.attr('piivot-this-section-count');
         let nextsection = thisbtn.attr('piivot-next-section-count');
+        let questionId = thisbtn.attr('piivot-question-id');
 
-         $('.piivot-tab-circular[piivot-section-count=' + nextsection + ']').removeClass('secondary').addClass('current');
-        $('.piivot-tab-circular[piivot-section-count=' + nextsection + '] span').removeClass('secondary').addClass('current');
-        $('.piivot-tab-circular[piivot-section-count=' + nextsection + ']')[0].click(); //.first().find('span').trigger('click');
-        
-        $('.piivot-tab-circular[piivot-section-count=' + thissection + '] span').html('<i class="fa fa-check" aria-hidden="true"></i>');
+        if (checkIfSelected(questionId)) { 
 
-        currentSection = sections[nextsection].name;
-        currentSectionOrder = nextsection;
-        resetChartAreaForNewSection();
+            $('.piivot-tab-circular[piivot-section-count=' + nextsection + ']').removeClass('secondary').addClass('current');
+            $('.piivot-tab-circular[piivot-section-count=' + nextsection + '] span').removeClass('secondary').addClass('current');
+            $('.piivot-tab-circular[piivot-section-count=' + nextsection + ']')[0].click(); //.first().find('span').trigger('click');
+            
+            $('.piivot-tab-circular[piivot-section-count=' + thissection + '] span').html('<i class="fa fa-check" aria-hidden="true"></i>');
+
+            currentSection = sections[nextsection].name;
+            currentSectionOrder = nextsection;
+            resetChartAreaForNewSection();
+        }
+        else {
+            alert("Please select a response");
+        }
 
         
     });
@@ -453,6 +474,7 @@ function loadQuestionContent()
         let section = '.section-' + thisbtn.attr('piivot-section');
         let thissection = thisbtn.attr('piivot-this-section-count');
         let prevsection = thisbtn.attr('piivot-prev-section-count');
+        let questionId = thisbtn.attr('piivot-question-id');
 
         $('.piivot-tab-circular[piivot-section-count=' + prevsection + ']')[0].click(); //.first().find('span').trigger('click');
 
@@ -467,10 +489,16 @@ function loadQuestionContent()
         let section = '.section-' + thisbtn.attr('piivot-section');
         let thissection = thisbtn.attr('piivot-this-section-count');
         let nextsection = thisbtn.attr('piivot-next-section-count');
+        let questionId = thisbtn.attr('piivot-question-id');
 
-        $('.piivot-tab-circular[piivot-section-count=' + thissection + '] span').html('<i class="fa fa-check" aria-hidden="true"></i>');
+        if (checkIfSelected(questionId)) { 
+            $('.piivot-tab-circular[piivot-section-count=' + thissection + '] span').html('<i class="fa fa-check" aria-hidden="true"></i>');
 
-        showFinalArea();
+            showFinalArea();
+        }
+        else {
+            alert("Please select a response");
+        }
 
         
     });
