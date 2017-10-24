@@ -115,7 +115,7 @@
         {
             "id": "OPR-04",
             "category": "Operational Testing",
-            "questionText": "Have structured operational testing processes and frequency been defined for business applications and services?",
+            "questionText": "Have structured operational testing processes and frequency been defined for business applications and services? (ie. Backup, HA, DR testing)",
             "options": [
                  {  "id": "OPR-04-opt-01", "optionText": "Operational Testing - Informal Recognition of Testing", "ml": 1 },
                  {  "id": "OPR-04-opt-02", "optionText": "Operational Testing - Ad-hoc Testing Structure and Freq.", "ml": 2 },
