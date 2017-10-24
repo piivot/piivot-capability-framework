@@ -210,6 +210,11 @@ function nextChar(c) {
     return String.fromCharCode(c.charCodeAt(0) + 1);
 }
 
+function isEmail(email) {
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
+  }
+
 function getUrlParameter(name) {
     name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
     var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
@@ -439,12 +444,13 @@ function loadQuestionContent()
         let nextquestion = thisbtn.attr('piivot-next-question-count');
         let questionId = thisbtn.attr('piivot-question-id');
 
-        if (checkIfSelected(questionId)) { 
+        if (checkIfSelected(questionId)) {
+            $('#questionvalidator').removeClass('d-block').addClass('d-none'); 
             $(section + '[piivot-question-number=' + nextquestion + ']').removeClass('d-none').addClass('d-block');
             $(section + '[piivot-question-number=' + thisquestion + ']' ).removeClass('d-block').addClass('d-none');
         }
         else {
-            alert("Please select a response");
+            $('#questionvalidator').removeClass('d-none').addClass('d-block');            
         }
 
         
@@ -470,7 +476,7 @@ function loadQuestionContent()
         let questionId = thisbtn.attr('piivot-question-id');
 
         if (checkIfSelected(questionId)) { 
-
+            $('#questionvalidator').removeClass('d-block').addClass('d-none'); 
             $('.piivot-tab-circular[piivot-section-count=' + nextsection + ']').removeClass('secondary').removeClass('disabled').addClass('current');
             $('.piivot-tab-circular[piivot-section-count=' + nextsection + '] span').removeClass('secondary').removeClass('disabled').addClass('current');
             $('.piivot-tab-circular[piivot-section-count=' + nextsection + ']')[0].click(); //.first().find('span').trigger('click');
@@ -482,7 +488,7 @@ function loadQuestionContent()
             resetChartAreaForNewSection();
         }
         else {
-            alert("Please select a response");
+            $('#questionvalidator').removeClass('d-none').addClass('d-block');
         }
 
         
@@ -511,12 +517,13 @@ function loadQuestionContent()
         let questionId = thisbtn.attr('piivot-question-id');
 
         if (checkIfSelected(questionId)) { 
+            $('#questionvalidator').removeClass('d-block').addClass('d-none'); 
             $('.piivot-tab-circular[piivot-section-count=' + thissection + '] span').html('<i class="fa fa-check" aria-hidden="true"></i>');
 
             showFinalArea();
         }
         else {
-            alert("Please select a response");
+            $('#questionvalidator').removeClass('d-none').addClass('d-block');
         }
 
         
@@ -612,8 +619,23 @@ function addScoreToArray(id,sectionId,ml,cl,maxML,maxCL)
 }
 
 $('#submitcontact').on('click', function() {
-    $('#infosection').removeClass('d-block').addClass('d-none');
-    $('#productsection').removeClass('d-none').addClass('d-block');
+    if ($('#name').val() == '' && $('#email').val() == '' && $('#company').val() == '' )
+    {
+        $('#infovalidator').removeClass('d-none').addClass('d-block');
+        $('#infovalidator').html('All field are required');
+    }
+    else if ( !isEmail($('#email').val()) )
+    {
+        $('#infovalidator').removeClass('d-none').addClass('d-block');
+        $('#infovalidator').html('Please enter a valid email address');
+    }
+    else {
+        $('#infovalidator').removeClass('d-block').addClass('d-none');
+        $('#infovalidator').html('');
+        $('#infosection').removeClass('d-block').addClass('d-none');
+        $('#productsection').removeClass('d-none').addClass('d-block');
+    }
+    
 });
 
 $('#submitproduct').on('click', function() {
