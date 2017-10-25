@@ -73,6 +73,34 @@ position: 'bottom'
     title: 'Capability Dimensions',
     }
 };
+
+var maturityoptions = {};
+maturityoptions = {
+    title: 'Maturity Path',
+    backgroundColor: 'none',
+    pointSize: 15,
+    height: 600,
+    width: 600,
+chartArea: {
+      left: 100,
+      width: 400,
+      height: 400
+    },
+    legend: {
+      position: 'bottom'
+    },
+    hAxis: {
+      title: 'People/Process',
+      minValue: 0,
+maxValue: 20
+    },
+    vAxis: {
+      title: 'Technology',
+minValue: 0,
+maxValue: 20,
+    }
+  };
+
   
 
 
@@ -195,6 +223,44 @@ function showFinalArea() {
 
         let chart = new google.visualization.ColumnChart(document.getElementById('finalchartarea'));      
         chart.draw(chartData, finalChartOptions);
+
+
+
+
+
+
+
+
+
+google.charts.load('current', {
+    packages: ['corechart', 'scatter'],
+    callback: function() {
+        var data1 = new google.visualization.DataTable();
+        data1.addColumn('number', 'People/Process');
+        data1.addColumn('number', 'Customer');
+        
+        data1.addRows([
+        [6.43, 7.72]
+        ]);
+        
+          var data2 = new google.visualization.DataTable();
+        data2.addColumn('number', 'People/Process');
+        data2.addColumn('number', 'Target');
+        
+        data2.addRows([
+        [14.23, 14.38]
+        ]);
+        
+        var joinedData = google.visualization.data.join(data1, data2, 'full', [[0, 0]], [1], [1]);
+        
+            
+          var chart = new google.visualization.ScatterChart(document.getElementById('finalmaturity'));
+          chart.draw(joinedData, machurityoptions);
+    }
+  });
+    
+
+
     }
     });
 }
@@ -712,6 +778,35 @@ if (final == "1") {
         chart.draw(chartData, finalChartOptions);
     }
     });
+
+
+google.charts.load('current', {
+    packages: ['corechart'],
+    callback: function() {
+        let data1 = new google.visualization.DataTable();
+        data1.addColumn('number', 'People/Process');
+        data1.addColumn('number', 'Customer');
+        
+        data1.addRows([
+        [6.43, 7.72]
+        ]);
+        
+          let data2 = new google.visualization.DataTable();
+        data2.addColumn('number', 'People/Process');
+        data2.addColumn('number', 'Target');
+        
+        data2.addRows([
+        [14.23, 14.38]
+        ]);
+        
+        let joinedData = google.visualization.data.join(data1, data2, 'full', [[0, 0]], [1], [1]);
+        
+            
+          let matchart = new google.visualization.ScatterChart(document.getElementById('finalmaturitychartarea'));
+          matchart.draw(joinedData, maturityoptions);
+    }
+  });
+    
 
     $('#finalstepsection').removeClass('d-none').addClass('d-block');
 }
