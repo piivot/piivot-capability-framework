@@ -815,13 +815,13 @@
         {
             "id": "DAT-08",
             "category": "Data Protection Software",
-            "questionText": "Has the IT organisation provided for the ability for file-level restore of point-in-time copies of data?",
+            "questionText": "Has the IT organisation provided for the ability for file/object-level restore of point-in-time copies of data?",
             "options": [
-                 {  "id": "DAT-08-opt-01", "optionText": "File-Level Restore Capabilities - Informal Needs Recognition", "ml": 1 },
-                 {  "id": "DAT-08-opt-02", "optionText": "File-Level Restore Capabilities - Ad-hoc Adoption", "ml": 2 },
-                 {  "id": "DAT-08-opt-03", "optionText": "File-Level Restore Capabilities - Formal tools and processes (Basic)", "ml": 3 },
-                 {  "id": "DAT-08-opt-04", "optionText": "File-Level Restore Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
-                 {  "id": "DAT-08-opt-05", "optionText": "File-Level Restore Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
+                 {  "id": "DAT-08-opt-01", "optionText": "File/Object-Level Restore Capabilities - Informal Needs Recognition", "ml": 1 },
+                 {  "id": "DAT-08-opt-02", "optionText": "File/Object-Level Restore Capabilities - Ad-hoc Adoption", "ml": 2 },
+                 {  "id": "DAT-08-opt-03", "optionText": "File/Object-Level Restore Capabilities - Formal tools and processes (Basic)", "ml": 3 },
+                 {  "id": "DAT-08-opt-04", "optionText": "File/Object-Level Restore Capabilities - Formal tools and processes (Advanced) - Business Unit", "ml": 4 },
+                 {  "id": "DAT-08-opt-05", "optionText": "File/Object-Level Restore Capabilities - Formal Automated/as-a-service tools/Processes - Enterprise-wide", "ml": 5 }
             ],
             "maxML": 5,
             "maxCL": 5
