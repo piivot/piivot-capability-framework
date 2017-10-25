@@ -1,6 +1,6 @@
 .piivot-board {
   width: 75%;
-  margin: 60px auto 0 auto;
+  margin: 20px auto 0 auto;
   /*height: 500px;*/
   background: #fff;
   z-index: 0;
@@ -11,7 +11,7 @@
       position: relative;
       /* border-bottom: 0; */
       /* width: 80%; */
-      margin: 40px auto 0 auto;
+      margin: 20px auto 0 auto;
       margin-bottom: 0;
       padding-bottom: 0.5rem;
       box-sizing: border-box;
