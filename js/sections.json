@@ -5,7 +5,7 @@
 
             "shortName": "organisational",
             "id": "S01-ORG",
-            "tabClass": "one",
+            "tabClass": "piivot-people",
             "order": 0,
             "questions": [
                 { "id": "ORG-01" }, { "id": "ORG-02" }, { "id": "ORG-03" }, { "id": "ORG-04" }, { "id": "ORG-05" }                
@@ -15,7 +15,7 @@
             "name": "Operational ",
             "shortName": "operational",
             "id": "S02-OPR",
-            "tabClass": "two",            
+            "tabClass": "piivot-people disabled",            
             "order": 1,
             "questions": [
                 { "id": "OPR-01" }, { "id": "OPR-02" }, { "id": "OPR-03" }, { "id": "OPR-04" }, { "id": "OPR-05" }, {"id": "OPR-06"}
@@ -25,7 +25,7 @@
             "name": "Governance",
             "shortName": "governance",
             "id": "S03-GOV",
-            "tabClass": "three",            
+            "tabClass": "piivot-process disabled",            
             "order": 2,
             "questions": [
                 { "id": "GOV-01" }, { "id": "GOV-02" }, {"id": "GOV-03"}, {"id": "GOV-04"}, {"id": "GOV-05"}, {"id": "GOV-06"}
@@ -35,7 +35,7 @@
             "name": "Platform Selection",
             "shortName": "platform",
             "id": "S04-PLT",
-            "tabClass": "four",            
+            "tabClass": "piivot-process disabled",            
             "order": 3,
             "questions": [
                 { "id": "PLT-01" }, { "id": "PLT-02" }, {"id": "PLT-03"}, {"id": "PLT-04"}, {"id": "PLT-05"}, {"id": "PLT-06"}
@@ -45,7 +45,7 @@
             "name": "Identity Access Management",
             "shortName": "identity",
             "id": "S05-IAM",
-            "tabClass": "five",
+            "tabClass": "piivot-technology disabled",
             "order": 4,
             "questions": [
                 { "id": "IAM-01" }, { "id": "IAM-02" }, {"id": "IAM-03"}, {"id": "IAM-04"}, {"id": "IAM-05"}, { "id": "IAM-06" }, { "id": "IAM-07" }, {"id": "IAM-08"}
@@ -55,7 +55,7 @@
             "name": "Network Elasticity",
             "shortName": "network",
             "id": "S06-NET",
-            "tabClass": "six",            
+            "tabClass": "piivot-technology disabled",            
             "order": 5,
             "questions": [
                 { "id": "NET-01" }, { "id": "NET-02" }, {"id": "NET-03"}, {"id": "NET-04"}, {"id": "NET-05"}, { "id": "NET-06" }, { "id": "NET-07" }, 
@@ -66,7 +66,7 @@
             "name": "Security Adherance",
             "shortName": "security",
             "id": "S07-SEC",
-            "tabClass": "seven",            
+            "tabClass": "piivot-technology disabled",            
             "order": 6,
             "questions": [
                 { "id": "SEC-01" }, { "id": "SEC-02" }, {"id": "SEC-03"}, {"id": "SEC-04"}, {"id": "SEC-05"}, { "id": "SEC-06" }, { "id": "SEC-07" }, 
@@ -77,7 +77,7 @@
             "name": "Data Management",
             "shortName": "data",
             "id": "S08-DAT",
-            "tabClass": "eight",            
+            "tabClass": "piivot-technology disabled",            
             "order": 7,
             "questions": [
                 { "id": "DAT-01" }, { "id": "DAT-02" }, {"id": "DAT-03"}, {"id": "DAT-04"}, {"id": "DAT-05"}, { "id": "DAT-06" }, { "id": "DAT-07" }, 

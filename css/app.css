@@ -24,6 +24,46 @@
   width: 75%;
 }
 
+span.round-tabs.piivot-people{
+  color: #856404 !important;border: 2px solid #ffc107 !important;
+  background: #fff3cd !important;
+}
+
+span.round-tabs.piivot-process{
+  color: #721c24 !important;border: 2px solid #dc3545!important;
+  background: #f8d7da !important;
+}
+
+span.round-tabs.piivot-technology{
+  color: #155724 !important;border: 2px solid #28a745 !important;
+  background: #d4edda !important;
+}
+
+.piivot-people-text{
+  color: #856404 !important;
+  font-weight: bolder;
+}
+
+.piivot-process-text {
+  color: #721c24 !important;
+  font-weight: bolder;
+}
+
+.piivot-technology-text {
+  color: #155724 !important;
+  font-weight: bolder;
+}
+
+span.round-tabs.piivot-people.disabled, span.round-tabs.piivot-process.disabled, span.round-tabs.piivot-technology.disabled {
+  cursor: not-allowed;
+}
+
+/*li.active span.round-tabs.piivot-people{
+  background: #fff3cd !important;
+  border: 2px solid #ddd;
+  color: #856404 !important;
+}*/
+
 .range-control {
     position: relative;
   }

@@ -290,7 +290,7 @@ function loadQuestionContent()
         let fullName = section.name;
         let sectionId = section.id;
         let sectionOrder = section.order;
-        //let sectionTabClass = section.tabClass;
+        let sectionTabClass = section.tabClass;
 
         let totalSectionQuestions = section.questions.length;
 
@@ -299,14 +299,14 @@ function loadQuestionContent()
         /*********** Build out the circular tab *******************/
         let tabAClass = 'piivot-tab-circular';
         let tabShow = '';
-        let sectionTabClass = 'secondary disabled';
+        //let sectionTabClass = 'secondary disabled';
 
         if (count == 0)
         {
             tabAClass += ' active';
             //ariaExpanded = 'true';
             tabShow += ' active show';
-            sectionTabClass = 'current';
+            //sectionTabClass = 'current';
 
             currentSection = fullName;
 

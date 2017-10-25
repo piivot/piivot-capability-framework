@@ -204,7 +204,8 @@ li.active span.round-tabs.eight{
       border-bottom-color: #ddd;
       
   }*/
-  a.one:after, a.two:after, a.three:after, a.four:after, a.five:after, a.six:after, a.seven:after, a.eight:after, a.current:after, a.secondary:after {
+  a.one:after, a.two:after, a.three:after, a.four:after, a.five:after, a.six:after, a.seven:after, a.eight:after, a.current:after, a.secondary:after,
+  a.piivot-people:after, a.piivot-process:after, a.piivot-technology:after {
     content:"";
     position:relative;
     /*bottom:-0.5rem; /* value = - border-top-width - border-bottom-width */
@@ -219,7 +220,8 @@ li.active span.round-tabs.eight{
   }
 
   a.active.one:after, a.active.two:after, a.active.three:after, a.active.four:after, a.active.five:after,
-  a.active.six:after, a.active.seven:after, a.active.eight:after, a.active.current:after, a.active.secondary:after {
+  a.active.six:after, a.active.seven:after, a.active.eight:after, a.active.current:after, a.active.secondary:after,
+  a.active.piivot-people:after, a.active.piivot-process:after, a.active.piivot-technology:after {
     content:"";
     position:relative;
     bottom:-0.5rem; /* value = - border-top-width - border-bottom-width */
