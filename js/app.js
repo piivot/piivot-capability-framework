@@ -167,6 +167,11 @@ function showFinalArea() {
     $('#chartsection').removeClass('d-block').addClass('d-none');
     $('#finalstepsection').removeClass('d-none').addClass('d-block');
 
+    let peopleprocess = 0.0;
+    let technology = 0.0;
+    let targetpeopleprocess = 0.0;
+    let targettechnology = 0.0;
+
     google.charts.load('current', {packages: ['corechart', 'bar'],
     callback: function() {
         let chartData = new google.visualization.DataTable();
@@ -217,6 +222,17 @@ function showFinalArea() {
             
 
             chartData.addRows([[thisSection.name, custValue, custPercentageText, targetShowValue, targetPercentageText, maxValue, 'Max Cap.']]);
+
+            switch (order) {
+                case 0: case 1: case 2: case 3:
+                    targetpeopleprocess += targetScore;
+                    peopleprocess += calculatedML;
+                    break;
+                case 4: case 5: case 6: case 7:
+                    targettechnology += targetScore;
+                    technology += calculatedML;
+                    break;
+            }
         });
     
         
@@ -225,39 +241,32 @@ function showFinalArea() {
         chart.draw(chartData, finalChartOptions);
 
 
-
-
-
-
-
-
-
-google.charts.load('current', {
-    packages: ['corechart', 'scatter'],
-    callback: function() {
-        var data1 = new google.visualization.DataTable();
-        data1.addColumn('number', 'People/Process');
-        data1.addColumn('number', 'Customer');
-        
-        data1.addRows([
-        [6.43, 7.72]
-        ]);
-        
-          var data2 = new google.visualization.DataTable();
-        data2.addColumn('number', 'People/Process');
-        data2.addColumn('number', 'Target');
-        
-        data2.addRows([
-        [14.23, 14.38]
-        ]);
-        
-        var joinedData = google.visualization.data.join(data1, data2, 'full', [[0, 0]], [1], [1]);
-        
-            
-          var chart = new google.visualization.ScatterChart(document.getElementById('finalmaturity'));
-          chart.draw(joinedData, machurityoptions);
-    }
-  });
+        google.charts.load('current', {
+            packages: ['corechart', 'scatter'],
+            callback: function() {
+                let data1 = new google.visualization.DataTable();
+                data1.addColumn('number', 'People/Process');
+                data1.addColumn('number', 'Customer');
+                
+                data1.addRows([
+                [peopleprocess, technology]
+                ]);
+                
+                let data2 = new google.visualization.DataTable();
+                data2.addColumn('number', 'People/Process');
+                data2.addColumn('number', 'Target');
+                
+                data2.addRows([
+                [targetpeopleprocess, targettechnology]
+                ]);
+                
+                let joinedData = google.visualization.data.join(data1, data2, 'full', [[0, 0]], [1], [1]);
+                
+                    
+                let matchart = new google.visualization.ScatterChart(document.getElementById('finalmaturitychartarea'));
+                matchart.draw(joinedData, maturityoptions);
+            }
+        });
     
 
 
