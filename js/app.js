@@ -90,14 +90,20 @@ chartArea: {
       position: 'bottom'
     },
     hAxis: {
-      title: 'People/Process',
-      minValue: 0,
-maxValue: 20
+        title: 'People/Process',
+        ticks: [4,8,12,16,20],
+        viewWindow: {
+        minValue: 4,
+        maxValue: 20
+        }
     },
     vAxis: {
-      title: 'Technology',
-minValue: 0,
-maxValue: 20,
+        title: 'Technology',
+        ticks: [4,8,12,16,20],
+        viewWindow: {
+    minValue: 4,
+    maxValue: 20
+        }
     }
   };
 
