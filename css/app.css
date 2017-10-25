@@ -18,6 +18,12 @@
   background-image: linear-gradient(to bottom,#6b7987 0,#6b7987 100%)
 }
 
+.piivot-ppt {
+  display: flex;
+  margin: 0 auto;
+  width: 75%;
+}
+
 .range-control {
     position: relative;
   }

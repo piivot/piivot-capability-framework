@@ -317,8 +317,10 @@ function loadQuestionContent()
         let circularTabContent = '';
         let showTab = count > 0 ? 'd-none' : 'd-block';
 
+        circularTabContent += '<div class="col">';
         circularTabContent += '<li class="' + showTab + ' d-lg-block d-xl-block"><a class="' + tabAClass + ' ' + sectionTabClass + '" href="#' + shortName + '" data-toggle="tab" title="' + shortName + '" piivot-section-count="' + count + '">';
         circularTabContent += '<span class="round-tabs ' + sectionTabClass + '" piivot-tab-name="' + piivotTabName + '">' + piivotTabName + '</span></a></li>';
+        circularTabContent += '</div>';
         $('#piivot-tabs').append(circularTabContent);
 
         
@@ -652,6 +654,8 @@ $('#submitproduct').on('click', function() {
 loadProducts();
 
 var final = getUrlParameter('final');
+var qs = getUrlParameter('qs');
+
 if (final == "1") {
     $('#infosection').removeClass('d-block').addClass('d-none');
     $('#productsection').removeClass('d-block').addClass('d-none');
@@ -709,4 +713,10 @@ if (final == "1") {
     });
 
     $('#finalstepsection').removeClass('d-none').addClass('d-block');
+}
+else if (qs == "1") {
+    $('#infosection').removeClass('d-block').addClass('d-none');
+    $('#productsection').removeClass('d-block').addClass('d-none');
+    $('#questionsection').removeClass('d-none').addClass('d-block');
+    $('#chartsection').removeClass('d-none').addClass('d-block');
 }
